@@ -19636,7 +19636,7 @@ int alt_get_fd (alt_dev* dev)
 1000fc08:	d9400015 	stw	r5,0(sp)
 1000fc0c:	d9800115 	stw	r6,4(sp)
 1000fc10:	d9c00215 	stw	r7,8(sp)
-1000fc14:	00000000 	call	10000000 <__reset>
+1000fc14:	00000000 	call	10000000 <__alt_mem_sdram>
 1000fc18:	d9400017 	ldw	r5,0(sp)
 1000fc1c:	d9800117 	ldw	r6,4(sp)
 1000fc20:	d9c00217 	ldw	r7,8(sp)
@@ -19778,7 +19778,7 @@ int alt_get_fd (alt_dev* dev)
 1000fe38:	18000a26 	beq	r3,zero,1000fe64 <__call_exitprocs+0x19c>
 1000fe3c:	9009883a 	mov	r4,r18
 1000fe40:	b8c00015 	stw	r3,0(r23)
-1000fe44:	00000000 	call	10000000 <__reset>
+1000fe44:	00000000 	call	10000000 <__alt_mem_sdram>
 1000fe48:	bc800017 	ldw	r18,0(r23)
 1000fe4c:	903fb61e 	bne	r18,zero,1000fd28 <__alt_data_end+0xf800fd28>
 1000fe50:	003fcc06 	br	1000fd84 <__alt_data_end+0xf800fd84>
