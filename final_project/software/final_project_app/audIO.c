@@ -28,6 +28,84 @@ unsigned int audio_read_fifo_avail(int channel)
 	return fifospace;
 }
 
+int audio_read_fifo(unsigned int *buf, int len, int channel) {
+	unsigned int fifospace;
+	int count = 0;
+	while (count < len) {
+		// read the whole fifospcae register
+		fifospace = IORD_AUDIO_FIFOSPACE();
+		// extract the part for proper Channel Read Space
+		fifospace = (channel == AUDIO_LEFT) ?
+			(fifospace & AUDIO_FIFOSPACE_RALC_MASK) >> AUDIO_FIFOSPACE_RALC_OFFSET
+			:
+			(fifospace & AUDIO_FIFOSPACE_RARC_MASK) >> AUDIO_FIFOSPACE_RARC_OFFSET;
+		if (fifospace > 0) {
+			buf[count] = (channel == AUDIO_LEFT) ?
+				IORD_AUDIO_LEFTDATA():
+				IORD_AUDIO_RIGHTDATA();
+			count ++;
+		}
+		else {
+			//no more data to read
+			break;
+		}
+	}
+	return count;
+}
+
+int audio_write_fifo(unsigned int *buf, int len, int channel) {
+	unsigned int fifospace;
+	int count = 0;
+	while (count < len) {
+		//read the whole fifospace register
+		fifospace = IORD_AUDIO_FIFOSPACE();
+		//extract the part for left Channel Write Space
+		fifospace = (channel == AUDIO_LEFT) ?
+			(fifospace & AUDIO_FIFOSPACE_WSLC_MASK) >> AUDIO_FIFOSPACE_WSLC_OFFSET :
+			(fifospace & AUDIO_FIFOSPACE_WSRC_MASK) >> AUDIO_FIFOSPACE_WSRC_OFFSET;
+		if (fifospace > 0) {
+			if (channel == AUDIO_LEFT)
+				IOWR_AUDIO_LEFTDATA(buf[count++]);
+			else 
+				IOWR_AUDIO_RIGHTDATA(buf[count++]);
+		}
+		else {
+			//no more space to write
+			break;
+		}
+	}
+	return count;
+}
+
+unsigned int audio_read_fifo_head(int channel) {
+	return ( (channel == AUDIO_LEFT) ? IORD_AUDIO_LEFTDATA() :
+					IORD_AUDIO_RIGHTDATA() );
+}
+
+void audio_write_fifo_head(unsigned int data, int channel) {
+	if (channel == AUDIO_LEFT)
+		IOWR_AUDIO_LEFTDATA(data);
+	else
+		IOWR_AUDIO_RIGHTDATA(data);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
 // checks if the 
 
 /**
