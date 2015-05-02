@@ -16,6 +16,46 @@ volatile unsigned int *const AUDIO_CONFIG	= (unsigned int *)0x00000050;
 #define RIGHT_DATA	((volatile unsigned int *const)(AUDIO_DEVICE + 3));
 
 
+void audio_enable_read_interrupt()
+{
+	unsigned int ctrl_reg = IORD_AUDIO_CONTROL();
+	// set RE to 1 while maintaining the other bits
+	ctrl_reg |= AUDIO_CONTROL_RE_MASK;
+	IOWR_AUDIO_CONTROL(ctrl_reg);
+}
+
+void audio_disable_read_interrupt()
+{
+	unsigned int ctrl_reg = IORD_AUDIO_CONTROL();
+	// set RE to 0 while maintaining the other bits
+	ctrl_reg &= ~AUDIO_CONTROL_RE_MASK;
+	IOWR_AUDIO_CONTROL(ctrl_reg);
+}
+
+void audio_enable_write_interrupt()
+{
+	
+}
+
+void audio_disable_write_interrupt()
+{
+	
+}
+
+int audio_read_interrupt_pending()
+{
+	unsigned int ctrl_reg = IORD_AUDIO_CONTROL();
+	// return RI
+	return (ctrl_reg & AUDIO_CONTROL_RI_MASK) ? 1 : 0;
+}
+
+int audio_write_interrupt_pending()
+{
+	unsigned int ctrl_reg = IORD_AUDIO_CONTROL();
+	// return WI
+	return (ctrl_reg & AUDIO_CONTROL_WI_MASK) ? 1 : 0;
+}
+
 void audio_reset_audio_core()
 {
 	unsigned int ctrl_reg = IORD_AUDIO_CONTROL();

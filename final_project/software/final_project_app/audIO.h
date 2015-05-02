@@ -19,6 +19,8 @@ void audio_enable_read_interrupt();
 void audio_disable_read_interrupt();
 void audio_enable_write_interrupt();
 void audio_disable_write_interrupt();
+int audio_read_interrupt_pending();
+int audio_write_interrupt_pending();
 
 void audio_reset_audio_core();
 
