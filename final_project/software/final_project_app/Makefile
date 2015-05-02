@@ -144,6 +144,7 @@ ELF := final_project_app.elf
 # Paths to C, C++, and assembly source files.
 C_SRCS += main.c
 C_SRCS += altera_up_avalon_audio.c
+C_SRCS += audIO.c
 CXX_SRCS :=
 ASM_SRCS :=
 

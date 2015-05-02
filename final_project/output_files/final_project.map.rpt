@@ -1,5 +1,5 @@
 Analysis & Synthesis report for final_project
-Fri May 01 22:40:24 2015
+Sat May 02 14:10:48 2015
 Quartus II 64-Bit Version 14.1.1 Build 190 01/19/2015 SJ Web Edition
 
 
@@ -356,7 +356,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 01 22:40:24 2015      ;
+; Analysis & Synthesis Status        ; Successful - Sat May 02 14:10:48 2015      ;
 ; Quartus II 64-Bit Version          ; 14.1.1 Build 190 01/19/2015 SJ Web Edition ;
 ; Revision Name                      ; final_project                              ;
 ; Top-level Entity Name              ; final_project                              ;
@@ -7912,8 +7912,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------+--------------+
 ; Partition Name   ; Elapsed Time ;
 +------------------+--------------+
-; Top              ; 00:00:15     ;
-; sld_hub:auto_hub ; 00:00:01     ;
+; Top              ; 00:00:26     ;
+; sld_hub:auto_hub ; 00:00:02     ;
 +------------------+--------------+
 
 
@@ -7923,7 +7923,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.1 Build 190 01/19/2015 SJ Web Edition
-    Info: Processing started: Fri May 01 22:39:24 2015
+    Info: Processing started: Sat May 02 14:09:28 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off final_project -c final_project
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file hexdriver.sv
@@ -8619,10 +8619,10 @@ Info (21057): Implemented 5310 device resources after synthesis - the final reso
     Info (21064): Implemented 272 RAM segments
     Info (21065): Implemented 2 PLLs
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 145 warnings
-    Info: Peak virtual memory: 811 megabytes
-    Info: Processing ended: Fri May 01 22:40:25 2015
-    Info: Elapsed time: 00:01:01
-    Info: Total CPU time (on all processors): 00:01:40
+    Info: Peak virtual memory: 815 megabytes
+    Info: Processing ended: Sat May 02 14:10:48 2015
+    Info: Elapsed time: 00:01:20
+    Info: Total CPU time (on all processors): 00:01:44
 
 
 +------------------------------------------+
