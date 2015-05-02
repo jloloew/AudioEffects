@@ -37,8 +37,10 @@ unsigned int audio_play_l(unsigned int *buf, int len);
 ///////////////////////////////////////
 
 
-#define AUDIO_LEFT 					(2)
-#define AUDIO_RIGHT					(3)
+#define AUDIO_LEFT 					(0)
+#define AUDIO_RIGHT					(1)
+
+#define BUF_THRESHOLD				(96)	// 75% of the 128 word FIFOs in the audio core
 
 #define IOWR_AUDIO_ADDR(base, addr, data)		\
 	IOWR(base, addr, data)
