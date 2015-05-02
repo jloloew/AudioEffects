@@ -156,7 +156,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
@@ -489,7 +489,7 @@
   <parameter name="icache_tagramBlockType" value="Automatic" />
   <parameter name="impl" value="Tiny" />
   <parameter name="instAddrWidth" value="29" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x0' end='0x10' /><slave name='sdram_pll.pll_slave' start='0x20' end='0x30' /><slave name='audio.avalon_audio_slave' start='0x40' end='0x50' /><slave name='audio_config.avalon_av_config_slave' start='0x50' end='0x60' /><slave name='sysid_qsys_0.control_slave' start='0xA8' end='0xB0' /><slave name='nios2_qsys_0.debug_mem_slave' start='0x1000' end='0x1800' /><slave name='sdram.s1' start='0x10000000' end='0x18000000' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x0' end='0x10' /><slave name='sdram_pll.pll_slave' start='0x20' end='0x30' /><slave name='sysid_qsys_0.control_slave' start='0xA8' end='0xB0' /><slave name='nios2_qsys_0.debug_mem_slave' start='0x1000' end='0x1800' /><slave name='sdram.s1' start='0x10000000' end='0x18000000' /></address-map>]]></parameter>
   <parameter name="instructionMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="instructionMasterHighPerformanceMapParam" value="" />
   <parameter name="instruction_master_high_performance_paddr_base" value="0" />
@@ -928,24 +928,6 @@
    end="onchip_memory2_0.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="14.1"
-   start="nios2_qsys_0.instruction_master"
-   end="audio.avalon_audio_slave">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0040" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="14.1"
-   start="nios2_qsys_0.instruction_master"
-   end="audio_config.avalon_av_config_slave">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0050" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection

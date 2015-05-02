@@ -29,6 +29,8 @@ int main()
   */
   
   audio_reset_audio_core();
+  audio_enable_read_interrupt();
+  audio_enable_write_interrupt();
   
   // Check how many data words the read FIFO for the right channel has.
   for (i = 0; i < 5; i++) {

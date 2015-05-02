@@ -5,11 +5,11 @@
  version="1.0"
  fabric="QSYS">
  <!-- Format version 14.1 190 (Future versions may contain additional information.) -->
- <!-- 2015.05.01.22:28:29 -->
+ <!-- 2015.05.02.17:56:15 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1430537309</value>
+  <value>1430607374</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -6031,7 +6031,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="instSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x0' end='0x10' /><slave name='sdram_pll.pll_slave' start='0x20' end='0x30' /><slave name='audio.avalon_audio_slave' start='0x40' end='0x50' /><slave name='audio_config.avalon_av_config_slave' start='0x50' end='0x60' /><slave name='sysid_qsys_0.control_slave' start='0xA8' end='0xB0' /><slave name='nios2_qsys_0.debug_mem_slave' start='0x1000' end='0x1800' /><slave name='sdram.s1' start='0x10000000' end='0x18000000' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x0' end='0x10' /><slave name='sdram_pll.pll_slave' start='0x20' end='0x30' /><slave name='sysid_qsys_0.control_slave' start='0xA8' end='0xB0' /><slave name='nios2_qsys_0.debug_mem_slave' start='0x1000' end='0x1800' /><slave name='sdram.s1' start='0x10000000' end='0x18000000' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -7084,22 +7084,6 @@ parameters are a RESULT of the module parameters. -->
     <width>1</width>
     <role>waitrequest</role>
    </port>
-   <memoryBlock>
-    <isBridge>false</isBridge>
-    <moduleName>audio</moduleName>
-    <slaveName>avalon_audio_slave</slaveName>
-    <name>audio.avalon_audio_slave</name>
-    <baseAddress>64</baseAddress>
-    <span>16</span>
-   </memoryBlock>
-   <memoryBlock>
-    <isBridge>false</isBridge>
-    <moduleName>audio_config</moduleName>
-    <slaveName>avalon_av_config_slave</slaveName>
-    <name>audio_config.avalon_av_config_slave</name>
-    <baseAddress>80</baseAddress>
-    <span>16</span>
-   </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
     <moduleName>sysid_qsys_0</moduleName>
@@ -11671,7 +11655,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1430537309</value>
+   <value>1430607374</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -11691,7 +11675,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1430537309</value>
+   <value>1430607374</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -11707,7 +11691,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1430537309</value>
+   <value>1430607374</value>
    <derived>false</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -12687,108 +12671,6 @@ parameters are a RESULT of the module parameters. -->
   <startConnectionPoint>data_master</startConnectionPoint>
   <endModule>onchip_memory2_0</endModule>
   <endConnectionPoint>s1</endConnectionPoint>
- </connection>
- <connection
-   name="nios2_qsys_0.instruction_master/audio.avalon_audio_slave"
-   kind="avalon"
-   version="14.1"
-   start="nios2_qsys_0.instruction_master"
-   end="audio.avalon_audio_slave">
-  <parameter name="arbitrationPriority">
-   <type>int</type>
-   <value>1</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="baseAddress">
-   <type>java.math.BigInteger</type>
-   <value>0x0040</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="defaultConnection">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>nios2_qsys_0</startModule>
-  <startConnectionPoint>instruction_master</startConnectionPoint>
-  <endModule>audio</endModule>
-  <endConnectionPoint>avalon_audio_slave</endConnectionPoint>
- </connection>
- <connection
-   name="nios2_qsys_0.instruction_master/audio_config.avalon_av_config_slave"
-   kind="avalon"
-   version="14.1"
-   start="nios2_qsys_0.instruction_master"
-   end="audio_config.avalon_av_config_slave">
-  <parameter name="arbitrationPriority">
-   <type>int</type>
-   <value>1</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="baseAddress">
-   <type>java.math.BigInteger</type>
-   <value>0x0050</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="defaultConnection">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>nios2_qsys_0</startModule>
-  <startConnectionPoint>instruction_master</startConnectionPoint>
-  <endModule>audio_config</endModule>
-  <endConnectionPoint>avalon_av_config_slave</endConnectionPoint>
  </connection>
  <connection
    name="nios2_qsys_0.instruction_master/sysid_qsys_0.control_slave"
@@ -13910,7 +13792,7 @@ parameters are a RESULT of the module parameters. -->
   <version>14.1</version>
  </plugin>
  <plugin>
-  <instanceCount>17</instanceCount>
+  <instanceCount>15</instanceCount>
   <name>avalon</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>

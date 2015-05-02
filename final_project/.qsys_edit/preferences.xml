@@ -7,7 +7,8 @@
    <irq preferredWidth="34" />
   </columns>
  </systemtable>
- <library expandedCategories="Library,Project" />
+ <library
+   expandedCategories="Library/Processors and Peripherals,Library/Interface Protocols,Project,Library/DSP,Library,Library/University Program/Generic IO,Library/Processors and Peripherals/Peripherals,Library/Interface Protocols/Audio &amp; Video,Library/University Program" />
  <window width="1296" height="776" x="-8" y="-8" />
  <hdlexample language="VERILOG" />
  <generation
