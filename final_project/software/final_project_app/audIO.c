@@ -89,25 +89,6 @@ void audio_write_fifo_head(unsigned int data, int channel) {
 		IOWR_AUDIO_RIGHTDATA(data);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-// checks if the 
-
 /**
  * Checks if the read FIFO for the right channel has at least BUF_THRESHOLD data words
  * available. If it doesn't, then just returns 0. If it does, then data is read from
@@ -134,6 +115,22 @@ unsigned int audio_record_l(unsigned int *buf, int len)
 		return 0;
 	else
 		return audio_read_fifo(buf, len, AUDIO_LEFT);
+}
+
+/**
+ * Provides the amount of empty space available in the outgoing FIFO: WSLC or WSRC
+ */
+unsigned int audio_write_fifo_space(int channel)
+{
+	unsigned int fifospace;
+	// read the whole fifospace register
+	fifospace = IORD_AUDIO_FIFOSPACE();
+	// extract the part for proper Channel Read Space
+	fifospace = (channel == AUDIO_LEFT) ?
+			(fifospace & AUDIO_FIFOSPACE_WSLC_MASK) >> AUDIO_FIFOSPACE_WSLC_OFFSET
+			:
+			(fifospace & AUDIO_FIFOSPACE_WSRC_MASK) >> AUDIO_FIFOSPACE_WSRC_OFFSET;
+	return fifospace;
 }
 
 /**

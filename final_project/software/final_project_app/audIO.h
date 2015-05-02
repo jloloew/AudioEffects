@@ -27,6 +27,8 @@ void audio_write_fifo_head(unsigned int data, int channel);
 unsigned int audio_record_r(unsigned int *buf, int len);
 unsigned int audio_record_l(unsigned int *buf, int len);
 
+unsigned int audio_write_fifo_space(int channel);
+
 unsigned int audio_play_r(unsigned int *buf, int len);
 unsigned int audio_play_l(unsigned int *buf, int len);
 
