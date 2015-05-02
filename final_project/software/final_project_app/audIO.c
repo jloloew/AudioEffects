@@ -174,3 +174,43 @@ unsigned int audio_play_l(unsigned int *buf, int len)
 	else
 		return audio_write_fifo(buf, len, AUDIO_LEFT);
 }
+
+void audio_enable_write_interrupt() {
+	unsigned int ctrl_reg;
+	ctrl_reg = IORD_AUDIO_CONTROL(); 
+	// set WE to 1 while maintaining other bits the same
+	ctrl_reg |= AUDIO_CONTROL_WE_MSK;
+	IOWR_AUDIO_CONTROL(ctrl_reg);
+}
+
+void audio_disable_write_interrupt() {
+	unsigned int ctrl_reg;
+	ctrl_reg = IORD_AUDIO_CONTROL(); 
+	// set WE to 0 while maintaining other bits the same
+	ctrl_reg &= ~AUDIO_CONTROL_WE_MSK;
+	IOWR_AUDIO_CONTROL(ctrl_reg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
