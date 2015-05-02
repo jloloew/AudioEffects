@@ -72,8 +72,7 @@ module final_project_soc_audio_config (
 	irq,
 
 	I2C_SCEN,
-	I2C_SCLK,
-	autoinit
+	I2C_SCLK
 );
 
 /*****************************************************************************
@@ -104,7 +103,6 @@ output					irq;
 
 output					I2C_SCEN;
 output					I2C_SCLK;
-output					autoinit;
 
 /*****************************************************************************
  *                           Constant Declarations                           *
@@ -130,7 +128,7 @@ localparam AUD_LINE_OUT_RC	= 9'h07B;
 localparam AUD_ADC_PATH		= 9'd154;
 localparam AUD_DAC_PATH		= 9'h006;
 localparam AUD_POWER			= 9'h000;
-localparam AUD_DATA_FORMAT	= 9'd73;
+localparam AUD_DATA_FORMAT	= 9'd77;
 localparam AUD_SAMPLE_CTRL	= 9'd0;
 localparam AUD_SET_ACTIVE	= 9'h001;
 
@@ -404,7 +402,6 @@ assign ack =	data_from_controller[18] |
 					data_from_controller[ 9] |
 					data_from_controller[ 0];
 
-assign autoinit = auto_init_complete;
 /*****************************************************************************
  *                              Internal Modules                             *
  *****************************************************************************/

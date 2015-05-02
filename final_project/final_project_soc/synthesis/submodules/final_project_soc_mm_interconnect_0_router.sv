@@ -1,4 +1,4 @@
-// (C) 2001-2014 Altera Corporation. All rights reserved.
+// (C) 2001-2015 Altera Corporation. All rights reserved.
 // Your use of Altera Corporation's design tools, logic functions and other 
 // software and tools, and its AMPP partner logic functions, and any output 
 // files any of the foregoing (including device programming or simulation 
@@ -44,7 +44,7 @@
 
 module final_project_soc_mm_interconnect_0_router_default_decode
   #(
-     parameter DEFAULT_CHANNEL = 9,
+     parameter DEFAULT_CHANNEL = 6,
                DEFAULT_WR_CHANNEL = -1,
                DEFAULT_RD_CHANNEL = -1,
                DEFAULT_DESTID = 8 
@@ -204,7 +204,7 @@ module final_project_soc_mm_interconnect_0_router
 
     // ( 0x0 .. 0x10 )
     if ( {address[RG:PAD0],{PAD0{1'b0}}} == 29'h0   ) begin
-            src_channel = 10'b0001000000;
+            src_channel = 10'b1000000000;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 6;
     end
 
@@ -228,13 +228,13 @@ module final_project_soc_mm_interconnect_0_router
 
     // ( 0x70 .. 0x80 )
     if ( {address[RG:PAD4],{PAD4{1'b0}}} == 29'h70   ) begin
-            src_channel = 10'b0100000000;
+            src_channel = 10'b0010000000;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 1;
     end
 
     // ( 0x80 .. 0x90 )
     if ( {address[RG:PAD5],{PAD5{1'b0}}} == 29'h80   ) begin
-            src_channel = 10'b0010000000;
+            src_channel = 10'b0100000000;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 0;
     end
 
@@ -258,7 +258,7 @@ module final_project_soc_mm_interconnect_0_router
 
     // ( 0x10000000 .. 0x18000000 )
     if ( {address[RG:PAD9],{PAD9{1'b0}}} == 29'h10000000   ) begin
-            src_channel = 10'b1000000000;
+            src_channel = 10'b0001000000;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 8;
     end
 

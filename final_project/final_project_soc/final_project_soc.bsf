@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -228,7 +228,7 @@ agreement for further details.
 		(text "export" (rect 229 595 494 1200)(font "Arial" (color 0 0 0)))
 		(text "unused_sdram_phasedone_conduit" (rect 18 611 216 1235)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "export" (rect 229 635 494 1280)(font "Arial" (color 0 0 0)))
-		(text " final_project_soc " (rect 451 656 1016 1322)(font "Arial" ))
+		(text " system " (rect 493 656 1034 1322)(font "Arial" ))
 		(line (pt 224 32)(pt 304 32)(line_width 1))
 		(line (pt 304 32)(pt 304 656)(line_width 1))
 		(line (pt 224 656)(pt 304 656)(line_width 1))

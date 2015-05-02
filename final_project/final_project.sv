@@ -1,7 +1,10 @@
+
+`timescale 1 ns / 1 ns
 module final_project (	input	CLOCK_50, Reset,
 						output [6:0]	HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7,
 						output [8:0]	LEDG,
 						output [17:0]	LEDR,
+						input [17:0]	SW,
 						// VGA Interface 
 						output [7:0]	VGA_R,
 										VGA_G,
@@ -30,12 +33,16 @@ module final_project (	input	CLOCK_50, Reset,
 						input			AUD_DACLRCK,
 						// Audio Config
 						inout			I2C_SCLK,
-						output			I2C_SDAT,
-						output		autoinitcomplete
+						output			I2C_SDAT
 					);
 	
+	logic [31:0] hex_input;
+	
+	// there isn't enough free board area to use this
+//	ping_pong_game ping_pong ( .clk (CLOCK_50), .Reset, .SW, .LEDR );
+	
 	final_project_soc nios_ii (	.clk_clk (CLOCK_50), .reset_reset_n (Reset),
-								.ledg_wire_export (), .ledr_wire_export (LEDR),
+								.ledg_wire_export (LEDG), .ledr_wire_export (),
 								// SDRAM
 								.sdram_wire_addr (DRAM_ADDR), .sdram_wire_ba (DRAM_BA),
 								.sdram_wire_cas_n (DRAM_CAS_N), .sdram_wire_cke (DRAM_CKE),
@@ -50,7 +57,7 @@ module final_project (	input	CLOCK_50, Reset,
 								.audio_wire_BCLK (AUD_BCLK), .audio_wire_DACDAT (AUD_DACDAT),
 								.audio_wire_DACLRCK (AUD_DACLRCK),
 								// Audio Config
-								.audio_config_wire_SDAT (I2C_SDAT), .audio_config_wire_SCLK (I2C_SCLK), .autoinit(autoinitcomplete)
+								.audio_config_wire_SDAT (I2C_SDAT), .audio_config_wire_SCLK (I2C_SCLK)
 								);	
 	
 	
@@ -63,17 +70,17 @@ module final_project (	input	CLOCK_50, Reset,
 	assign VGA_BLANK_N = 1'b0;
 	assign VGA_VS = 1'b0;
 	assign VGA_HS = 1'b0;
-	// Autoinitcomplete
-	assign LEDG[0]	= autoinitcomplete;
 	
 	// Hex Displays
-	assign HEX0 = 7'h00;
-	assign HEX1 = 7'h00;
-	assign HEX2 = 7'h00;
-	assign HEX3 = 7'h00;
-	assign HEX4 = 7'h00;
-	assign HEX5 = 7'h00;
-	assign HEX6 = 7'h00;
-	assign HEX7 = 7'h00;
+	assign hex_input = 32'h8BADF00D;
+	
+	HexDriver hex0 (.In0 (hex_input[3:0]),		.Out0 (HEX0));
+	HexDriver hex1 (.In0 (hex_input[7:4]),		.Out0 (HEX1));
+	HexDriver hex2 (.In0 (hex_input[11:8]),		.Out0 (HEX2));
+	HexDriver hex3 (.In0 (hex_input[15:12]),	.Out0 (HEX3));
+	HexDriver hex4 (.In0 (hex_input[19:16]),	.Out0 (HEX4));
+	HexDriver hex5 (.In0 (hex_input[23:20]),	.Out0 (HEX5));
+	HexDriver hex6 (.In0 (hex_input[27:24]),	.Out0 (HEX6));
+	HexDriver hex7 (.In0 (hex_input[31:28]),	.Out0 (HEX7));
 	
 endmodule
