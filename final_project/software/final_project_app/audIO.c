@@ -15,6 +15,20 @@ volatile unsigned int *const AUDIO_CONFIG	= (unsigned int *)0x00000050;
 #define LEFT_DATA	((volatile unsigned int *const)(AUDIO_DEVICE + 2));
 #define RIGHT_DATA	((volatile unsigned int *const)(AUDIO_DEVICE + 3));
 
+
+void audio_reset_audio_core()
+{
+	unsigned int ctrl_reg = IORD_AUDIO_CONTROL();
+	// set CR and CW to 1 while maintaining the other bits
+	ctrl_reg |= AUDIO_CONTROL_CR_MASK;
+	ctrl_reg |= AUDIO_CONTROL_CW_MASK;
+	IOWR_AUDIO_CONTROL(ctrl_reg);
+	// set CR and CW to 0 while maintaining the other bits
+	ctrl_reg &= ~AUDIO_CONTROL_CR_MASK;
+	ctrl_reg &= ~AUDIO_CONTROL_CW_MASK;
+	IOWR_AUDIO_CONTROL(ctrl_reg);
+}
+
 // provides number of words of data available in the incoming FIFO: RALC or RARC
 unsigned int audio_read_fifo_avail(int channel)
 {

@@ -15,7 +15,13 @@ extern volatile unsigned int *const AUDIO_CONFIG;
 
 
 /********** FUNCTIONS **********/
-// provides number of words of data available in the incoming FIFO: RALC or RARC
+void audio_enable_read_interrupt();
+void audio_disable_read_interrupt();
+void audio_enable_write_interrupt();
+void audio_disable_write_interrupt();
+
+void audio_reset_audio_core();
+
 unsigned int audio_read_fifo_avail(int channel);
 int audio_read_fifo(unsigned int *buf, int len, int channel);
 
