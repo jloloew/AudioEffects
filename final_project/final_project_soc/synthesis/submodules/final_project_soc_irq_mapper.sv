@@ -22,7 +22,7 @@
 // Parameters
 //   NUM_RCVRS        : 2
 //   SENDER_IRW_WIDTH : 32
-//   IRQ_MAP          : 0:0,1:5
+//   IRQ_MAP          : 0:0,1:1
 //
 // -------------------------------------------------------
 
@@ -53,7 +53,7 @@ module final_project_soc_irq_mapper
 	sender_irq = 0;
 
         sender_irq[0] = receiver0_irq;
-        sender_irq[5] = receiver1_irq;
+        sender_irq[1] = receiver1_irq;
     end
 
 endmodule

@@ -34,7 +34,7 @@ i_state.011 0 0 1 0 0 1
 i_state.101 0 1 0 0 0 1 
 i_state.111 1 0 0 0 0 1 
 
-State Machine - |final_project|final_project_soc:nios_ii|final_project_soc_nios2_qsys_0:nios2_qsys_0|final_project_soc_nios2_qsys_0_nios2_oci:the_final_project_soc_nios2_qsys_0_nios2_oci|final_project_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_final_project_soc_nios2_qsys_0_jtag_debug_module_wrapper|final_project_soc_nios2_qsys_0_jtag_debug_module_tck:the_final_project_soc_nios2_qsys_0_jtag_debug_module_tck|DRsize
+State Machine - |final_project|final_project_soc:nios_ii|final_project_soc_nios2_qsys_0:nios2_qsys_0|final_project_soc_nios2_qsys_0_cpu:cpu|final_project_soc_nios2_qsys_0_cpu_nios2_oci:the_final_project_soc_nios2_qsys_0_cpu_nios2_oci|final_project_soc_nios2_qsys_0_cpu_debug_slave_wrapper:the_final_project_soc_nios2_qsys_0_cpu_debug_slave_wrapper|final_project_soc_nios2_qsys_0_cpu_debug_slave_tck:the_final_project_soc_nios2_qsys_0_cpu_debug_slave_tck|DRsize
 Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
 DRsize.000 0 0 0 0 0 0 
 DRsize.001 0 0 0 0 1 1 

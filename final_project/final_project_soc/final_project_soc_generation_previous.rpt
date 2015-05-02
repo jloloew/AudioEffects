@@ -16,7 +16,7 @@ Progress: Adding clk_0 [clock_source 14.1]
 Progress: Parameterizing module clk_0
 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 14.1]
 Progress: Parameterizing module jtag_uart_0
-Progress: Adding nios2_qsys_0 [altera_nios2_qsys 14.1]
+Progress: Adding nios2_qsys_0 [altera_nios2_gen2 14.1]
 Progress: Parameterizing module nios2_qsys_0
 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 14.1]
 Progress: Parameterizing module onchip_memory2_0
@@ -30,7 +30,6 @@ Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
-Warning: final_project_soc.nios2_qsys_0: Nios II Classic cores are now superseded by improved Gen 2 cores.
 Info: final_project_soc.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
 Info: final_project_soc.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
 Info: ip-generate succeeded.
@@ -54,7 +53,7 @@ Progress: Adding clk_0 [clock_source 14.1]
 Progress: Parameterizing module clk_0
 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 14.1]
 Progress: Parameterizing module jtag_uart_0
-Progress: Adding nios2_qsys_0 [altera_nios2_qsys 14.1]
+Progress: Adding nios2_qsys_0 [altera_nios2_gen2 14.1]
 Progress: Parameterizing module nios2_qsys_0
 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 14.1]
 Progress: Parameterizing module onchip_memory2_0
@@ -68,7 +67,6 @@ Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
-Warning: final_project_soc.nios2_qsys_0: Nios II Classic cores are now superseded by improved Gen 2 cores.
 Info: final_project_soc.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
 Info: final_project_soc.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
 Info: final_project_soc: Generating final_project_soc "final_project_soc" for QUARTUS_SYNTH
@@ -81,11 +79,11 @@ Info: Inserting clock-crossing logic between rsp_demux.src1 and rsp_mux_001.sink
 Info: Inserting clock-crossing logic between rsp_demux_006.src0 and rsp_mux.sink6
 Info: Inserting clock-crossing logic between rsp_demux_006.src1 and rsp_mux_001.sink5
 Info: LEDG: Starting RTL generation for module 'final_project_soc_LEDG'
-Info: LEDG:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=final_project_soc_LEDG --dir=C:/Users/Justin/AppData/Local/Temp/alt6556_93487898822224762.dir/0273_LEDG_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6556_93487898822224762.dir/0273_LEDG_gen//final_project_soc_LEDG_component_configuration.pl  --do_build_sim=0  ]
+Info: LEDG:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=final_project_soc_LEDG --dir=C:/Users/Justin/AppData/Local/Temp/alt6557_6063703355581314168.dir/0001_LEDG_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6557_6063703355581314168.dir/0001_LEDG_gen//final_project_soc_LEDG_component_configuration.pl  --do_build_sim=0  ]
 Info: LEDG: Done RTL generation for module 'final_project_soc_LEDG'
 Info: LEDG: "final_project_soc" instantiated altera_avalon_pio "LEDG"
 Info: LEDR: Starting RTL generation for module 'final_project_soc_LEDR'
-Info: LEDR:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=final_project_soc_LEDR --dir=C:/Users/Justin/AppData/Local/Temp/alt6556_93487898822224762.dir/0274_LEDR_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6556_93487898822224762.dir/0274_LEDR_gen//final_project_soc_LEDR_component_configuration.pl  --do_build_sim=0  ]
+Info: LEDR:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=final_project_soc_LEDR --dir=C:/Users/Justin/AppData/Local/Temp/alt6557_6063703355581314168.dir/0002_LEDR_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6557_6063703355581314168.dir/0002_LEDR_gen//final_project_soc_LEDR_component_configuration.pl  --do_build_sim=0  ]
 Info: LEDR: Done RTL generation for module 'final_project_soc_LEDR'
 Info: LEDR: "final_project_soc" instantiated altera_avalon_pio "LEDR"
 Info: audio: Starting Generation of Audio Controller
@@ -94,31 +92,16 @@ Info: audio_config: Starting Generation of Audio and Video Config
 Info: audio_config: "final_project_soc" instantiated altera_up_avalon_audio_and_video_config "audio_config"
 Info: audio_pll_0: "final_project_soc" instantiated altera_up_avalon_audio_pll "audio_pll_0"
 Info: jtag_uart_0: Starting RTL generation for module 'final_project_soc_jtag_uart_0'
-Info: jtag_uart_0:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=final_project_soc_jtag_uart_0 --dir=C:/Users/Justin/AppData/Local/Temp/alt6556_93487898822224762.dir/0277_jtag_uart_0_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6556_93487898822224762.dir/0277_jtag_uart_0_gen//final_project_soc_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=final_project_soc_jtag_uart_0 --dir=C:/Users/Justin/AppData/Local/Temp/alt6557_6063703355581314168.dir/0005_jtag_uart_0_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6557_6063703355581314168.dir/0005_jtag_uart_0_gen//final_project_soc_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag_uart_0: Done RTL generation for module 'final_project_soc_jtag_uart_0'
 Info: jtag_uart_0: "final_project_soc" instantiated altera_avalon_jtag_uart "jtag_uart_0"
-Info: nios2_qsys_0: Starting RTL generation for module 'final_project_soc_nios2_qsys_0'
-Info: nios2_qsys_0:   Generation command is [exec C:/altera/14.1/quartus/bin64/eperlcmd.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=final_project_soc_nios2_qsys_0 --dir=C:/Users/Justin/AppData/Local/Temp/alt6556_93487898822224762.dir/0278_nios2_qsys_0_gen/ --quartus_bindir=C:/altera/14.1/quartus/bin64 --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6556_93487898822224762.dir/0278_nios2_qsys_0_gen//final_project_soc_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0  ]
-Info: nios2_qsys_0: # 2015.05.01 21:29:15 (*) Starting Nios II generation
-Info: nios2_qsys_0: # 2015.05.01 21:29:15 (*)   Checking for plaintext license.
-Info: nios2_qsys_0: # 2015.05.01 21:29:17 (*)   Couldn't query license setup in Quartus directory C:/altera/14.1/quartus/bin64
-Info: nios2_qsys_0: # 2015.05.01 21:29:17 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info: nios2_qsys_0: # 2015.05.01 21:29:17 (*)   LM_LICENSE_FILE environment variable is empty
-Info: nios2_qsys_0: # 2015.05.01 21:29:17 (*)   Plaintext license not found.
-Info: nios2_qsys_0: # 2015.05.01 21:29:17 (*)   No license required to generate encrypted Nios II/e.
-Info: nios2_qsys_0: # 2015.05.01 21:29:17 (*)   Elaborating CPU configuration settings
-Info: nios2_qsys_0: # 2015.05.01 21:29:17 (*)   Creating all objects for CPU
-Info: nios2_qsys_0: # 2015.05.01 21:29:19 (*)   Generating RTL from CPU objects
-Info: nios2_qsys_0: # 2015.05.01 21:29:19 (*)   Creating plain-text RTL
-Info: nios2_qsys_0: # 2015.05.01 21:29:20 (*) Done Nios II generation
-Info: nios2_qsys_0: Done RTL generation for module 'final_project_soc_nios2_qsys_0'
-Info: nios2_qsys_0: "final_project_soc" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: nios2_qsys_0: "final_project_soc" instantiated altera_nios2_gen2 "nios2_qsys_0"
 Info: onchip_memory2_0: Starting RTL generation for module 'final_project_soc_onchip_memory2_0'
-Info: onchip_memory2_0:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=final_project_soc_onchip_memory2_0 --dir=C:/Users/Justin/AppData/Local/Temp/alt6556_93487898822224762.dir/0279_onchip_memory2_0_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6556_93487898822224762.dir/0279_onchip_memory2_0_gen//final_project_soc_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=final_project_soc_onchip_memory2_0 --dir=C:/Users/Justin/AppData/Local/Temp/alt6557_6063703355581314168.dir/0006_onchip_memory2_0_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6557_6063703355581314168.dir/0006_onchip_memory2_0_gen//final_project_soc_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
 Info: onchip_memory2_0: Done RTL generation for module 'final_project_soc_onchip_memory2_0'
 Info: onchip_memory2_0: "final_project_soc" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
 Info: sdram: Starting RTL generation for module 'final_project_soc_sdram'
-Info: sdram:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=final_project_soc_sdram --dir=C:/Users/Justin/AppData/Local/Temp/alt6556_93487898822224762.dir/0280_sdram_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6556_93487898822224762.dir/0280_sdram_gen//final_project_soc_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=final_project_soc_sdram --dir=C:/Users/Justin/AppData/Local/Temp/alt6557_6063703355581314168.dir/0007_sdram_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6557_6063703355581314168.dir/0007_sdram_gen//final_project_soc_sdram_component_configuration.pl  --do_build_sim=0  ]
 Info: sdram: Done RTL generation for module 'final_project_soc_sdram'
 Info: sdram: "final_project_soc" instantiated altera_avalon_new_sdram_controller "sdram"
 Info: sdram_pll: "final_project_soc" instantiated altpll "sdram_pll"
@@ -129,6 +112,22 @@ Info: irq_synchronizer: "final_project_soc" instantiated altera_irq_clock_crosse
 Info: rst_controller: "final_project_soc" instantiated altera_reset_controller "rst_controller"
 Info: audio_pll: "audio_pll_0" instantiated altera_up_altpll "audio_pll"
 Info: reset_from_locked: "audio_pll_0" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: cpu: Starting RTL generation for module 'final_project_soc_nios2_qsys_0_cpu'
+Info: cpu:   Generation command is [exec C:/altera/14.1/quartus/bin64/eperlcmd.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=final_project_soc_nios2_qsys_0_cpu --dir=C:/Users/Justin/AppData/Local/Temp/alt6557_6063703355581314168.dir/0016_cpu_gen/ --quartus_bindir=C:/altera/14.1/quartus/bin64 --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6557_6063703355581314168.dir/0016_cpu_gen//final_project_soc_nios2_qsys_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2015.05.01 22:10:03 (*) Starting Nios II generation
+Info: cpu: # 2015.05.01 22:10:03 (*)   Checking for plaintext license.
+Info: cpu: # 2015.05.01 22:10:05 (*)   Couldn't query license setup in Quartus directory C:/altera/14.1/quartus/bin64
+Info: cpu: # 2015.05.01 22:10:05 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2015.05.01 22:10:05 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2015.05.01 22:10:05 (*)   Plaintext license not found.
+Info: cpu: # 2015.05.01 22:10:05 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2015.05.01 22:10:05 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2015.05.01 22:10:05 (*)   Creating all objects for CPU
+Info: cpu: # 2015.05.01 22:10:06 (*)   Generating RTL from CPU objects
+Info: cpu: # 2015.05.01 22:10:06 (*)   Creating plain-text RTL
+Info: cpu: # 2015.05.01 22:10:08 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'final_project_soc_nios2_qsys_0_cpu'
+Info: cpu: "nios2_qsys_0" instantiated altera_nios2_gen2_unit "cpu"
 Info: nios2_qsys_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_qsys_0_data_master_translator"
 Info: audio_avalon_audio_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "audio_avalon_audio_slave_translator"
 Info: nios2_qsys_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_qsys_0_data_master_agent"
@@ -151,6 +150,6 @@ Info: Reusing file C:/Users/Justin/Documents/ece385/final_project/final_project/
 Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
 Info: Reusing file C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
-Info: final_project_soc: Done "final_project_soc" with 37 modules, 71 files
+Info: final_project_soc: Done "final_project_soc" with 38 modules, 72 files
 Info: ip-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

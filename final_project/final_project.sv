@@ -9,7 +9,7 @@ module final_project (	input	CLOCK_50, Reset,
 						output [7:0]	VGA_R,
 										VGA_G,
 										VGA_B,
-						output			VGA_clk,
+						output			VGA_CLK,
 										VGA_SYNC_N,
 										VGA_BLANK_N,
 										VGA_VS,
@@ -62,14 +62,14 @@ module final_project (	input	CLOCK_50, Reset,
 	
 	
 	// VGA
-	assign VGA_R = 8'h00;
-	assign VGA_G = 8'h00;
-	assign VGA_B = 8'h00;
-	assign VGA_clk = 1'b0;
-	assign VGA_SYNC_N = 1'b0;
-	assign VGA_BLANK_N = 1'b0;
-	assign VGA_VS = 1'b0;
-	assign VGA_HS = 1'b0;
+	assign VGA_R		= 8'h00;
+	assign VGA_G		= 8'h00;
+	assign VGA_B		= 8'h00;
+	assign VGA_CLK		= 1'b0;
+	assign VGA_SYNC_N	= 1'b0;
+	assign VGA_BLANK_N	= 1'b0;
+	assign VGA_VS		= 1'b0;
+	assign VGA_HS		= 1'b0;
 	
 	// Hex Displays
 	assign hex_input = 32'h8BADF00D;

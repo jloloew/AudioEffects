@@ -41,45 +41,45 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  11 .debug_abbrev 00008e72  00000000  00000000  000370cb  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_line   0000af6b  00000000  00000000  0003ff3d  2**0
+ 12 .debug_line   0000af6d  00000000  00000000  0003ff3d  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_frame  00002240  00000000  00000000  0004aea8  2**2
+ 13 .debug_frame  00002240  00000000  00000000  0004aeac  2**2
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_str    00003460  00000000  00000000  0004d0e8  2**0
+ 14 .debug_str    00003460  00000000  00000000  0004d0ec  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_loc    0001704e  00000000  00000000  00050548  2**0
+ 15 .debug_loc    0001704e  00000000  00000000  0005054c  2**0
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_alt_sim_info 00000010  00000000  00000000  00067598  2**2
+ 16 .debug_alt_sim_info 00000010  00000000  00000000  0006759c  2**2
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_ranges 00001338  00000000  00000000  000675a8  2**3
+ 17 .debug_ranges 00001338  00000000  00000000  000675b0  2**3
                   CONTENTS, READONLY, DEBUGGING
- 18 .thread_model 00000003  00000000  00000000  0006bce9  2**0
+ 18 .thread_model 00000003  00000000  00000000  0006bcf1  2**0
                   CONTENTS, READONLY
- 19 .cpu          0000000c  00000000  00000000  0006bcec  2**0
+ 19 .cpu          0000000c  00000000  00000000  0006bcf4  2**0
                   CONTENTS, READONLY
- 20 .qsys         00000001  00000000  00000000  0006bcf8  2**0
+ 20 .qsys         00000001  00000000  00000000  0006bd00  2**0
                   CONTENTS, READONLY
- 21 .simulation_enabled 00000001  00000000  00000000  0006bcf9  2**0
+ 21 .simulation_enabled 00000001  00000000  00000000  0006bd01  2**0
                   CONTENTS, READONLY
- 22 .sysid_hash   00000004  00000000  00000000  0006bcfa  2**0
+ 22 .sysid_hash   00000004  00000000  00000000  0006bd02  2**0
                   CONTENTS, READONLY
- 23 .sysid_base   00000004  00000000  00000000  0006bcfe  2**0
+ 23 .sysid_base   00000004  00000000  00000000  0006bd06  2**0
                   CONTENTS, READONLY
- 24 .sysid_time   00000004  00000000  00000000  0006bd02  2**0
+ 24 .sysid_time   00000004  00000000  00000000  0006bd0a  2**0
                   CONTENTS, READONLY
- 25 .stderr_dev   0000000b  00000000  00000000  0006bd06  2**0
+ 25 .stderr_dev   0000000b  00000000  00000000  0006bd0e  2**0
                   CONTENTS, READONLY
- 26 .stdin_dev    0000000b  00000000  00000000  0006bd11  2**0
+ 26 .stdin_dev    0000000b  00000000  00000000  0006bd19  2**0
                   CONTENTS, READONLY
- 27 .stdout_dev   0000000b  00000000  00000000  0006bd1c  2**0
+ 27 .stdout_dev   0000000b  00000000  00000000  0006bd24  2**0
                   CONTENTS, READONLY
- 28 .sopc_system_name 00000011  00000000  00000000  0006bd27  2**0
+ 28 .sopc_system_name 00000011  00000000  00000000  0006bd2f  2**0
                   CONTENTS, READONLY
- 29 .quartus_project_dir 0000003c  00000000  00000000  0006bd38  2**0
+ 29 .quartus_project_dir 0000003c  00000000  00000000  0006bd40  2**0
                   CONTENTS, READONLY
- 30 .jdi          00004667  00000000  00000000  0006bd74  2**0
+ 30 .jdi          000047d7  00000000  00000000  0006bd7c  2**0
                   CONTENTS, READONLY
- 31 .sopcinfo     0005fb7b  00000000  00000000  000703db  2**0
+ 31 .sopcinfo     00063454  00000000  00000000  00070553  2**0
                   CONTENTS, READONLY
 SYMBOL TABLE:
 10000000 l    d  .entry	00000000 .entry
@@ -227,7 +227,7 @@ SYMBOL TABLE:
 1000efbc l     F .text	00000050 alt_get_errno
 1000f00c l     F .text	000000f4 alt_file_locked
 00000000 l    df *ABS*	00000000 alt_tick.c
-00000000 l    df *ABS*	00000000 altera_nios2_qsys_irq.c
+00000000 l    df *ABS*	00000000 altera_nios2_gen2_irq.c
 00000000 l    df *ABS*	00000000 alt_find_file.c
 00000000 l    df *ABS*	00000000 alt_get_fd.c
 00000000 l    df *ABS*	00000000 atexit.c
@@ -262,6 +262,7 @@ SYMBOL TABLE:
 10004a60 g     F .text	00000018 _cleanup
 10006618 g     F .text	000000a8 _Balloc
 1000be50 g     F .text	000000d8 .hidden __gtdf2
+1000f3f8 g     F .text	00000020 altera_nios2_gen2_irq_init
 00000000  w      *UND*	00000000 __errno
 10000000 g     F .entry	0000000c __reset
 10000020 g       *ABS*	00000000 __flash_exceptions_start
@@ -444,7 +445,6 @@ SYMBOL TABLE:
 1000ec88 g     F .text	000000a0 alt_ic_irq_disable
 10007ccc g     F .text	0000007c __swrite
 10011818 g     O .rwdata	00000004 __malloc_trim_threshold
-1000f3f8 g     F .text	00000020 altera_nios2_qsys_irq_init
 10005814 g     F .text	0000000c __locale_msgcharset
 1000f614 g     F .text	00000038 exit
 100056d0 g     F .text	000000b8 _fwalk_reent
@@ -592,6 +592,11 @@ Disassembly of section .exceptions:
          */
         stw   ea,  72(sp)  /* Don't re-issue */
 1000008c:	df401215 	stw	ea,72(sp)
+        ldhu.n  r2, 0(r4)
+        ldhu.n  r3, 2(r4)
+        slli.n  r3, r3, 16
+        or.n    r2, r2, r3 /* Instruction that caused exception */
+#else
         ldw   r2, -4(ea)   /* Instruction that caused exception */
 10000090:	e8bfff17 	ldw	r2,-4(ea)
 
@@ -16120,8 +16125,8 @@ void alt_irq_init ( const void* base )
 1000ddd0:	df000115 	stw	fp,4(sp)
 1000ddd4:	df000104 	addi	fp,sp,4
 1000ddd8:	e13fff15 	stw	r4,-4(fp)
-    ALTERA_NIOS2_QSYS_IRQ_INIT ( NIOS2_QSYS_0, nios2_qsys_0);
-1000dddc:	000f3f80 	call	1000f3f8 <altera_nios2_qsys_irq_init>
+    ALTERA_NIOS2_GEN2_IRQ_INIT ( NIOS2_QSYS_0, nios2_qsys_0);
+1000dddc:	000f3f80 	call	1000f3f8 <altera_nios2_gen2_irq_init>
  * alt_irq_cpu_enable_interrupts() enables the CPU to start taking interrupts.
  */
 static ALT_INLINE void ALT_ALWAYS_INLINE 
@@ -16153,7 +16158,7 @@ void alt_sys_init( void )
 1000de0c:	01040074 	movhi	r4,4097
 1000de10:	2101f204 	addi	r4,r4,1992
 1000de14:	000b883a 	mov	r5,zero
-1000de18:	01800144 	movi	r6,5
+1000de18:	01800044 	movi	r6,1
 1000de1c:	000dfa80 	call	1000dfa8 <altera_avalon_jtag_uart_init>
 1000de20:	01040074 	movhi	r4,4097
 1000de24:	2101e804 	addi	r4,r4,1952
@@ -18688,12 +18693,12 @@ void alt_tick (void)
 1000f3f0:	dec00204 	addi	sp,sp,8
 1000f3f4:	f800283a 	ret
 
-1000f3f8 <altera_nios2_qsys_irq_init>:
+1000f3f8 <altera_nios2_gen2_irq_init>:
 /*
  * To initialize the internal interrupt controller, just clear the IENABLE
  * register so that all possible IRQs are disabled.
  */
-void altera_nios2_qsys_irq_init(void) 
+void altera_nios2_gen2_irq_init(void) 
 {
 1000f3f8:	deffff04 	addi	sp,sp,-4
 1000f3fc:	df000015 	stw	fp,0(sp)

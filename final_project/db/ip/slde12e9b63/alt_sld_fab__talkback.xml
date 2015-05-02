@@ -117,7 +117,7 @@
    <SOPCModuleParameter>
     <C>24</C>
     <Name>DESIGN_HASH</Name>
-    <Value>969d28be678fe9933731</Value>
+    <Value>4c8e95deabbde0805357</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>25</C>
@@ -130,7 +130,7 @@
     <Value>{width 4 latency 0} </Value>
    </SOPCModuleParameter>
   </SOPCModule>
-  <SystemID>311170759</SystemID>
+  <SystemID>313890575</SystemID>
  </SOPCSystem>
  <SchemaVersion>schema_2013-01-18</SchemaVersion>
 </ProgramExecution>
