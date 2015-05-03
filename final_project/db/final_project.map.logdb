@@ -1,1 +1,3 @@
 v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Display:display|color_mapper:color_map|lpm_mult:Mult1|mult_p5t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Display:display|color_mapper:color_map|lpm_mult:Mult0|mult_p5t:auto_generated|mac_out2,

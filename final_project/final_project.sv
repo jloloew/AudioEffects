@@ -37,6 +37,7 @@ module final_project (	input	CLOCK_50, Reset,
 					);
 	
 	logic [31:0] hex_input;
+	logic [9:0] DrawX, DrawY;
 	
 	// there isn't enough free board area to use this
 //	ping_pong_game ping_pong ( .clk (CLOCK_50), .Reset, .SW, .LEDR );
@@ -62,14 +63,11 @@ module final_project (	input	CLOCK_50, Reset,
 	
 	
 	// VGA
-	assign VGA_R		= 8'h00;
-	assign VGA_G		= 8'h00;
-	assign VGA_B		= 8'h00;
-	assign VGA_CLK		= 1'b0;
-	assign VGA_SYNC_N	= 1'b0;
-	assign VGA_BLANK_N	= 1'b0;
-	assign VGA_VS		= 1'b0;
-	assign VGA_HS		= 1'b0;
+	Display display (	.Clk (CLOCK_50), .Reset,
+						.Red (VGA_R), .Green (VGA_G), .Blue (VGA_B),
+						.VGA_clk (VGA_CLK), .sync (VGA_SYNC_N), .blank (VGA_BLANK_N),
+						.vs (VGA_VS), .hs (VGA_HS)
+					);
 	
 	// Hex Displays
 	assign hex_input = 32'h8BADF00D;
