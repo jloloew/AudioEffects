@@ -1,13 +1,4 @@
 
-State Machine - |lab8_usb|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_jtag_debug_module_wrapper:the_usb_system_cpu_jtag_debug_module_wrapper|usb_system_cpu_jtag_debug_module_tck:the_usb_system_cpu_jtag_debug_module_tck|DRsize
-Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
-DRsize.000 0 0 0 0 0 0 
-DRsize.001 0 0 0 0 1 1 
-DRsize.010 0 0 0 1 0 1 
-DRsize.011 0 0 1 0 0 1 
-DRsize.100 0 1 0 0 0 1 
-DRsize.101 1 0 0 0 0 1 
-
 State Machine - |lab8_usb|usb_system:usbsys_instance|usb_system_sdram:sdram|m_next
 Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
 m_next.000000001 0 0 0 0 
@@ -42,3 +33,12 @@ i_state.010 0 0 0 1 0 1
 i_state.011 0 0 1 0 0 1 
 i_state.101 0 1 0 0 0 1 
 i_state.111 1 0 0 0 0 1 
+
+State Machine - |lab8_usb|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_cpu:cpu|usb_system_cpu_cpu_nios2_oci:the_usb_system_cpu_cpu_nios2_oci|usb_system_cpu_cpu_debug_slave_wrapper:the_usb_system_cpu_cpu_debug_slave_wrapper|usb_system_cpu_cpu_debug_slave_tck:the_usb_system_cpu_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
