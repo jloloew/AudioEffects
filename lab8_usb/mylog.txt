@@ -1,0 +1,54 @@
+C:\altera\14.0\nios2eds\bin\nios2-gdb-server.exe: invalid option -- write-pid
+usage: nios2-gdb-server [-h/--help] [-c/--cable <cable name>]
+       [-d/--device <device index>] [-i/--instance <instance>]
+       [-s/--sidp <address>] [-I/--id <id>] [-t/--timestamp <timestamp>]
+       [-w/--wait <seconds>] [--no-verify] [-g/--go] [--stop]
+       [--tcpport=<port> | auto] [--tcpdebug] [--tcptimeout <seconds>]
+       [--tcppersist] [--thread-vars <vars>] 
+       [--write-gmon <gmonfile>] [--wait-target-exit]
+       <filename.srec>*
+
+ -h/--help                   Print this message
+
+ -c/--cable <cable name>     Specifies which JTAG cable to use (not needed if
+                             you only have one cable)
+ -d/--device <device index>  Specifies in which device you want to look for the
+                             Nios II OCI core (1 = device nearest TDI etc.)
+ -i/--instance <instance>    Specifies the INSTANCE value of the JTAG debug core
+                             (not needed if there is exactly one on the chain)
+
+ -r/--reset-target           Always reset the target system before use
+
+ -C/--init-cache             Always initialize target processor cache before use
+
+ -s/--sidp <address>         Base-address of System ID peripheral on target
+ -I/--id <system-id-value>   Unique ID code for target system
+ -t/--timestamp <time-stamp> Timestamp for target-system (when last generated)
+    --accept-bad-sysid       Continue even if the system ID comparison fails
+
+ <filename.srec>*            S-Record file(s) to download to the target
+    --no-verify              Don't verify after downloading
+
+ -w/--wait <seconds>         Wait for time specified before starting processor
+                             (signal USR1 will terminate the wait early)
+ -g/--go                     Run processor from entry point after downloading
+    --stop                   Stop processor (leave it in a paused state).
+
+    --tcpport <port> | auto  Listen on specified TCP port for a connection from
+                             GDB (with "auto" a free port will be used).
+    --tcpdebug               Display the GDB remote protocol running over TCP
+    --tcptimeout <seconds>   Timeout if GDB has not connected in time specified
+    --tcppersist             Don't stop when GDB disconnects
+    --thread-vars <vars>     Decode target thread list using specified string
+
+    --write-gmon <gmonfile>  Wait for target to complete and write GMON data
+                             (if available) to the file specified
+    --wait-target-exit       Wait for target to complete and return target exit
+                             code as our return code if no other errors
+
+The processor state after execution is chosen as follows:
+  1) If the GDB remote protocol is enabled then this chooses the state.
+  2) If the --go option is specified then the processor will be started.
+  3) If the --stop option is specified then the processor will be left paused.
+  4) If a file is downloaded or the procesor is reset then it will be paused.
+  5) Otherwise, the processor state will be restored.
