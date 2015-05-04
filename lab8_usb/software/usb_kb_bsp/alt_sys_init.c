@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'usb_system'
  * SOPC Builder design path: ../../usb_system.sopcinfo
  *
- * Generated: Thu Sep 25 09:54:09 CDT 2014
+ * Generated: Mon May 04 10:32:56 CDT 2015
  */
 
 /*
@@ -58,15 +58,17 @@
  * Device headers
  */
 
-#include "altera_nios2_qsys_irq.h"
+#include "altera_nios2_gen2_irq.h"
 #include "altera_avalon_jtag_uart.h"
+#include "altera_avalon_sysid_qsys.h"
 
 /*
  * Allocate the device storage
  */
 
-ALTERA_NIOS2_QSYS_IRQ_INSTANCE ( CPU, cpu);
+ALTERA_NIOS2_GEN2_IRQ_INSTANCE ( CPU, cpu);
 ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART, jtag_uart);
+ALTERA_AVALON_SYSID_QSYS_INSTANCE ( SYSID_QSYS_0, sysid_qsys_0);
 
 /*
  * Initialize the interrupt controller devices
@@ -78,7 +80,7 @@ ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART, jtag_uart);
 
 void alt_irq_init ( const void* base )
 {
-    ALTERA_NIOS2_QSYS_IRQ_INIT ( CPU, cpu);
+    ALTERA_NIOS2_GEN2_IRQ_INIT ( CPU, cpu);
     alt_irq_cpu_enable_interrupts();
 }
 
@@ -90,4 +92,5 @@ void alt_irq_init ( const void* base )
 void alt_sys_init( void )
 {
     ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART, jtag_uart);
+    ALTERA_AVALON_SYSID_QSYS_INIT ( SYSID_QSYS_0, sysid_qsys_0);
 }

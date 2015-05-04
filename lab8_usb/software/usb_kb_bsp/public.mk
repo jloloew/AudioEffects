@@ -78,12 +78,12 @@ ALT_CPPFLAGS += -DSYSTEM_BUS_WIDTH=32 \
 
 # This following VERSION comment indicates the version of the tool used to 
 # generate this makefile. A makefile variable is provided for VERSION as well. 
-# ACDS_VERSION: 14.0
-ACDS_VERSION := 14.0
+# ACDS_VERSION: 14.1
+ACDS_VERSION := 14.1
 
 # This following BUILD_NUMBER comment indicates the build number of the tool 
 # used to generate this makefile. 
-# BUILD_NUMBER: 200
+# BUILD_NUMBER: 190
 
 # Qsys--generated SOPCINFO file. Required for resolving node instance ID's with 
 # design component names. 
@@ -92,6 +92,9 @@ SOPCINFO_FILE := $(ABS_BSP_ROOT_DIR)/../../usb_system.sopcinfo
 # Big-Endian operation. 
 # setting BIG_ENDIAN is false
 
+
+# BMX present. 
+# setting BMX is false
 
 # Path to the provided C language runtime initialization code. 
 BSP_CRT0 := $(ALT_LIBRARY_ROOT_DIR)/obj/HAL/src/crt0.o
@@ -106,6 +109,9 @@ ELF_PATCH_FLAG  += --thread_model hal
 # setting BSP_TYPE is hal
 ALT_CPPFLAGS += -D__hal__
 BSP_TYPE := hal
+
+# CDX present. 
+# setting CDX is false
 
 # CPU Name 
 # setting CPU_NAME is cpu
@@ -140,6 +146,21 @@ SOPC_NAME := usb_system
 # SopcBuilder Simulation Enabled 
 # setting SOPC_SIMULATION_ENABLED is false
 ELF_PATCH_FLAG  += --simulation_enabled false
+
+# The SOPC System ID 
+# setting SOPC_SYSID is 0
+SOPC_SYSID_FLAG += --id=0
+ELF_PATCH_FLAG  += --id 0
+
+# The SOPC System ID Base Address 
+# setting SOPC_SYSID_BASE_ADDRESS is 0x9018
+SOPC_SYSID_FLAG += --sidp=0x9018
+ELF_PATCH_FLAG  += --sidp 0x9018
+
+# The SOPC Timestamp 
+# setting SOPC_TIMESTAMP is 1430753331
+SOPC_SYSID_FLAG += --timestamp=1430753331
+ELF_PATCH_FLAG  += --timestamp 1430753331
 
 # Enable JTAG UART driver to recover when host is inactive causing buffer to 
 # full without returning error. Printf will not fail with this recovery. none 
@@ -239,6 +260,14 @@ ALT_CPPFLAGS += -DALT_NO_INSTRUCTION_EMULATION
 # Enable BSP generation to query if SOPC system is big endian. If true ignores 
 # export of 'ALT_CFLAGS += -meb' to public.mk if big endian system. none 
 # setting hal.make.ignore_system_derived.big_endian is false
+
+# If true, prevents GCC from using BMX instructions. If false, GCC uses BMX 
+# instructions if present in the CPU. none 
+# setting hal.make.ignore_system_derived.bmx_present is false
+
+# If true, prevents GCC from using CDX instructions. If false, GCC uses CDX 
+# instructions if present in the CPU. none 
+# setting hal.make.ignore_system_derived.cdx_present is false
 
 # Enable BSP generation to query if SOPC system has a debug core present. If 
 # true ignores export of 'CPU_HAS_DEBUG_CORE = 1' to public.mk if a debug core 

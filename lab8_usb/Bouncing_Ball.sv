@@ -14,9 +14,12 @@ module Bouncing_Ball (	input				Clk,
 	
 	logic [9:0] DrawX, DrawY, BallX, BallY, BallS;
 	logic [1:0] velocity_x, velocity_y, velocity_x_out, velocity_y_out; // ball velocities
+	logic [9:0] brick_width, brick_height;
+	logic [99:0] brick_x_vals, brick_y_vals;
 	
 	vga_controller vga_ctrlr (.*, .pixel_clk (VGA_clk));
 	ball mBall (.*, .frame_clk (vs), .velocity_x_in (velocity_x), .velocity_y_in (velocity_y));
+	BrickList brickList (.*, .frame_clk (vs));
 	color_mapper color_map (.*, .Ball_size (BallS));
 	
 	// set ball direction from keycode
@@ -27,7 +30,7 @@ module Bouncing_Ball (	input				Clk,
 				velocity_x = 2'b00;
 				velocity_y = 2'b10;
 			end
-			8'd34 : begin // S/down
+			8'd22 : begin // S/down
 				velocity_x = 2'b00;
 				velocity_y = 2'b01;
 			end

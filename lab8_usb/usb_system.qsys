@@ -48,6 +48,11 @@
          value = "4";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
    }
    element clock_bridge_sdram.out_clk
    {
@@ -63,6 +68,11 @@
       {
          value = "5";
          type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
       }
    }
    element clock_bridge_usb.out_clk
@@ -80,6 +90,11 @@
          value = "1";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
    }
    element clock_crossing_io.s0
    {
@@ -95,6 +110,11 @@
       {
          value = "0";
          type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
       }
    }
    element clocks.c0
@@ -117,7 +137,7 @@
    {
       datum baseAddress
       {
-         value = "285216784";
+         value = "285216864";
          type = "String";
       }
    }
@@ -149,7 +169,7 @@
    {
       datum baseAddress
       {
-         value = "285216816";
+         value = "285216896";
          type = "String";
       }
    }
@@ -173,7 +193,7 @@
    {
       datum baseAddress
       {
-         value = "285216800";
+         value = "285216848";
          type = "String";
       }
    }
@@ -210,7 +230,71 @@
    {
       datum baseAddress
       {
-         value = "36888";
+         value = "285216888";
+         type = "String";
+      }
+   }
+   element to_hw_port
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+   }
+   element to_hw_port.s1
+   {
+      datum baseAddress
+      {
+         value = "285216832";
+         type = "String";
+      }
+   }
+   element to_hw_sig
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+   }
+   element to_hw_sig.s1
+   {
+      datum baseAddress
+      {
+         value = "285216816";
+         type = "String";
+      }
+   }
+   element to_sw_port
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+   }
+   element to_sw_port.s1
+   {
+      datum baseAddress
+      {
+         value = "285216784";
+         type = "String";
+      }
+   }
+   element to_sw_sig
+   {
+      datum _sortIndex
+      {
+         value = "13";
+         type = "int";
+      }
+   }
+   element to_sw_sig.s1
+   {
+      datum baseAddress
+      {
+         value = "285216800";
          type = "String";
       }
    }
@@ -489,7 +573,7 @@
   <parameter name="dataAddrWidth" value="29" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x8000000' end='0x10000000' /><slave name='CY7C67200_IF_0.hpi' start='0x10000000' end='0x10000010' /><slave name='cpu.debug_mem_slave' start='0x11000800' end='0x11001000' /><slave name='clocks.pll_slave' start='0x11001010' end='0x11001020' /><slave name='keycode.s1' start='0x11001020' end='0x11001030' /><slave name='jtag_uart.avalon_jtag_slave' start='0x11001030' end='0x11001038' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x8000000' end='0x10000000' /><slave name='CY7C67200_IF_0.hpi' start='0x10000000' end='0x10000010' /><slave name='cpu.debug_mem_slave' start='0x11000800' end='0x11001000' /><slave name='to_sw_port.s1' start='0x11001010' end='0x11001020' /><slave name='to_sw_sig.s1' start='0x11001020' end='0x11001030' /><slave name='to_hw_sig.s1' start='0x11001030' end='0x11001040' /><slave name='to_hw_port.s1' start='0x11001040' end='0x11001050' /><slave name='keycode.s1' start='0x11001050' end='0x11001060' /><slave name='clocks.pll_slave' start='0x11001060' end='0x11001070' /><slave name='sysid_qsys_0.control_slave' start='0x11001078' end='0x11001080' /><slave name='jtag_uart.avalon_jtag_slave' start='0x11001080' end='0x11001088' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -528,7 +612,7 @@
   <parameter name="icache_tagramBlockType" value="Automatic" />
   <parameter name="impl" value="Tiny" />
   <parameter name="instAddrWidth" value="29" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x8000000' end='0x10000000' /><slave name='cpu.debug_mem_slave' start='0x11000800' end='0x11001000' /><slave name='clocks.pll_slave' start='0x11001010' end='0x11001020' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x8000000' end='0x10000000' /><slave name='cpu.debug_mem_slave' start='0x11000800' end='0x11001000' /><slave name='clocks.pll_slave' start='0x11001060' end='0x11001070' /><slave name='sysid_qsys_0.control_slave' start='0x11001078' end='0x11001080' /></address-map>]]></parameter>
   <parameter name="instructionMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="instructionMasterHighPerformanceMapParam" value="" />
   <parameter name="instruction_master_high_performance_paddr_base" value="0" />
@@ -692,7 +776,7 @@
   <parameter name="casLatency" value="3" />
   <parameter name="clockRate" value="50000000" />
   <parameter name="columnWidth" value="10" />
-  <parameter name="componentName" value="$${FILENAME}_sdram" />
+  <parameter name="componentName" value="usb_system_sdram" />
   <parameter name="dataWidth" value="32" />
   <parameter name="generateSimulationModel" value="false" />
   <parameter name="initNOPDelay" value="0.0" />
@@ -711,10 +795,66 @@
    name="sysid_qsys_0"
    kind="altera_avalon_sysid_qsys"
    version="14.1"
-   enabled="0">
+   enabled="1">
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
   <parameter name="id" value="0" />
   <parameter name="timestamp" value="0" />
+ </module>
+ <module name="to_hw_port" kind="altera_avalon_pio" version="14.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <module name="to_hw_sig" kind="altera_avalon_pio" version="14.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="2" />
+ </module>
+ <module name="to_sw_port" kind="altera_avalon_pio" version="14.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <module name="to_sw_sig" kind="altera_avalon_pio" version="14.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="2" />
  </module>
  <connection
    kind="avalon"
@@ -722,7 +862,16 @@
    start="cpu.data_master"
    end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x11001030" />
+  <parameter name="baseAddress" value="0x11001080" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="cpu.data_master"
+   end="sysid_qsys_0.control_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x11001078" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -740,7 +889,7 @@
    start="cpu.data_master"
    end="clocks.pll_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x11001010" />
+  <parameter name="baseAddress" value="0x11001060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -754,12 +903,57 @@
  </connection>
  <connection kind="avalon" version="14.1" start="cpu.data_master" end="keycode.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x11001020" />
+  <parameter name="baseAddress" value="0x11001050" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="avalon" version="14.1" start="cpu.data_master" end="sdram.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x08000000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="cpu.data_master"
+   end="to_hw_port.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x11001040" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="cpu.data_master"
+   end="to_hw_sig.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x11001030" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="cpu.data_master"
+   end="to_sw_sig.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x11001020" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="cpu.data_master"
+   end="to_sw_port.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x11001010" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="cpu.instruction_master"
+   end="sysid_qsys_0.control_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x11001078" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -777,7 +971,7 @@
    start="cpu.instruction_master"
    end="clocks.pll_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x11001010" />
+  <parameter name="baseAddress" value="0x11001060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -821,8 +1015,12 @@
    end="clock_crossing_io.m0_clk" />
  <connection kind="clock" version="14.1" start="clk.clk" end="cpu.clk" />
  <connection kind="clock" version="14.1" start="clk.clk" end="jtag_uart.clk" />
- <connection kind="clock" version="14.1" start="clk.clk" end="sysid_qsys_0.clk" />
  <connection kind="clock" version="14.1" start="clk.clk" end="keycode.clk" />
+ <connection kind="clock" version="14.1" start="clk.clk" end="sysid_qsys_0.clk" />
+ <connection kind="clock" version="14.1" start="clk.clk" end="to_hw_port.clk" />
+ <connection kind="clock" version="14.1" start="clk.clk" end="to_hw_sig.clk" />
+ <connection kind="clock" version="14.1" start="clk.clk" end="to_sw_sig.clk" />
+ <connection kind="clock" version="14.1" start="clk.clk" end="to_sw_port.clk" />
  <connection
    kind="clock"
    version="14.1"
@@ -871,6 +1069,26 @@
    version="14.1"
    start="clk.clk_reset"
    end="sysid_qsys_0.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk.clk_reset"
+   end="to_hw_port.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk.clk_reset"
+   end="to_hw_sig.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk.clk_reset"
+   end="to_sw_sig.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk.clk_reset"
+   end="to_sw_port.reset" />
  <connection
    kind="reset"
    version="14.1"

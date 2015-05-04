@@ -112,29 +112,29 @@ void UsbSetAddress()
 	//the starting address
 	IOWR(CY7C67200_BASE,HPI_ADDR,0x0500); //the start address
 	// TD #1: 6 writes
-	IOWR(CY7C67200_BASE,HPI_DATA,0x050C); // base address of data buffer (BaseAddress)
-	IOWR(CY7C67200_BASE,HPI_DATA,0x0008); // port number and data length
+	IOWR(CY7C67200_BASE,HPI_DATA,0x050C);
+	IOWR(CY7C67200_BASE,HPI_DATA,0x0008); //4 port number
+	IOWR(CY7C67200_BASE,HPI_DATA,0x00D0);
+	IOWR(CY7C67200_BASE,HPI_DATA,0x0001);
+	IOWR(CY7C67200_BASE,HPI_DATA,0x0013);
+	IOWR(CY7C67200_BASE,HPI_DATA,0x0514);
 	// TASK: Complete with 4 more IOWR functions
-	IOWR(CY7C67200_BASE,HPI_DATA,0x00D0); // PID (SETUP) and Endpoint Number (0); Device Address (DevAdd)
-	IOWR(CY7C67200_BASE,HPI_DATA,0x0001); // TD Control; Transaction Status
-	IOWR(CY7C67200_BASE,HPI_DATA,0x0013); // Active Flag, Transfer Type, Retry Count; Residue
-	IOWR(CY7C67200_BASE,HPI_DATA,0x0514); // Pointer to Next TD (NextTDPointer)
 
 	// TD #2: 4 writes
+	IOWR(CY7C67200_BASE,HPI_DATA,0x0500);
+	IOWR(CY7C67200_BASE,HPI_DATA,0x0002);
+	IOWR(CY7C67200_BASE,HPI_DATA,0x0000);
+	IOWR(CY7C67200_BASE,HPI_DATA,0x0000);
 	// TASK: Complete with 4 IOWR functions
-	IOWR(CY7C67200_BASE,HPI_DATA,0x0500); // bmRequestType; bRequest
-	IOWR(CY7C67200_BASE,HPI_DATA,0x0002); // wValue
-	IOWR(CY7C67200_BASE,HPI_DATA,0x0000); // wIndex
-	IOWR(CY7C67200_BASE,HPI_DATA,0x0000); // wLength
 	
 	// TD #3: 6 writes
+	IOWR(CY7C67200_BASE,HPI_DATA,0x0000);
+	IOWR(CY7C67200_BASE,HPI_DATA,0x0000);
+	IOWR(CY7C67200_BASE,HPI_DATA,0x0090);
+	IOWR(CY7C67200_BASE,HPI_DATA,0x0041);
+	IOWR(CY7C67200_BASE,HPI_DATA,0x0013);
+	IOWR(CY7C67200_BASE,HPI_DATA,0x0000);
 	// TASK: Complete with 6 IOWR functions
-	IOWR(CY7C67200_BASE,HPI_DATA,0x0000); // Base Address of Data Buffer (BaseAddress)
-	IOWR(CY7C67200_BASE,HPI_DATA,0x0000); // Port Number and Data Length
-	IOWR(CY7C67200_BASE,HPI_DATA,0x0090); // PID (IN) and Endpoint Number (0); Device Address (DevAdd)
-	IOWR(CY7C67200_BASE,HPI_DATA,0x0041); // TD Control; Transaction Status
-	IOWR(CY7C67200_BASE,HPI_DATA,0x0013); // Active Flag, Transfer Type, Retry Count; Residue
-	IOWR(CY7C67200_BASE,HPI_DATA,0x0000); // Pointer to Next TD (NextTDPointer)
 
 	UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
 }
