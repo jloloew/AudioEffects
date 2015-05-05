@@ -21,11 +21,11 @@ module  ball (	input Reset, frame_clk,
 				input logic [1:0]	velocity_x_in,	velocity_y_in,
 				output logic [1:0]	velocity_x_out,	velocity_y_out,
 				output [9:0]  BallX, BallY, BallS,
-				output [9:0] brick_exists
+				output [8:0] brick_exists
 				);
     
     logic [9:0] Ball_X_Pos, Ball_X_Motion, Ball_Y_Pos, Ball_Y_Motion, Ball_Size;
-	reg [9:0] brick_exists_n;
+	reg   [8:0] brick_exists_n;
 	
     parameter [9:0] Ball_X_Center=320;  // Center position on the X axis
     parameter [9:0] Ball_Y_Center=240;  // Center position on the Y axis
@@ -111,7 +111,7 @@ module  ball (	input Reset, frame_clk,
 	
 	// hide bricks we've already collided with
 	always_ff @ (posedge frame_clk or posedge Reset)
-	begin
+	begin : Brick_destroy
 		if (Reset)
 		begin
 			brick_exists_n = 0;
@@ -119,7 +119,7 @@ module  ball (	input Reset, frame_clk,
 		else
 		begin
 			int j;
-			for (j = 0; j < 10; j = j+1)
+			for (j = 0; j < 9; j = j+1)
 			begin : Hide_brick_logic
 				if (brick_bounce_x_array[j] || brick_bounce_y_array[j])
 					brick_exists_n[j] = 1'b1;
@@ -129,10 +129,10 @@ module  ball (	input Reset, frame_clk,
 		end
 	end
 	
-	genvar i;
 	// Brick bouncing
+	genvar i;
 	generate
-		for (i = 0; i < 10; i = i+1)
+		for (i = 0; i < 9; i = i+1)
 		begin : Brick_on_logic
 			assign brick_bounce_x_array[i] =
 			~brick_exists_n[i]

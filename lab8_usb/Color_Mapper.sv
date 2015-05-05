@@ -13,16 +13,15 @@
 //-------------------------------------------------------------------------
 
 
-module  color_mapper (	input  [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
-						input [9:0] brick_exists,
+module color_mapper (	input [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
+						input [8:0] brick_exists,
 						input [9:0] brick_width,
 						input [9:0] brick_height,
 						input [99:0] brick_x_vals,
 						input [99:0] brick_y_vals,
-						output logic [7:0]  Red, Green, Blue );
+						output logic [7:0] Red, Green, Blue );
     
-    logic ball_on;
-	logic brick_on;
+    logic ball_on, brick_on, paddle_on;
 	int DistX, DistY, Size;
 	
 	assign DistX = DrawX - BallX;
@@ -31,39 +30,44 @@ module  color_mapper (	input  [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
 	
 	always_comb
 	begin : Ball_on_proc
-		if ( ( DistX*DistX + DistY*DistY) <= (Size*Size) ) 
+		if ((DistX*DistX + DistY*DistY) <= (Size*Size)) 
 			ball_on = 1'b1;
 		else 
 			ball_on = 1'b0;
 	end
 	
-	logic [9:0] brick_on_array;
+	logic [8:0] brick_on_array;
 	
 	genvar i;
 	generate
-		for (i = 0; i < 10; i = i+1)
+		for (i = 0; i < 9; i = i+1)
 		begin : Brick_on_logic
 			assign brick_on_array[i] = brick_exists[i] && ((brick_x_vals[10*i+9 : 10*i] <= DrawX && DrawX < (brick_x_vals[10*i+9 : 10*i] + brick_width)) && (brick_y_vals[10*i+9 : 10*i] <= DrawY && DrawY < (brick_y_vals[10*i+9 : 10*i] + brick_height)));
 		end
 	endgenerate
 	
 	assign brick_on = (brick_on_array != 10'd0);
+	assign paddle_on = ((brick_x_vals[99:90] <= DrawX && DrawX < (brick_x_vals[99:90] + brick_width)) && (brick_y_vals[99:90] <= DrawY && DrawY < (brick_y_vals[99:90] + brick_height)));
 	
     always_comb
     begin : RGB_Display
-		if (brick_on == 1'b1) begin
-			Red		= 8'd84;
-            Green	= 8'd34;
-            Blue	= 8'd226;
+		if (paddle_on == 1'b1) begin
+			Red		= 8'h20;
+			Green	= 8'h8A;
+			Blue	= 8'hF5;
 		end
-        else
-        if (ball_on == 1'b1)
+		else if (brick_on == 1'b1) begin
+			Red		= 8'h54;
+            Green	= 8'h22;
+            Blue	= 8'hE2;
+		end
+        else if (ball_on == 1'b1)
         begin 
             Red		= 8'h00;
-            Green	= 8'hff;
-            Blue	= 8'hff;
+            Green	= 8'hFF;
+            Blue	= 8'hFF;
         end
-		else 
+		else // background
         begin 
             Red		= 8'h00;
             Green	= 8'h00;
