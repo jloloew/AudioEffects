@@ -13,16 +13,16 @@
 //-------------------------------------------------------------------------
 
 
-module  color_mapper (	input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
-						output [9:0] brick_width,
-						output [9:0] brick_height,
-						output [99:0] brick_x_vals,
-						output [99:0] brick_y_vals,
+module  color_mapper (	input  [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
+						input [9:0] brick_exists,
+						input [9:0] brick_width,
+						input [9:0] brick_height,
+						input [99:0] brick_x_vals,
+						input [99:0] brick_y_vals,
 						output logic [7:0]  Red, Green, Blue );
     
     logic ball_on;
 	logic brick_on;
-	integer i;
 	int DistX, DistY, Size;
 	
 	assign DistX = DrawX - BallX;
@@ -31,47 +31,43 @@ module  color_mapper (	input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
 	
 	always_comb
 	begin : Ball_on_proc
-		if ( ( DistX*DistX + DistY*DistY) <= (Size * Size) ) 
+		if ( ( DistX*DistX + DistY*DistY) <= (Size*Size) ) 
 			ball_on = 1'b1;
 		else 
 			ball_on = 1'b0;
 	end
 	
-	always_comb
-	begin : Brick_on_proc
-		brick_on = 1'b0;
-		
-		for (i = 0; i < 10; i = i+1) begin
-			logic [9:0] brick_x = 10'(brick_x_vals >> i);
-			logic [9:0] brick_y = 10'(brick_y_vals >> i);
-			
-			if (brick_x <= DrawX && DrawX < (brick_x + brick_width))
-				if (brick_y <= DrawY && DrawY < (brick_y + brick_height))
-					brick_on = 1'b1;
+	logic [9:0] brick_on_array;
+	
+	genvar i;
+	generate
+		for (i = 0; i < 10; i = i+1)
+		begin : Brick_on_logic
+			assign brick_on_array[i] = brick_exists[i] && ((brick_x_vals[10*i+9 : 10*i] <= DrawX && DrawX < (brick_x_vals[10*i+9 : 10*i] + brick_width)) && (brick_y_vals[10*i+9 : 10*i] <= DrawY && DrawY < (brick_y_vals[10*i+9 : 10*i] + brick_height)));
 		end
-	end
+	endgenerate
+	
+	assign brick_on = (brick_on_array != 10'd0);
 	
     always_comb
     begin : RGB_Display
-        if ((ball_on == 1'b1)) 
-        begin 
-            Red = 8'h00;
-            Green = 8'hff;
-            Blue = 8'hff;
-        end
-		/*
-		else if (brick1.containsPosition(DrawX, DrawY))
-		begin
-			Red = brick1.r;
-			Green = brick1.g;
-			Blue = brick1.b;
+		if (brick_on == 1'b1) begin
+			Red		= 8'd84;
+            Green	= 8'd34;
+            Blue	= 8'd226;
 		end
-		*/
-        else 
+        else
+        if (ball_on == 1'b1)
         begin 
-            Red = 8'h4f - DrawX[9:3];
-            Green = 8'h00;
-            Blue = 8'h44; 
+            Red		= 8'h00;
+            Green	= 8'hff;
+            Blue	= 8'hff;
+        end
+		else 
+        begin 
+            Red		= 8'h00;
+            Green	= 8'h00;
+            Blue	= 8'h00; 
         end      
     end 
     

@@ -14,6 +14,7 @@ module Bouncing_Ball (	input				Clk,
 	
 	logic [9:0] DrawX, DrawY, BallX, BallY, BallS;
 	logic [1:0] velocity_x, velocity_y, velocity_x_out, velocity_y_out; // ball velocities
+	logic [9:0] brick_exists;
 	logic [9:0] brick_width, brick_height;
 	logic [99:0] brick_x_vals, brick_y_vals;
 	
