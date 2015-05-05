@@ -1,0 +1,8 @@
+/// Detects collisions between each and every one of the onscreen objects.
+module CollisionDetector (	
+							
+							);
+	
+	
+	
+endmodule

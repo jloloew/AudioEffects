@@ -1,0 +1,808 @@
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+# do final_project_run_msim_rtl_systemverilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlib final_project_soc
+# vmap final_project_soc final_project_soc
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+# vmap -modelsim_quiet final_project_soc final_project_soc 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/final_project_soc.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:17 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/final_project_soc.v 
+# -- Compiling module final_project_soc
+# 
+# Top level modules:
+# 	final_project_soc
+# End time: 20:22:18 on May 02,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_reset_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:18 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_reset_controller.v 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 20:22:18 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_reset_synchronizer.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:18 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_reset_synchronizer.v 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 20:22:18 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:18 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0.v 
+# -- Compiling module final_project_soc_mm_interconnect_0
+# 
+# Top level modules:
+# 	final_project_soc_mm_interconnect_0
+# End time: 20:22:18 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_sc_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:18 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_sc_fifo.v 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 20:22:18 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sysid_qsys_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:18 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sysid_qsys_0.v 
+# -- Compiling module final_project_soc_sysid_qsys_0
+# 
+# Top level modules:
+# 	final_project_soc_sysid_qsys_0
+# End time: 20:22:18 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sdram_pll.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:18 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sdram_pll.v 
+# -- Compiling module final_project_soc_sdram_pll_dffpipe_l2c
+# -- Compiling module final_project_soc_sdram_pll_stdsync_sv6
+# -- Compiling module final_project_soc_sdram_pll_altpll_fua2
+# -- Compiling module final_project_soc_sdram_pll
+# 
+# Top level modules:
+# 	final_project_soc_sdram_pll
+# End time: 20:22:18 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sdram.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:18 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sdram.v 
+# -- Compiling module final_project_soc_sdram_input_efifo_module
+# -- Compiling module final_project_soc_sdram
+# 
+# Top level modules:
+# 	final_project_soc_sdram
+# End time: 20:22:18 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_onchip_memory2_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:18 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_onchip_memory2_0.v 
+# -- Compiling module final_project_soc_onchip_memory2_0
+# 
+# Top level modules:
+# 	final_project_soc_onchip_memory2_0
+# End time: 20:22:18 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:18 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0.v 
+# -- Compiling module final_project_soc_nios2_qsys_0
+# 
+# Top level modules:
+# 	final_project_soc_nios2_qsys_0
+# End time: 20:22:18 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:18 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu.v 
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_register_bank_a_module
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_register_bank_b_module
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_oci_debug
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_oci_break
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_oci_xbrk
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_oci_dbrk
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_oci_itrace
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_oci_td_mode
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_oci_dtrace
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_oci_compute_input_tm_cnt
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_oci_fifo_wrptr_inc
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_oci_fifo_cnt_inc
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_oci_fifo
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_oci_pib
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_oci_im
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_performance_monitors
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_avalon_reg
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_ociram_sp_ram_module
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_ocimem
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_nios2_oci
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu
+# 
+# Top level modules:
+# 	final_project_soc_nios2_qsys_0_cpu_nios2_performance_monitors
+# 	final_project_soc_nios2_qsys_0_cpu
+# End time: 20:22:18 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_sysclk.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:18 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_sysclk.v 
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_debug_slave_sysclk
+# 
+# Top level modules:
+# 	final_project_soc_nios2_qsys_0_cpu_debug_slave_sysclk
+# End time: 20:22:18 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_tck.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:18 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_tck.v 
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_debug_slave_tck
+# 
+# Top level modules:
+# 	final_project_soc_nios2_qsys_0_cpu_debug_slave_tck
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_wrapper.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_wrapper.v 
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_debug_slave_wrapper
+# 
+# Top level modules:
+# 	final_project_soc_nios2_qsys_0_cpu_debug_slave_wrapper
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_oci_test_bench.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_oci_test_bench.v 
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_oci_test_bench
+# 
+# Top level modules:
+# 	final_project_soc_nios2_qsys_0_cpu_oci_test_bench
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_test_bench.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_test_bench.v 
+# -- Compiling module final_project_soc_nios2_qsys_0_cpu_test_bench
+# 
+# Top level modules:
+# 	final_project_soc_nios2_qsys_0_cpu_test_bench
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_jtag_uart_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_jtag_uart_0.v 
+# -- Compiling module final_project_soc_jtag_uart_0_sim_scfifo_w
+# -- Compiling module final_project_soc_jtag_uart_0_scfifo_w
+# -- Compiling module final_project_soc_jtag_uart_0_sim_scfifo_r
+# -- Compiling module final_project_soc_jtag_uart_0_scfifo_r
+# -- Compiling module final_project_soc_jtag_uart_0
+# 
+# Top level modules:
+# 	final_project_soc_jtag_uart_0
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio_pll_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio_pll_0.v 
+# -- Compiling module final_project_soc_audio_pll_0
+# 
+# Top level modules:
+# 	final_project_soc_audio_pll_0
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v 
+# -- Compiling module altera_up_avalon_reset_from_locked_signal
+# 
+# Top level modules:
+# 	altera_up_avalon_reset_from_locked_signal
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_altpll.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_altpll.v 
+# -- Compiling module altera_up_altpll
+# 
+# Top level modules:
+# 	altera_up_altpll
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_serial_bus_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_serial_bus_controller.v 
+# -- Compiling module altera_up_av_config_serial_bus_controller
+# 
+# Top level modules:
+# 	altera_up_av_config_serial_bus_controller
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_slow_clock_generator.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_slow_clock_generator.v 
+# -- Compiling module altera_up_slow_clock_generator
+# 
+# Top level modules:
+# 	altera_up_slow_clock_generator
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init.v 
+# -- Compiling module altera_up_av_config_auto_init
+# 
+# Top level modules:
+# 	altera_up_av_config_auto_init
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_de2_115.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_de2_115.v 
+# -- Compiling module altera_up_av_config_auto_init_ob_de2_115
+# 
+# Top level modules:
+# 	altera_up_av_config_auto_init_ob_de2_115
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_audio.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_audio.v 
+# -- Compiling module altera_up_av_config_auto_init_ob_audio
+# 
+# Top level modules:
+# 	altera_up_av_config_auto_init_ob_audio
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_adv7180.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_adv7180.v 
+# -- Compiling module altera_up_av_config_auto_init_ob_adv7180
+# 
+# Top level modules:
+# 	altera_up_av_config_auto_init_ob_adv7180
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio_config.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio_config.v 
+# -- Compiling module final_project_soc_audio_config
+# 
+# Top level modules:
+# 	final_project_soc_audio_config
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_bit_counter.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_bit_counter.v 
+# -- Compiling module altera_up_audio_bit_counter
+# 
+# Top level modules:
+# 	altera_up_audio_bit_counter
+# End time: 20:22:19 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_in_deserializer.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:19 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_in_deserializer.v 
+# -- Compiling module altera_up_audio_in_deserializer
+# 
+# Top level modules:
+# 	altera_up_audio_in_deserializer
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_out_serializer.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_out_serializer.v 
+# -- Compiling module altera_up_audio_out_serializer
+# 
+# Top level modules:
+# 	altera_up_audio_out_serializer
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_clock_edge.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_clock_edge.v 
+# -- Compiling module altera_up_clock_edge
+# 
+# Top level modules:
+# 	altera_up_clock_edge
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_sync_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_sync_fifo.v 
+# -- Compiling module altera_up_sync_fifo
+# 
+# Top level modules:
+# 	altera_up_sync_fifo
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio.v 
+# -- Compiling module final_project_soc_audio
+# 
+# Top level modules:
+# 	final_project_soc_audio
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_LEDR.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_LEDR.v 
+# -- Compiling module final_project_soc_LEDR
+# 
+# Top level modules:
+# 	final_project_soc_LEDR
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_LEDG.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_LEDG.v 
+# -- Compiling module final_project_soc_LEDG
+# 
+# Top level modules:
+# 	final_project_soc_LEDG
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project {C:/Users/Justin/Documents/ece385/final_project/final_project/VGA_controller.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project" C:/Users/Justin/Documents/ece385/final_project/final_project/VGA_controller.sv 
+# -- Compiling module vga_controller
+# 
+# Top level modules:
+# 	vga_controller
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project {C:/Users/Justin/Documents/ece385/final_project/final_project/Color_Mapper.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project" C:/Users/Justin/Documents/ece385/final_project/final_project/Color_Mapper.sv 
+# -- Compiling module color_mapper
+# 
+# Top level modules:
+# 	color_mapper
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project {C:/Users/Justin/Documents/ece385/final_project/final_project/ball.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project" C:/Users/Justin/Documents/ece385/final_project/final_project/ball.sv 
+# -- Compiling module ball
+# 
+# Top level modules:
+# 	ball
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project {C:/Users/Justin/Documents/ece385/final_project/final_project/HexDriver.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project" C:/Users/Justin/Documents/ece385/final_project/final_project/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project {C:/Users/Justin/Documents/ece385/final_project/final_project/Display.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project" C:/Users/Justin/Documents/ece385/final_project/final_project/Display.sv 
+# -- Compiling module Display
+# 
+# Top level modules:
+# 	Display
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_irq_clock_crosser.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_irq_clock_crosser.sv 
+# -- Compiling module altera_irq_clock_crosser
+# 
+# Top level modules:
+# 	altera_irq_clock_crosser
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_irq_mapper.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_irq_mapper.sv 
+# -- Compiling module final_project_soc_irq_mapper
+# 
+# Top level modules:
+# 	final_project_soc_irq_mapper
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v 
+# -- Compiling module altera_avalon_st_handshake_clock_crosser
+# 
+# Top level modules:
+# 	altera_avalon_st_handshake_clock_crosser
+# End time: 20:22:20 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:20 on May 02,2015
+# vlog -reportprogress 300 -vlog01compat -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v 
+# -- Compiling module altera_avalon_st_clock_crosser
+# 
+# Top level modules:
+# 	altera_avalon_st_clock_crosser
+# End time: 20:22:21 on May 02,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_arbitrator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:21 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_arbitrator.sv 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 20:22:21 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_mux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:21 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_mux_001.sv 
+# -- Compiling module final_project_soc_mm_interconnect_0_rsp_mux_001
+# 
+# Top level modules:
+# 	final_project_soc_mm_interconnect_0_rsp_mux_001
+# End time: 20:22:21 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:21 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_mux.sv 
+# -- Compiling module final_project_soc_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	final_project_soc_mm_interconnect_0_rsp_mux
+# End time: 20:22:21 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux_003.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:21 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux_003.sv 
+# -- Compiling module final_project_soc_mm_interconnect_0_rsp_demux_003
+# 
+# Top level modules:
+# 	final_project_soc_mm_interconnect_0_rsp_demux_003
+# End time: 20:22:21 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:21 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux_001.sv 
+# -- Compiling module final_project_soc_mm_interconnect_0_rsp_demux_001
+# 
+# Top level modules:
+# 	final_project_soc_mm_interconnect_0_rsp_demux_001
+# End time: 20:22:21 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:21 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux.sv 
+# -- Compiling module final_project_soc_mm_interconnect_0_rsp_demux
+# 
+# Top level modules:
+# 	final_project_soc_mm_interconnect_0_rsp_demux
+# End time: 20:22:21 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_mux_003.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:21 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_mux_003.sv 
+# -- Compiling module final_project_soc_mm_interconnect_0_cmd_mux_003
+# 
+# Top level modules:
+# 	final_project_soc_mm_interconnect_0_cmd_mux_003
+# End time: 20:22:21 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:21 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_mux.sv 
+# -- Compiling module final_project_soc_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	final_project_soc_mm_interconnect_0_cmd_mux
+# End time: 20:22:21 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_demux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:21 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_demux_001.sv 
+# -- Compiling module final_project_soc_mm_interconnect_0_cmd_demux_001
+# 
+# Top level modules:
+# 	final_project_soc_mm_interconnect_0_cmd_demux_001
+# End time: 20:22:21 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:21 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_demux.sv 
+# -- Compiling module final_project_soc_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	final_project_soc_mm_interconnect_0_cmd_demux
+# End time: 20:22:21 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_005.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:21 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_005.sv 
+# -- Compiling module final_project_soc_mm_interconnect_0_router_005_default_decode
+# -- Compiling module final_project_soc_mm_interconnect_0_router_005
+# 
+# Top level modules:
+# 	final_project_soc_mm_interconnect_0_router_005
+# End time: 20:22:21 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_002.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:21 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_002.sv 
+# -- Compiling module final_project_soc_mm_interconnect_0_router_002_default_decode
+# -- Compiling module final_project_soc_mm_interconnect_0_router_002
+# 
+# Top level modules:
+# 	final_project_soc_mm_interconnect_0_router_002
+# End time: 20:22:21 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:21 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_001.sv 
+# -- Compiling module final_project_soc_mm_interconnect_0_router_001_default_decode
+# -- Compiling module final_project_soc_mm_interconnect_0_router_001
+# 
+# Top level modules:
+# 	final_project_soc_mm_interconnect_0_router_001
+# End time: 20:22:21 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:21 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router.sv 
+# -- Compiling module final_project_soc_mm_interconnect_0_router_default_decode
+# -- Compiling module final_project_soc_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	final_project_soc_mm_interconnect_0_router
+# End time: 20:22:22 on May 02,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:22 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_agent.sv 
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_agent.sv(597): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_agent.sv(479): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_agent.sv(480): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_agent.sv(481): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_agent.sv(482): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 20:22:22 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:22 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 20:22:22 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_master_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:22 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_master_agent.sv 
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# End time: 20:22:22 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:22 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_translator.sv 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 20:22:22 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_master_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:22 on May 02,2015
+# vlog -reportprogress 300 -sv -work final_project_soc "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_master_translator.sv 
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# End time: 20:22:22 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project {C:/Users/Justin/Documents/ece385/final_project/final_project/final_project.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:22:22 on May 02,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project" C:/Users/Justin/Documents/ece385/final_project/final_project/final_project.sv 
+# -- Compiling module final_project
+# 
+# Top level modules:
+# 	final_project
+# End time: 20:22:22 on May 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.final_project
+# vsim -gui "+altera" -l msim_transcript -do "final_project_run_msim_rtl_systemverilog.do" 
+# Start time: 20:22:44 on May 02,2015
+# Loading sv_std.std
+# Loading work.final_project
+# ** Error: (vsim-3033) C:/Users/Justin/Documents/ece385/final_project/final_project/final_project.sv(45): Instantiation of 'final_project_soc' failed. The design unit was not found.
+# 
+#         Region: /final_project
+#         Searched libraries:
+#             C:/Users/Justin/Documents/ece385/final_project/final_project/simulation/modelsim/rtl_work
+# Loading work.Display
+# Loading work.vga_controller
+# Loading work.ball
+# Loading work.color_mapper
+# Loading work.HexDriver
+# Error loading design
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+wave create -pattern none -portmode input -language vlog /final_project/CLOCK_50
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# final_project
+wave create -pattern none -portmode input -language vlog /final_project/Reset
+# final_project
+wave create -pattern none -portmode output -language vlog -range 6 0 /final_project/HEX0
+# final_project
+wave create -pattern none -portmode output -language vlog -range 6 0 /final_project/HEX1
+# final_project
+wave create -pattern none -portmode output -language vlog -range 6 0 /final_project/HEX2
+# final_project
+wave create -pattern none -portmode output -language vlog -range 6 0 /final_project/HEX3
+# final_project
+wave create -pattern none -portmode output -language vlog -range 6 0 /final_project/HEX4
+# final_project
+wave create -pattern none -portmode output -language vlog -range 6 0 /final_project/HEX5
+# final_project
+wave create -pattern none -portmode output -language vlog -range 6 0 /final_project/HEX6
+# final_project
+wave create -pattern none -portmode output -language vlog -range 6 0 /final_project/HEX7
+# final_project
+wave create -pattern none -portmode output -language vlog -range 8 0 /final_project/LEDG
+# final_project
+wave create -pattern none -portmode output -language vlog -range 17 0 /final_project/LEDR
+# final_project
+wave create -pattern none -portmode input -language vlog -range 17 0 /final_project/SW
+# final_project
+wave create -pattern none -portmode output -language vlog -range 7 0 /final_project/VGA_R
+# final_project
+wave create -pattern none -portmode output -language vlog -range 7 0 /final_project/VGA_G
+# final_project
+wave create -pattern none -portmode output -language vlog -range 7 0 /final_project/VGA_B
+# final_project
+wave create -pattern none -portmode output -language vlog /final_project/VGA_CLK
+# final_project
+wave create -pattern none -portmode output -language vlog /final_project/VGA_SYNC_N
+# final_project
+wave create -pattern none -portmode output -language vlog /final_project/VGA_BLANK_N
+# final_project
+wave create -pattern none -portmode output -language vlog /final_project/VGA_VS
+# final_project
+wave create -pattern none -portmode output -language vlog /final_project/VGA_HS
+# final_project
+wave create -pattern none -portmode output -language vlog -range 12 0 /final_project/DRAM_ADDR
+# final_project
+wave create -pattern none -portmode inout -language vlog -range 31 0 /final_project/DRAM_DQ
+# final_project
+wave create -pattern none -portmode output -language vlog -range 1 0 /final_project/DRAM_BA
+# final_project
+wave create -pattern none -portmode output -language vlog -range 3 0 /final_project/DRAM_DQM
+# final_project
+wave create -pattern none -portmode output -language vlog /final_project/DRAM_RAS_N
+# final_project
+wave create -pattern none -portmode output -language vlog /final_project/DRAM_CAS_N
+# final_project
+wave create -pattern none -portmode output -language vlog /final_project/DRAM_CKE
+# final_project
+wave create -pattern none -portmode output -language vlog /final_project/DRAM_WE_N
+# final_project
+wave create -pattern none -portmode output -language vlog /final_project/DRAM_CS_N
+# final_project
+wave create -pattern none -portmode output -language vlog /final_project/DRAM_CLK
+# final_project
+wave create -pattern none -portmode input -language vlog /final_project/AUD_ADCDAT
+# final_project
+wave create -pattern none -portmode input -language vlog /final_project/AUD_ADCLRCK
+# final_project
+wave create -pattern none -portmode input -language vlog /final_project/AUD_BCLK
+# final_project
+wave create -pattern none -portmode output -language vlog /final_project/AUD_DACDAT
+# final_project
+wave create -pattern none -portmode input -language vlog /final_project/AUD_DACLRCK
+# final_project
+wave create -pattern none -portmode inout -language vlog /final_project/I2C_SCLK
+# final_project
+wave create -pattern none -portmode output -language vlog /final_project/I2C_SDAT
+# final_project

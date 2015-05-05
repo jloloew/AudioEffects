@@ -1,0 +1,10 @@
+/// A list of every object that needs to be drawn.
+module ObjectList (	
+					
+					);
+	
+	BrickList brickList (.*);
+	Ball ball (.*);
+	CollisionDetector colDctr (.*);
+	
+endmodule

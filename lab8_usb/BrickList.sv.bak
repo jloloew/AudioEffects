@@ -1,0 +1,10 @@
+module BrickList (	input frame_clk, Reset,
+					output [9:0] brick_width,
+					output [9:0] brick_height,
+					output [99:0] brick_x_vals,
+					output [99:0] brick_y_vals
+					);
+	
+	
+	
+endmodule

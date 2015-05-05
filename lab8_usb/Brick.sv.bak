@@ -1,0 +1,13 @@
+Class Brick;
+	// location
+	int x;
+	int y;
+	int width;
+	int height;
+	// color
+	int r;
+	int g;
+	int b;
+	
+	
+endclass

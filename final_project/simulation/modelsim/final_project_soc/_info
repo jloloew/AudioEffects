@@ -1,0 +1,2001 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Justin/Documents/ece385/final_project/final_project/simulation/modelsim
+valtera_avalon_sc_fifo
+Z1 !s110 1430616138
+!i10b 1
+!s100 2@;YleiQS51@UMb7^^WbN1
+IkOYIoOViJaPi>cVbdVPP43
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+Z3 w1430607395
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_sc_fifo.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_sc_fifo.v
+Z4 L0 21
+Z5 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1430616138.359000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_sc_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_sc_fifo.v|
+!i113 1
+Z6 o-vlog01compat -work final_project_soc
+Z7 !s92 -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules
+valtera_avalon_st_clock_crosser
+Z8 !s110 1430616140
+!i10b 1
+!s100 _kMN<BJ0mkgSFXTW`85Bh2
+I2^bcUne;<4^6GZNbG[c^?3
+R2
+R0
+Z9 w1430607396
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v
+L0 22
+R5
+r1
+!s85 0
+31
+!s108 1430616140.985000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v|
+!i113 1
+R6
+R7
+valtera_avalon_st_handshake_clock_crosser
+R8
+!i10b 1
+!s100 <TeLS^R[XXnBHVSJ0:LXK0
+I9S]A>E2ji2VkCfc^`ebmA3
+R2
+R0
+R9
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+Z10 L0 24
+R5
+r1
+!s85 0
+31
+!s108 1430616140.922000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v|
+!i113 1
+R6
+R7
+valtera_irq_clock_crosser
+Z11 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+R8
+!i10b 1
+!s100 h4R`cF8cBH7NA_@W;Oa@73
+IcZ]oPb0gHlkSP7X6abTbm2
+R2
+!s105 altera_irq_clock_crosser_sv_unit
+S1
+R0
+Z12 w1430607389
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_irq_clock_crosser.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_irq_clock_crosser.sv
+R4
+R5
+r1
+!s85 0
+31
+!s108 1430616140.797000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_irq_clock_crosser.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_irq_clock_crosser.sv|
+!i113 1
+Z13 o-sv -work final_project_soc
+Z14 !s92 -sv -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules
+valtera_merlin_arb_adder
+R11
+Z15 !s110 1430616141
+!i10b 1
+!s100 K`mj4ab`UI=f=Bzd]0FbK0
+I^FJDQ_hKe9[08^4ghM]MS3
+R2
+Z16 !s105 altera_merlin_arbitrator_sv_unit
+S1
+R0
+R3
+Z17 8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Z18 FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+L0 228
+R5
+r1
+!s85 0
+31
+Z19 !s108 1430616141.047000
+Z20 !s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_arbitrator.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_arbitrator.sv|
+!i113 1
+R13
+R14
+valtera_merlin_arbitrator
+R11
+R15
+!i10b 1
+!s100 Ni=FjEDhlN5HaJIeO8C?D0
+I6`AiIHeON0D`1_6SmgS@Z0
+R2
+R16
+S1
+R0
+R3
+R17
+R18
+L0 103
+R5
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R13
+R14
+valtera_merlin_burst_uncompressor
+R11
+Z22 !s110 1430616142
+!i10b 1
+!s100 GURQ=I3dUngBFBEkGhKmh3
+I4[m23]R3dN2`1b_LKa>4A0
+R2
+!s105 altera_merlin_burst_uncompressor_sv_unit
+S1
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+L0 40
+R5
+r1
+!s85 0
+31
+!s108 1430616142.129000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!i113 1
+R13
+R14
+valtera_merlin_master_agent
+R11
+R22
+!i10b 1
+!s100 Jab1Q;H[nX1=C4hVKJWMo1
+Io3T^i72Do_5l01XoTXa1d1
+R2
+!s105 altera_merlin_master_agent_sv_unit
+S1
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_master_agent.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_master_agent.sv
+L0 28
+R5
+r1
+!s85 0
+31
+!s108 1430616142.191000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_master_agent.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_master_agent.sv|
+!i113 1
+R13
+R14
+valtera_merlin_master_translator
+R11
+R22
+!i10b 1
+!s100 LBhngUFPIJEXXHQh>T8K12
+I@43igegf:9nJF<M<j10`J0
+R2
+!s105 altera_merlin_master_translator_sv_unit
+S1
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_master_translator.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_master_translator.sv
+L0 30
+R5
+r1
+!s85 0
+31
+!s108 1430616142.347000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_master_translator.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_master_translator.sv|
+!i113 1
+R13
+R14
+valtera_merlin_slave_agent
+R11
+R22
+!i10b 1
+!s100 lCTFVc3<_W6mG`lnjV;Al3
+I^NaZMgNIfRz`P=eVGkYUh0
+R2
+!s105 altera_merlin_slave_agent_sv_unit
+S1
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_agent.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_agent.sv
+L0 34
+R5
+r1
+!s85 0
+31
+!s108 1430616142.051000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_agent.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_agent.sv|
+!i113 1
+R13
+R14
+valtera_merlin_slave_translator
+R11
+R22
+!i10b 1
+!s100 dTa]H8`_eei9>oMl>o5z71
+I6RzD3R>]1j4Y2ZQI@Yf4@0
+R2
+!s105 altera_merlin_slave_translator_sv_unit
+S1
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_translator.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_translator.sv
+L0 35
+R5
+r1
+!s85 0
+31
+!s108 1430616142.254000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_translator.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_merlin_slave_translator.sv|
+!i113 1
+R13
+R14
+valtera_reset_controller
+R1
+!i10b 1
+!s100 VEhLaE^KT@RiagZkfkKI93
+I<z<?kXGn_0Xgkgo8b9bkR1
+R2
+R0
+R12
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_reset_controller.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_reset_controller.v
+L0 42
+R5
+r1
+!s85 0
+31
+!s108 1430616138.124000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_reset_controller.v|
+!i113 1
+R6
+R7
+valtera_reset_synchronizer
+R1
+!i10b 1
+!s100 UTD:?4E=?>;X@do<;V;hQ1
+IN1b6WQ01bMKXhk^OGV[T61
+R2
+R0
+R12
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_reset_synchronizer.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_reset_synchronizer.v
+R10
+R5
+r1
+!s85 0
+31
+!s108 1430616138.202000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_reset_synchronizer.v|
+!i113 1
+R6
+R7
+valtera_up_altpll
+Z23 !s110 1430616139
+!i10b 1
+!s100 S>IR<NCYl:Jnf`9m;0Yn@1
+Ibe0JX3]?fU01^XYYJ;=6i2
+R2
+R0
+R12
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_altpll.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_altpll.v
+Z24 L0 48
+R5
+r1
+!s85 0
+31
+!s108 1430616139.454000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_altpll.v|
+!i113 1
+R6
+R7
+valtera_up_audio_bit_counter
+R23
+!i10b 1
+!s100 :n2J9N0cKMNjX704LI]_P1
+IUiGnSgILDGo]JNc=nSW5k3
+R2
+R0
+Z25 w1430607382
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_bit_counter.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_bit_counter.v
+Z26 L0 49
+R5
+r1
+!s85 0
+31
+!s108 1430616139.938000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_bit_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_bit_counter.v|
+!i113 1
+R6
+R7
+valtera_up_audio_in_deserializer
+R8
+!i10b 1
+!s100 3>1b`W89XQKS]^>P2ET[N0
+IjaGJliz3I1mRaJ@KoiTf41
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_in_deserializer.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_in_deserializer.v
+Z27 L0 47
+R5
+r1
+!s85 0
+31
+!s108 1430616140.001000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_in_deserializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_in_deserializer.v|
+!i113 1
+R6
+R7
+valtera_up_audio_out_serializer
+R8
+!i10b 1
+!s100 k90^Q[RkUH5BGR8[J5D;83
+I]Qz4gIi5CUTmmYRQ1j`jf2
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_out_serializer.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_out_serializer.v
+R27
+R5
+r1
+!s85 0
+31
+!s108 1430616140.063000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_out_serializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_audio_out_serializer.v|
+!i113 1
+R6
+R7
+valtera_up_av_config_auto_init
+R23
+!i10b 1
+!s100 eoSXNgMjoeZNO6nb[H1Q`1
+IcmWU:GAjRMi5ULab1a:oL2
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init.v
+R24
+R5
+r1
+!s85 0
+31
+!s108 1430616139.641000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init.v|
+!i113 1
+R6
+R7
+valtera_up_av_config_auto_init_ob_adv7180
+R23
+!i10b 1
+!s100 P>oQS5mo8`K?:@mBZjD_]1
+IXUH^0:Z2T`o]f]]`JBfXR3
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_adv7180.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_adv7180.v
+R27
+R5
+r1
+!s85 0
+31
+!s108 1430616139.829000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_adv7180.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_adv7180.v|
+!i113 1
+R6
+R7
+valtera_up_av_config_auto_init_ob_audio
+R23
+!i10b 1
+!s100 G5IX_=^9XVUW?b`;MHoM03
+IOj7R[S<5zZJ1hRT=b]L?b2
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_audio.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_audio.v
+R27
+R5
+r1
+!s85 0
+31
+!s108 1430616139.766000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_audio.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_audio.v|
+!i113 1
+R6
+R7
+valtera_up_av_config_auto_init_ob_de2_115
+R23
+!i10b 1
+!s100 dJbBK@iga@<mOVn9jdTRc0
+IjmzJcg<4zHO]TZ_2>?50A1
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_de2_115.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_de2_115.v
+R24
+R5
+r1
+!s85 0
+31
+!s108 1430616139.704000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_de2_115.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_auto_init_ob_de2_115.v|
+!i113 1
+R6
+R7
+valtera_up_av_config_serial_bus_controller
+R23
+!i10b 1
+!s100 ^zKD0Qin1TA?aY7A;JIUj2
+I`nk@T`:4>5;Rb>>A<]OU30
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_serial_bus_controller.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_serial_bus_controller.v
+R24
+R5
+r1
+!s85 0
+31
+!s108 1430616139.516000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_serial_bus_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_av_config_serial_bus_controller.v|
+!i113 1
+R6
+R7
+valtera_up_avalon_reset_from_locked_signal
+R23
+!i10b 1
+!s100 Vcz;zO5;h69gjjGVD_^G02
+I8dWKdn_H2[8MPn2V`m9>V0
+R2
+R0
+R12
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v
+R27
+R5
+r1
+!s85 0
+31
+!s108 1430616139.391000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v|
+!i113 1
+R6
+R7
+valtera_up_clock_edge
+R8
+!i10b 1
+!s100 bomES2b5TZT?;gVIK7;MH3
+IJzHXVz?Qe0U[40dSHEBR01
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_clock_edge.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_clock_edge.v
+R24
+R5
+r1
+!s85 0
+31
+!s108 1430616140.141000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_clock_edge.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_clock_edge.v|
+!i113 1
+R6
+R7
+valtera_up_slow_clock_generator
+R23
+!i10b 1
+!s100 n5?l`JQ=K27^PnEfgN@zW3
+ILeHf7zSN9YY:@:MhdeZTV0
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_slow_clock_generator.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_slow_clock_generator.v
+L0 53
+R5
+r1
+!s85 0
+31
+!s108 1430616139.579000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_slow_clock_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_slow_clock_generator.v|
+!i113 1
+R6
+R7
+valtera_up_sync_fifo
+R8
+!i10b 1
+!s100 ?eZz:fXgSmjJICHDK>0^42
+Ih]5JPP?[U?C1AWaH?[iBJ2
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_sync_fifo.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_sync_fifo.v
+R27
+R5
+r1
+!s85 0
+31
+!s108 1430616140.204000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_sync_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/altera_up_sync_fifo.v|
+!i113 1
+R6
+R7
+vfinal_project_soc
+R1
+!i10b 1
+!s100 Y1d`GjnLW4fPZFVgPgD[e2
+I=KAF5VS9VmGcAN:MF^6J:3
+R2
+R0
+Z28 w1430607381
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/final_project_soc.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/final_project_soc.v
+L0 6
+R5
+r1
+!s85 0
+31
+!s108 1430616138.015000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/final_project_soc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/final_project_soc.v|
+!i113 1
+R6
+!s92 -vlog01compat -work final_project_soc +incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis
+vfinal_project_soc_audio
+R8
+!i10b 1
+!s100 DC`nW80P0F?YTZ;no1n5U2
+IfR1h:JR_zZoPBlnlj2Be;2
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio.v
+R26
+R5
+r1
+!s85 0
+31
+!s108 1430616140.266000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_audio_config
+R23
+!i10b 1
+!s100 X4LRe?BY_CbbH4B5HEPo23
+I<MdE`8P8714UzNJ3M]?Ud0
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio_config.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio_config.v
+L0 54
+R5
+r1
+!s85 0
+31
+!s108 1430616139.876000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio_config.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio_config.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_audio_pll_0
+R23
+!i10b 1
+!s100 dcE?gFU]in_DSUJ5m52l@3
+I:233Un4V;H?<L6@Zcd?a_0
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio_pll_0.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio_pll_0.v
+L0 9
+R5
+r1
+!s85 0
+31
+!s108 1430616139.329000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio_pll_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_audio_pll_0.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_irq_mapper
+R11
+R8
+!i10b 1
+!s100 QShZ`99`F<ZkgaR<^<@[N1
+IHH5[zH;5P3X_keoJYCc:?0
+R2
+!s105 final_project_soc_irq_mapper_sv_unit
+S1
+R0
+R12
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_irq_mapper.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_irq_mapper.sv
+L0 31
+R5
+r1
+!s85 0
+31
+!s108 1430616140.860000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_irq_mapper.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_irq_mapper.sv|
+!i113 1
+R13
+R14
+vfinal_project_soc_jtag_uart_0
+R23
+!i10b 1
+!s100 ;k30zV3=MI@[>i9=4anX?1
+IUkGCebJcAzeF8deUF8KgV0
+R2
+R0
+R25
+Z29 8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_jtag_uart_0.v
+Z30 FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_jtag_uart_0.v
+L0 327
+R5
+r1
+!s85 0
+31
+Z31 !s108 1430616139.250000
+Z32 !s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_jtag_uart_0.v|
+Z33 !s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_jtag_uart_0.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_jtag_uart_0_scfifo_r
+R23
+!i10b 1
+!s100 A8U3SL5E]JmF29HmiK@dI3
+I@Oz7DmUPgC]`86@oPPzS20
+R2
+R0
+R25
+R29
+R30
+L0 240
+R5
+r1
+!s85 0
+31
+R31
+R32
+R33
+!i113 1
+R6
+R7
+vfinal_project_soc_jtag_uart_0_scfifo_w
+R23
+!i10b 1
+!s100 g@QHcOca?XMHA]C^_OZEH3
+IXT4PG4PQ8V8kHJPmjAf>32
+R2
+R0
+R25
+R29
+R30
+L0 77
+R5
+r1
+!s85 0
+31
+R31
+R32
+R33
+!i113 1
+R6
+R7
+vfinal_project_soc_jtag_uart_0_sim_scfifo_r
+R23
+!i10b 1
+!s100 9CR=EALCXdELHVjRDeeaN3
+I94aN1D_S0FHL>P1JgQCLI3
+R2
+R0
+R25
+R29
+R30
+L0 162
+R5
+r1
+!s85 0
+31
+R31
+R32
+R33
+!i113 1
+R6
+R7
+vfinal_project_soc_jtag_uart_0_sim_scfifo_w
+R23
+!i10b 1
+!s100 i>ziEOmMKS]S]hc5^D6ob0
+I^0BWfmf6nS>23z4:c^`bm1
+R2
+R0
+R25
+R29
+R30
+R4
+R5
+r1
+!s85 0
+31
+R31
+R32
+R33
+!i113 1
+R6
+R7
+vfinal_project_soc_LEDG
+R8
+!i10b 1
+!s100 Hak:dE5ZGS;DSN=aO^0>I3
+IK>XM]Wcz>]aZCoRfgF==]3
+R2
+R0
+R28
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_LEDG.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_LEDG.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1430616140.407000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_LEDG.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_LEDG.v|
+!i113 1
+R6
+R7
+nfinal_project_soc_@l@e@d@g
+vfinal_project_soc_LEDR
+R8
+!i10b 1
+!s100 PYaELmV`bBk5;VfClB<d;2
+I6[kFoSVi3b7RkI`5QUjJ93
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_LEDR.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_LEDR.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1430616140.344000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_LEDR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_LEDR.v|
+!i113 1
+R6
+R7
+nfinal_project_soc_@l@e@d@r
+vfinal_project_soc_mm_interconnect_0
+R1
+!i10b 1
+!s100 JWi@]l7_5:om1F`e]Q7^V0
+I:4YTg3zMh[O]`b8_ePX2H2
+R2
+R0
+R12
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0.v
+L0 9
+R5
+r1
+!s85 0
+31
+!s108 1430616138.249000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_mm_interconnect_0_cmd_demux
+R11
+R15
+!i10b 1
+!s100 ]AD2j9GEd52lCZY[15GT70
+IHBli5Ij`S4dm>S6=e?f:93
+R2
+!s105 final_project_soc_mm_interconnect_0_cmd_demux_sv_unit
+S1
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_demux.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_demux.sv
+Z34 L0 43
+R5
+r1
+!s85 0
+31
+!s108 1430616141.691000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_demux.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_demux.sv|
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_cmd_demux_001
+R11
+R15
+!i10b 1
+!s100 f5dGM[=echU2Eh40:l]>F2
+IUPMFD7gU2VWaS1TU:8z`_1
+R2
+!s105 final_project_soc_mm_interconnect_0_cmd_demux_001_sv_unit
+S1
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_demux_001.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_demux_001.sv
+R34
+R5
+r1
+!s85 0
+31
+!s108 1430616141.613000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_demux_001.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_demux_001.sv|
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_cmd_mux
+R11
+R15
+!i10b 1
+!s100 `SCWWzJ_7SoBe0<eYH7z_3
+Ic<^[kOhdHRbZkIz]NG;6f3
+R2
+!s105 final_project_soc_mm_interconnect_0_cmd_mux_sv_unit
+S1
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_mux.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_mux.sv
+Z35 L0 38
+R5
+r1
+!s85 0
+31
+!s108 1430616141.551000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_mux.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_mux.sv|
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_cmd_mux_003
+R11
+R15
+!i10b 1
+!s100 ]EFUmU>T`j5ZPcGC4gagk1
+I31<SP]W7Occ>6YzOiGVSL2
+R2
+!s105 final_project_soc_mm_interconnect_0_cmd_mux_003_sv_unit
+S1
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_mux_003.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_mux_003.sv
+R35
+R5
+r1
+!s85 0
+31
+!s108 1430616141.473000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_mux_003.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_cmd_mux_003.sv|
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_router
+R11
+R22
+!i10b 1
+!s100 3MU]PGeH9EnFg9Md@QG1j1
+I57EU:_B`]==6OEGGQW97J0
+R2
+Z36 !s105 final_project_soc_mm_interconnect_0_router_sv_unit
+S1
+R0
+R3
+Z37 8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router.sv
+Z38 FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router.sv
+Z39 L0 84
+R5
+r1
+!s85 0
+31
+Z40 !s108 1430616141.972000
+Z41 !s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router.sv|
+Z42 !s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router.sv|
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_router_001
+R11
+R15
+!i10b 1
+!s100 VQ`dIjVHQYI5Sj6kh5OV60
+IR`mf_0PKMoWa7PCc0XcEl0
+R2
+Z43 !s105 final_project_soc_mm_interconnect_0_router_001_sv_unit
+S1
+R0
+R3
+Z44 8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_001.sv
+Z45 FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_001.sv
+R39
+R5
+r1
+!s85 0
+31
+Z46 !s108 1430616141.894000
+Z47 !s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_001.sv|
+Z48 !s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_001.sv|
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_router_001_default_decode
+R11
+R15
+!i10b 1
+!s100 OE6j=3AXGN`IO1fMKQoLF0
+I@_]WbG]5jRe`FS<@2j7dD2
+R2
+R43
+S1
+R0
+R3
+R44
+R45
+Z49 L0 45
+R5
+r1
+!s85 0
+31
+R46
+R47
+R48
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_router_002
+R11
+R15
+!i10b 1
+!s100 H>HF27ebc64>=XM`<@LTK1
+I@=gF]5DcOc22[8G?YHYWE1
+R2
+Z50 !s105 final_project_soc_mm_interconnect_0_router_002_sv_unit
+S1
+R0
+R3
+Z51 8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_002.sv
+Z52 FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_002.sv
+R39
+R5
+r1
+!s85 0
+31
+Z53 !s108 1430616141.832000
+Z54 !s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_002.sv|
+Z55 !s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_002.sv|
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_router_002_default_decode
+R11
+R15
+!i10b 1
+!s100 12MmW0maSGH]=;2Kd_Onn2
+I5;izN?BJ`:eiT0gO`12]Q3
+R2
+R50
+S1
+R0
+R3
+R51
+R52
+R49
+R5
+r1
+!s85 0
+31
+R53
+R54
+R55
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_router_005
+R11
+R15
+!i10b 1
+!s100 Pb6fjm`T[ifeD4ijRIX]Y3
+I4I3NUMVn8VMaHdSRfFjoF0
+R2
+Z56 !s105 final_project_soc_mm_interconnect_0_router_005_sv_unit
+S1
+R0
+R3
+Z57 8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_005.sv
+Z58 FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_005.sv
+R39
+R5
+r1
+!s85 0
+31
+Z59 !s108 1430616141.754000
+Z60 !s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_005.sv|
+Z61 !s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_router_005.sv|
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_router_005_default_decode
+R11
+R15
+!i10b 1
+!s100 f>bK5P_AfWK74F^m0iYNL2
+I6N7@^aZ:bN]h?K:;^WggR2
+R2
+R56
+S1
+R0
+R3
+R57
+R58
+R49
+R5
+r1
+!s85 0
+31
+R59
+R60
+R61
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_router_default_decode
+R11
+R15
+!i10b 1
+!s100 @L;e4V^UOfBXYeGEG>?1:0
+IUPV182oK_YEa]FInh8SG;0
+R2
+R36
+S1
+R0
+R3
+R37
+R38
+R49
+R5
+r1
+!s85 0
+31
+R40
+R41
+R42
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_rsp_demux
+R11
+R15
+!i10b 1
+!s100 oGF:TTF>F7USJn^G@BzYn3
+IiUV1c^XcJCJ>BPdETPiS20
+R2
+!s105 final_project_soc_mm_interconnect_0_rsp_demux_sv_unit
+S1
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux.sv
+R34
+R5
+r1
+!s85 0
+31
+!s108 1430616141.407000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux.sv|
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_rsp_demux_001
+R11
+R15
+!i10b 1
+!s100 gAj1V2U^QV9il@;^V5oTF0
+IA?HiaZ7Sn5J==cOJ6KCHY1
+R2
+!s105 final_project_soc_mm_interconnect_0_rsp_demux_001_sv_unit
+S1
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux_001.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux_001.sv
+R34
+R5
+r1
+!s85 0
+31
+!s108 1430616141.329000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux_001.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux_001.sv|
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_rsp_demux_003
+R11
+R15
+!i10b 1
+!s100 m3=gZdjiOdZVX:3E1MJ0D3
+Ik2RMUJ9V3k4gV^Bl`N_c@2
+R2
+!s105 final_project_soc_mm_interconnect_0_rsp_demux_003_sv_unit
+S1
+R0
+R9
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux_003.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux_003.sv
+R34
+R5
+r1
+!s85 0
+31
+!s108 1430616141.251000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux_003.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_demux_003.sv|
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_rsp_mux
+R11
+R15
+!i10b 1
+!s100 C9CAQ^hF;6ZFfMcD0fQYn1
+IGO1[bdmM]A8U`j6XISJzN1
+R2
+!s105 final_project_soc_mm_interconnect_0_rsp_mux_sv_unit
+S1
+R0
+R9
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_mux.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_mux.sv
+R35
+R5
+r1
+!s85 0
+31
+!s108 1430616141.188000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_mux.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_mux.sv|
+!i113 1
+R13
+R14
+vfinal_project_soc_mm_interconnect_0_rsp_mux_001
+R11
+R15
+!i10b 1
+!s100 CzR@^C]hb>a9]7TPBcBR:1
+ILdQfJ4GVJQ<ne8bVDa0CK3
+R2
+!s105 final_project_soc_mm_interconnect_0_rsp_mux_001_sv_unit
+S1
+R0
+R9
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_mux_001.sv
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_mux_001.sv
+R35
+R5
+r1
+!s85 0
+31
+!s108 1430616141.126000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_mux_001.sv|
+!s90 -reportprogress|300|-sv|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_mm_interconnect_0_rsp_mux_001.sv|
+!i113 1
+R13
+R14
+vfinal_project_soc_nios2_qsys_0
+R1
+!i10b 1
+!s100 gCAV:[P4<kKiaGeNl>V>z2
+I;i:cz82VaA4^<0T5kjINj1
+R2
+R0
+R25
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0.v
+L0 9
+R5
+r1
+!s85 0
+31
+!s108 1430616138.719000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu
+R1
+!i10b 1
+!s100 30Q_8P:bN9;h`0MW9>V@A0
+ImfhYBCGjP?mQ=L>0oN=DP1
+R2
+R0
+R3
+Z62 8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu.v
+Z63 FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu.v
+L0 3073
+R5
+r1
+!s85 0
+31
+Z64 !s108 1430616138.766000
+Z65 !s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu.v|
+Z66 !s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_debug_slave_sysclk
+R1
+!i10b 1
+!s100 E<EPldoDRX]^Me?6>f21;1
+I2O3F7^7XJMz[gESaT=Wb^2
+R2
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_sysclk.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_sysclk.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1430616138.922000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_sysclk.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_debug_slave_tck
+R23
+!i10b 1
+!s100 nUIN;kIFMR7<UD_jb:MYd3
+IVQJW>c?366^E_aF9NoAI51
+R2
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_tck.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_tck.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1430616138.985000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_tck.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_debug_slave_wrapper
+R23
+!i10b 1
+!s100 1JENeHXnz;oWi`gi8N7mP3
+I:TN0Tdhbi5ZU9<W]BQmmR1
+R2
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_wrapper.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_wrapper.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1430616139.063000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_debug_slave_wrapper.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_avalon_reg
+R1
+!i10b 1
+!s100 P`JNHSlHm`4zF;g1EzHzk1
+IL3C:YWaQj5kLXom[fzB_l3
+R2
+R0
+R3
+R62
+R63
+L0 2243
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_oci
+R1
+!i10b 1
+!s100 l4Bi0c`9YCoLOne1TSVzd2
+IaD@l9h1?ahO3iX>;P]bID1
+R2
+R0
+R3
+R62
+R63
+L0 2576
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_oci_break
+R1
+!i10b 1
+!s100 :0>QTRN=3ONN?Gd=Kejak3
+Ii0j8KT_?H;Hm7XH@aXcJJ0
+R2
+R0
+R3
+R62
+R63
+L0 292
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_oci_compute_input_tm_cnt
+R1
+!i10b 1
+!s100 SZMF<@EB]XdD5W55oHeoT0
+Iijo@l?bYYiziddVcz0ALc2
+R2
+R0
+R3
+R62
+R63
+L0 1445
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_oci_dbrk
+R1
+!i10b 1
+!s100 C6MhDGaicZAiM9Yf`[`<S3
+I8fg:B8mEXP[B>lQFUmHW<2
+R2
+R0
+R3
+R62
+R63
+L0 790
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_oci_debug
+R1
+!i10b 1
+!s100 ;5@<QD@@X160Q`A@m;_?k1
+I^e9Lgl5m:g5UC8[MdE5f<2
+R2
+R0
+R3
+R62
+R63
+L0 151
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_oci_dtrace
+R1
+!i10b 1
+!s100 ^gA6Z1kBHj]m[7]h6DlCQ2
+Ibc6^WH>>jPK8mjljd2ISj1
+R2
+R0
+R3
+R62
+R63
+L0 1364
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_oci_fifo
+R1
+!i10b 1
+!s100 JLJN6SWG`g9KSCdI?:jB?2
+Ibf9DWm]n<6Yl=_K7^LQ=?1
+R2
+R0
+R3
+R62
+R63
+L0 1604
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_oci_fifo_cnt_inc
+R1
+!i10b 1
+!s100 He1Uc8nE@me8J7=Bz=[TH2
+IgidTS8SjL;UO`zEX^i:Qg2
+R2
+R0
+R3
+R62
+R63
+L0 1558
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_oci_fifo_wrptr_inc
+R1
+!i10b 1
+!s100 :UiUA<_;75HhMeZ?jKHWX1
+IY^73z[1QWCQ_NZeX<nh_61
+R2
+R0
+R3
+R62
+R63
+L0 1516
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_oci_im
+R1
+!i10b 1
+!s100 R=>4G1LLGZ_2lP1>UdX7X1
+I_Yf6i=S]fl7hVVcQlOe4N0
+R2
+R0
+R3
+R62
+R63
+L0 2127
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_oci_itrace
+R1
+!i10b 1
+!s100 N4:XV`]@O]c^4M>c@cgY11
+IYC^zF9IVSGW5dE?2<F8`12
+R2
+R0
+R3
+R62
+R63
+L0 976
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_oci_pib
+R1
+!i10b 1
+!s100 VFzLBBWjQaYBBbWABRn0g0
+IT2GOBNO8D_Ijc@EO9PmbH3
+R2
+R0
+R3
+R62
+R63
+L0 2105
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_oci_td_mode
+R1
+!i10b 1
+!s100 jFQXB^N08:IJS;4dH8zEP1
+I6KHN0Y1[K=RE?13ZeZj833
+R2
+R0
+R3
+R62
+R63
+L0 1297
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_oci_xbrk
+R1
+!i10b 1
+!s100 Mz9>RBPjeUIk:gFdAml9O2
+IIE:0zU0CFPQ]`CSQ^KKg]2
+R2
+R0
+R3
+R62
+R63
+L0 584
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_ocimem
+R1
+!i10b 1
+!s100 _J>M1C2knXA8CE<VHGcbc3
+I1aa?EXPA?2TaQ[i?72DK30
+R2
+R0
+R3
+R62
+R63
+L0 2398
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_nios2_performance_monitors
+R1
+!i10b 1
+!s100 zHbjNKGWW_C?=QJY]zL400
+ISX;em2Z8g4>6<CW3@;K<`0
+R2
+R0
+R3
+R62
+R63
+L0 2227
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_oci_test_bench
+R23
+!i10b 1
+!s100 [agAB>Xc_I__?4:IhibUB2
+I2j9<mEA4<KTAO`I255g123
+R2
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_oci_test_bench.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_oci_test_bench.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1430616139.125000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_oci_test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_oci_test_bench.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_ociram_sp_ram_module
+R1
+!i10b 1
+!s100 hHDGN`F=9ZVjAo;Pz`Fg53
+I=l22A`8ijB>iZGR9b5:@k0
+R2
+R0
+R3
+R62
+R63
+L0 2335
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_register_bank_a_module
+R1
+!i10b 1
+!s100 D1:3C9PclaR[Ea8U??81M0
+I7C^K0::SVYH:J9W6F5Y_K2
+R2
+R0
+R3
+R62
+R63
+R4
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_register_bank_b_module
+R1
+!i10b 1
+!s100 7SlT5_gZhC?F@h419G@zz2
+I;<H[b=4Bcd9eGnDRTkl;D1
+R2
+R0
+R3
+R62
+R63
+L0 86
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R6
+R7
+vfinal_project_soc_nios2_qsys_0_cpu_test_bench
+R23
+!i10b 1
+!s100 og@QUc]F^dj4o`K_Dn9S@2
+IOni08?6D@H:?z8GkDgHo02
+R2
+R0
+R3
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_test_bench.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_test_bench.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1430616139.172000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_nios2_qsys_0_cpu_test_bench.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_onchip_memory2_0
+R1
+!i10b 1
+!s100 eUNTX@ojOClzT8al_[H[G1
+IL;UN@K8mULi8F5H;CdlE52
+R2
+R0
+Z67 w1430607383
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_onchip_memory2_0.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_onchip_memory2_0.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1430616138.657000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_onchip_memory2_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_onchip_memory2_0.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_sdram
+R1
+!i10b 1
+!s100 KnEnIFT`K?XXJ7k@GgaTe3
+I_NBXYVacIj[OJOCPNO>fM3
+R2
+R0
+R67
+Z68 8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sdram.v
+Z69 FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sdram.v
+L0 158
+R5
+r1
+!s85 0
+31
+Z70 !s108 1430616138.563000
+Z71 !s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sdram.v|
+Z72 !s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sdram.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_sdram_input_efifo_module
+R1
+!i10b 1
+!s100 bV[h;oj2[^JM5Z=NUcEX;3
+IaJGSCMIkVzHUfHoQ^[2kg1
+R2
+R0
+R67
+R68
+R69
+R4
+R5
+r1
+!s85 0
+31
+R70
+R71
+R72
+!i113 1
+R6
+R7
+vfinal_project_soc_sdram_pll
+R1
+!i10b 1
+!s100 HEL;RcfO11RlX@^fcd4<T0
+I5PE?g_79jzRfYiHFm9Q^00
+R2
+R0
+Z73 w1430607386
+Z74 8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sdram_pll.v
+Z75 FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sdram_pll.v
+L0 218
+R5
+r1
+!s85 0
+31
+Z76 !s108 1430616138.485000
+Z77 !s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sdram_pll.v|
+Z78 !s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sdram_pll.v|
+!i113 1
+R6
+R7
+vfinal_project_soc_sdram_pll_altpll_fua2
+R1
+!i10b 1
+!s100 eSIzCFZhBTW^U9DVTCXhJ3
+I<5VN?[1`Q1YzJSD5i@>z]1
+R2
+R0
+R73
+R74
+R75
+L0 131
+R5
+r1
+!s85 0
+31
+R76
+R77
+R78
+!i113 1
+R6
+R7
+vfinal_project_soc_sdram_pll_dffpipe_l2c
+R1
+!i10b 1
+!s100 >8b:@X^[gHQCAoAM8XToi1
+I<GE?ZEYDUz;X2F<A13deL2
+R2
+R0
+R73
+R74
+R75
+R35
+R5
+r1
+!s85 0
+31
+R76
+R77
+R78
+!i113 1
+R6
+R7
+vfinal_project_soc_sdram_pll_stdsync_sv6
+R1
+!i10b 1
+!s100 @llk8XkFz3RHzS]TbT@WY3
+IG2=4P@dPPz7:V?`@A1[O_1
+R2
+R0
+R73
+R74
+R75
+L0 99
+R5
+r1
+!s85 0
+31
+R76
+R77
+R78
+!i113 1
+R6
+R7
+vfinal_project_soc_sysid_qsys_0
+R1
+!i10b 1
+!s100 Ddaz1gHJNhNOJ3?oLXGZN2
+Ig2b;oEi_cJ<8iINm0=:Ab0
+R2
+R0
+R73
+8C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sysid_qsys_0.v
+FC:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sysid_qsys_0.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1430616138.422000
+!s107 C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sysid_qsys_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|final_project_soc|+incdir+C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules|C:/Users/Justin/Documents/ece385/final_project/final_project/final_project_soc/synthesis/submodules/final_project_soc_sysid_qsys_0.v|
+!i113 1
+R6
+R7
