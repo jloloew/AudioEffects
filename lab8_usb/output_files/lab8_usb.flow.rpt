@@ -1,5 +1,5 @@
 Flow report for lab8_usb
-Tue May 05 16:10:51 2015
+Tue May 05 20:47:35 2015
 Quartus II 64-Bit Version 14.1.1 Build 190 01/19/2015 SJ Web Edition
 
 
@@ -41,17 +41,17 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue May 05 16:10:51 2015      ;
+; Flow Status                        ; Successful - Tue May 05 20:47:35 2015      ;
 ; Quartus II 64-Bit Version          ; 14.1.1 Build 190 01/19/2015 SJ Web Edition ;
 ; Revision Name                      ; lab8_usb                                   ;
 ; Top-level Entity Name              ; lab8_usb                                   ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 4,064 / 114,480 ( 4 % )                    ;
-;     Total combinational functions  ; 3,333 / 114,480 ( 3 % )                    ;
-;     Dedicated logic registers      ; 2,566 / 114,480 ( 2 % )                    ;
-; Total registers                    ; 2685                                       ;
+; Total logic elements               ; 4,180 / 114,480 ( 4 % )                    ;
+;     Total combinational functions  ; 3,449 / 114,480 ( 3 % )                    ;
+;     Dedicated logic registers      ; 2,564 / 114,480 ( 2 % )                    ;
+; Total registers                    ; 2683                                       ;
 ; Total pins                         ; 194 / 529 ( 37 % )                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 16,000 / 3,981,312 ( < 1 % )               ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/05/2015 16:08:31 ;
+; Start date & time ; 05/05/2015 20:44:54 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab8_usb            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                        ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 121367831039.143086011103628                                 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 121367831039.143087669303632                                 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)                              ; <None>        ; --          ; --             ;
 ; FLOW_ENABLE_POWER_ANALYZER          ; On                                                           ; Off           ; --          ; --             ;
@@ -106,13 +106,13 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:56     ; 1.0                     ; 815 MB              ; 00:01:37                           ;
-; Fitter                    ; 00:00:34     ; 1.5                     ; 1607 MB             ; 00:00:48                           ;
-; Assembler                 ; 00:00:07     ; 1.0                     ; 597 MB              ; 00:00:06                           ;
-; PowerPlay Power Analyzer  ; 00:00:15     ; 1.0                     ; 763 MB              ; 00:00:15                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.6                     ; 784 MB              ; 00:00:06                           ;
-; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 612 MB              ; 00:00:07                           ;
-; Total                     ; 00:02:05     ; --                      ; --                  ; 00:02:59                           ;
+; Analysis & Synthesis      ; 00:01:10     ; 1.0                     ; 836 MB              ; 00:02:00                           ;
+; Fitter                    ; 00:00:39     ; 1.7                     ; 1617 MB             ; 00:00:55                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 596 MB              ; 00:00:06                           ;
+; PowerPlay Power Analyzer  ; 00:00:14     ; 1.0                     ; 763 MB              ; 00:00:15                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 787 MB              ; 00:00:07                           ;
+; EDA Netlist Writer        ; 00:00:08     ; 1.0                     ; 613 MB              ; 00:00:07                           ;
+; Total                     ; 00:02:23     ; --                      ; --                  ; 00:03:30                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

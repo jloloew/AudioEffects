@@ -1,4 +1,16 @@
 
+State Machine - |lab8_usb|Bouncing_Ball:bouncingBall|ball:mBall|velocity_y
+Name velocity_y.00 velocity_y.10 velocity_y.01 
+velocity_y.00 0 0 0 
+velocity_y.01 1 0 1 
+velocity_y.10 1 1 0 
+
+State Machine - |lab8_usb|Bouncing_Ball:bouncingBall|ball:mBall|velocity_x
+Name velocity_x.00 velocity_x.10 velocity_x.01 
+velocity_x.00 0 0 0 
+velocity_x.01 1 0 1 
+velocity_x.10 1 1 0 
+
 State Machine - |lab8_usb|usb_system:usbsys_instance|usb_system_sdram:sdram|m_next
 Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
 m_next.000000001 0 0 0 0 

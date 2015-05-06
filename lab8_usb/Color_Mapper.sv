@@ -21,48 +21,68 @@ module color_mapper (	input [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
 						input [99:0] brick_y_vals,
 						output logic [7:0] Red, Green, Blue );
     
-    logic ball_on, brick_on, paddle_on;
+    logic ball_on, brick_on, edge_of_brick_on, paddle_on;
 	int DistX, DistY, Size;
+	
+	logic [8:0] brick_on_array;
+	logic [8:0] edge_of_brick_array;
 	
 	assign DistX = DrawX - BallX;
 	assign DistY = DrawY - BallY;
 	assign Size = Ball_size;
 	
 	always_comb
-	begin : Ball_on_proc
+	begin: Ball_on_proc
 		if ((DistX*DistX + DistY*DistY) <= (Size*Size)) 
 			ball_on = 1'b1;
 		else 
 			ball_on = 1'b0;
 	end
 	
-	logic [8:0] brick_on_array;
-	
 	genvar i;
 	generate
 		for (i = 0; i < 9; i = i+1)
-		begin : Brick_on_logic
+		begin: Brick_on_logic
 			assign brick_on_array[i] = brick_exists[i] && ((brick_x_vals[10*i+9 : 10*i] <= DrawX && DrawX < (brick_x_vals[10*i+9 : 10*i] + brick_width)) && (brick_y_vals[10*i+9 : 10*i] <= DrawY && DrawY < (brick_y_vals[10*i+9 : 10*i] + brick_height)));
+			
+			assign edge_of_brick_array[i] = (
+				( // cursor is on the top or bottom edge of the block
+					((DrawY == brick_y_vals[10*i+9 : 10*i]) || (DrawY == (brick_y_vals[10*i+9 : 10*i] + brick_height - 1)))
+					// DrawX is within the brick along the x-axis
+					&& (brick_x_vals[10*i+9 : 10*i] <= DrawX && DrawX < (brick_x_vals[10*i+9 : 10*i] + brick_width))
+				)
+				|| ( // cursor is on the left or right edge of the block
+					((DrawX == brick_x_vals[10*i+9 : 10*i]) || (DrawX == (brick_x_vals[10*i+9 : 10*i] + brick_width - 1)))
+					// DrawY is within the brick along the y-axis
+					&& (brick_y_vals[10*i+9 : 10*i] <= DrawY && DrawY < (brick_y_vals[10*i+9 : 10*i] + brick_height))
+				)
+			);
 		end
 	endgenerate
 	
 	assign brick_on = (brick_on_array != 10'd0);
+	assign edge_of_brick_on = (edge_of_brick_array != 10'd0);
 	assign paddle_on = ((brick_x_vals[99:90] <= DrawX && DrawX < (brick_x_vals[99:90] + brick_width)) && (brick_y_vals[99:90] <= DrawY && DrawY < (brick_y_vals[99:90] + brick_height)));
 	
     always_comb
-    begin : RGB_Display
-		if (paddle_on == 1'b1) begin
-			Red		= 8'h20;
-			Green	= 8'h8A;
-			Blue	= 8'hF5;
+    begin: RGB_Display
+		if (paddle_on == 1'b1) begin: Draw_Paddle
+			Red		= 8'hB0;
+			Green	= 8'hE2;
+			Blue	= 8'h22;
 		end
-		else if (brick_on == 1'b1) begin
+		else if (brick_on == 1'b1) begin: Draw_Brick
 			Red		= 8'h54;
             Green	= 8'h22;
             Blue	= 8'hE2;
+			// invert the edges of the brick
+			if (edge_of_brick_on == 1'b1) begin
+				Red		= ~Red;
+				Green	= ~Green;
+				Blue	= ~Blue;
+			end
 		end
-        else if (ball_on == 1'b1)
-        begin 
+        else if (ball_on == 1'b1) begin: Draw_Ball
             Red		= 8'h00;
             Green	= 8'hFF;
             Blue	= 8'hFF;
