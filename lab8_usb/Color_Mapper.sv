@@ -70,7 +70,7 @@ module color_mapper (	input [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
 	
 	assign brick_on = (brick_on_array != 10'd0);
 	assign edge_of_brick_on = (edge_of_brick_array != 10'd0);
-	assign paddle_on = ((brick_x_vals[99:90] <= DrawX && DrawX < (brick_x_vals[99:90] + brick_width)) && (brick_y_vals[99:90] <= DrawY && DrawY < (brick_y_vals[99:90] + brick_height)));
+	assign paddle_on = ((brick_x_vals[99:90] <= DrawX && DrawX < (brick_x_vals[99:90] + 10'd80)) && (brick_y_vals[99:90] <= DrawY && DrawY < (brick_y_vals[99:90] + 10'd35)));
 	
     always_comb
     begin: RGB_Display

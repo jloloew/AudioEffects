@@ -11719,3 +11719,53 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY com.altera.sbtgui.launch 1 0 2014-10-05 00:16:16.880
 !MESSAGE Executing: [C:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid /cygdrive/c/ece385/lab7_usb/software/usb_kb/usb_kb.elf]
+!SESSION 2015-05-05 22:29:40.993 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/14.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/14.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-05 22:35:32.546
+!MESSAGE Indexed 'usb_kb' (2 sources, 4 headers) in 4.06 sec: 54 declarations; 1,468 references; 15 unresolved inclusions; 0 syntax errors; 382 unresolved names (20.06%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-05 22:37:11.119
+!MESSAGE Indexed 'usb_kb_bsp' (80 sources, 66 headers) in 3.15 sec: 1,196 declarations; 2,452 references; 110 unresolved inclusions; 8 syntax errors; 203 unresolved names (5.27%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-05-05 22:47:33.583
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11001078 --id=0x0 --timestamp=1430756268]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-05-05 22:47:36.275
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11001078 --id=0x0 --timestamp=1430756268 /cygdrive/c/Users/Alberto/Pictures/AudioEffects/lab8_usb/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-05-05 23:07:35.369
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-05-05 23:07:36.588
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11001078 --id=0x0 --timestamp=1430756268]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-05-05 23:07:39.914
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11001078 --id=0x0 --timestamp=1430756268 /cygdrive/c/Users/Alberto/Pictures/AudioEffects/lab8_usb/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-05-05 23:30:54.979
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-05-05 23:30:56.127
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11001078 --id=0x0 --timestamp=1430756268]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-05-05 23:30:59.290
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11001078 --id=0x0 --timestamp=1430756268 /cygdrive/c/Users/Alberto/Pictures/AudioEffects/lab8_usb/software/usb_kb/usb_kb.elf]
+!SESSION 2015-05-06 08:59:00.256 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/14.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/14.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-05-06 09:02:14.047
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11001078 --id=0x0 --timestamp=1430756268]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-05-06 09:02:17.641
+!MESSAGE Executing: [C:/altera/14.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11001078 --id=0x0 --timestamp=1430756268 /cygdrive/c/Users/Alberto/Pictures/AudioEffects/lab8_usb/software/usb_kb/usb_kb.elf]

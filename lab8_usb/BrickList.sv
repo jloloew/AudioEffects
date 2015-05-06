@@ -10,7 +10,7 @@ module BrickList (	input			frame_clk, Reset,
 	
 	assign brick_x_vals = { 10'd70, 10'd170, 10'd270, 10'd370, 10'd470, // top row
 								10'd120, 10'd220,  10'd320, 10'd420 };
-	assign brick_y_vals = { 10'd360, // paddle
+	assign brick_y_vals = { 10'd400, // paddle
 							{ 5{10'd60} }, // top row
 							{ 4{10'd140} } }; // bottom row
 	

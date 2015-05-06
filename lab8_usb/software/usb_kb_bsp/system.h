@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'usb_system'
  * SOPC Builder design path: ../../usb_system.sopcinfo
  *
- * Generated: Mon May 04 19:21:15 CDT 2015
+ * Generated: Tue May 05 22:39:37 CDT 2015
  */
 
 /*
