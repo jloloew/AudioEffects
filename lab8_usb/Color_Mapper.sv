@@ -19,9 +19,11 @@ module color_mapper (	input [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
 						input [9:0] brick_height,
 						input [99:0] brick_x_vals,
 						input [99:0] brick_y_vals,
+						input			did_win_game, did_lose_game,
 						output logic [7:0] Red, Green, Blue );
     
     logic ball_on, brick_on, edge_of_brick_on, paddle_on;
+//	logic did_win_game, did_lose_game, out_of_bounds;
 	int DistX, DistY, Size;
 	
 	logic [8:0] brick_on_array;
@@ -30,7 +32,13 @@ module color_mapper (	input [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
 	assign DistX = DrawX - BallX;
 	assign DistY = DrawY - BallY;
 	assign Size = Ball_size;
-	
+	/*
+	assign did_win_game = (brick_exists == '0);
+	assign out_of_bounds = ((BallY + Ball_size) >= 10'd480);
+	always_ff @ (posedge out_of_bounds) begin
+		did_lose_game = 1'b1;
+	end
+	*/
 	always_comb
 	begin: Ball_on_proc
 		if ((DistX*DistX + DistY*DistY) <= (Size*Size)) 
@@ -66,7 +74,17 @@ module color_mapper (	input [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
 	
     always_comb
     begin: RGB_Display
-		if (paddle_on == 1'b1) begin: Draw_Paddle
+		if (did_win_game) begin: Game_Over_Win
+			Red		= 8'h00;
+			Green	= 8'hC9;
+			Blue	= 8'h57;
+		end
+		else if (did_lose_game) begin: Game_Over_Lose
+			Red		= 8'h80;
+			Green	= 8'h00;
+			Blue	= 8'h00;
+		end
+		else if (paddle_on == 1'b1) begin: Draw_Paddle
 			Red		= 8'hB0;
 			Green	= 8'hE2;
 			Blue	= 8'h22;

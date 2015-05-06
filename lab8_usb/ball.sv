@@ -18,8 +18,6 @@ module  ball (	input Reset, frame_clk,
 				input [9:0] brick_height,
 				input [99:0] brick_x_vals,
 				input [99:0] brick_y_vals,
-//				input logic [1:0]	velocity_x_in,	velocity_y_in,
-//				output logic [1:0]	velocity_x_out,	velocity_y_out,
 				output [9:0]  BallX, BallY, BallS,
 				output [8:0] brick_exists
 				);
@@ -40,7 +38,6 @@ module  ball (	input Reset, frame_clk,
 	logic brick_bounce_x, brick_bounce_y;
 	logic [9:0] brick_bounce_x_array, brick_bounce_y_array;
 	
-//	assign brick_exists_n[9] = 1'b0; // paddle always exists
 	assign brick_exists = ~brick_exists_n;
 	
     assign Ball_Size = 4;  // assigns the value 4 as a 10-digit binary number, ie "0000000100"
