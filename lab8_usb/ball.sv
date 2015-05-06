@@ -40,7 +40,7 @@ module  ball (	input Reset, frame_clk,
 	logic brick_bounce_x, brick_bounce_y;
 	logic [9:0] brick_bounce_x_array, brick_bounce_y_array;
 	
-	assign brick_exists_n[9] = 1'b0; // paddle always exists
+//	assign brick_exists_n[9] = 1'b0; // paddle always exists
 	assign brick_exists = ~brick_exists_n;
 	
     assign Ball_Size = 4;  // assigns the value 4 as a 10-digit binary number, ie "0000000100"
@@ -117,20 +117,23 @@ module  ball (	input Reset, frame_clk,
 	
 	// hide bricks we've already collided with
 	always_ff @ (posedge frame_clk or posedge Reset)
-	begin : Brick_destroy
+	begin: Brick_destroy
 		if (Reset)
 		begin
-			brick_exists_n = 0;
+			brick_exists_n = '0;
 		end
 		else
 		begin
 			int j;
-			for (j = 0; j < 9; j += 1)
-			begin : Hide_brick_logic
-				if (brick_bounce_x_array[j] || brick_bounce_y_array[j])
-					brick_exists_n[j] = 1'b1;
-				else
+			for (j = 0; j < (9+1); j += 1)
+			begin: Hide_brick_logic
+				if (brick_bounce_x_array[j] || brick_bounce_y_array[j]) begin
+					if (j != 9) // don't hide the paddle
+						brick_exists_n[j] = 1'b1;
+				end
+				else begin
 					brick_exists_n[j] = brick_exists_n[j];
+				end
 			end
 		end
 	end
@@ -138,8 +141,8 @@ module  ball (	input Reset, frame_clk,
 	// Brick bouncing
 	genvar i;
 	generate
-		for (i = 0; i < 9; i += 1)
-		begin : Brick_on_logic
+		for (i = 0; i < (9+1); i += 1)
+		begin: Brick_on_logic
 			assign brick_bounce_x_array[i] =
 			~brick_exists_n[i]
 			// ball's y value is within the brick's y values
