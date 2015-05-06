@@ -1,0 +1,5 @@
+
+module text_luser (	input [9:0]		DrawX, DrawY,
+					output [9:0]	SizeX, SizeY,
+					output			char_pix_is_on
+					);

@@ -24,13 +24,23 @@ module color_mapper (	input		frame_clk, Reset,
 						input		did_win_game, did_lose_game,
 						output logic [7:0] Red, Green, Blue );
     
-    logic ball_on, brick_on, edge_of_brick_on, paddle_on;
+    logic ball_on, brick_on, edge_of_brick_on, paddle_on,
+			spriteOn, spritePixOn;
+//	logic did_win_game, did_lose_game, out_of_bounds;
 	int DistX, DistY, Size;
 	
-	logic [8:0] brick_on_array;
-	logic [8:0] edge_of_brick_array;
+	logic [8:0]		brick_on_array;
+	logic [8:0]		edge_of_brick_array;
 	// animations
 //	logic [99:0] brick_x_anim, brick_y_anim, brick_width_anim, brick_height_anim;
+	
+	logic [9:0]	spriteX = 300;
+	logic [9:0]	spriteY = 300;
+	logic [9:0]	spriteSizeX = 8;
+	logic [9:0]	spriteSizeY = 16;
+	text_luser lusertext (	.didWin (did_win_game), .didLose (did_lose_game),
+							.DrawX (DrawX - spriteX), .DrawY (DrawY - spriteY),
+							.SizeX (spriteSizeX), .SizeY (spriteSizeY), .char_pix_is_on (spritePixOn));
 	
 	assign DistX = DrawX - BallX;
 	assign DistY = DrawY - BallY;
@@ -65,10 +75,18 @@ module color_mapper (	input		frame_clk, Reset,
 	*/
 	always_comb
 	begin: Ball_on_proc
+		ball_on		= 1'b0;
+		spriteOn	= 1'b0;
+		
 		if ((DistX*DistX + DistY*DistY) <= (Size*Size)) 
+		begin
 			ball_on = 1'b1;
-		else 
-			ball_on = 1'b0;
+		end
+		else if ((DrawX >= spriteX) && (DrawX < spriteX + spriteSizeX) &&
+					(DrawY >= spriteY) && (DrawY < spriteY + spriteSizeY))
+		begin
+			spriteOn = 1'b1;
+		end
 	end
 	
 	generate
@@ -101,11 +119,21 @@ module color_mapper (	input		frame_clk, Reset,
 			Red		= 8'h00;
 			Green	= 8'hC9;
 			Blue	= 8'h57;
+			if (spriteOn && spritePixOn) begin: Game_Over_Win_Word
+				Red		= 8'h00;
+				Green	= 8'h00;
+				Blue	= 8'h00;
+			end
 		end
 		else if (did_lose_game) begin: Game_Over_Lose
 			Red		= 8'h80;
 			Green	= 8'h00;
 			Blue	= 8'h00;
+			if (spriteOn && spritePixOn) begin: Game_Over_Lose_Word
+				Red		= 8'h00;
+				Green	= 8'h00;
+				Blue	= 8'h00;
+			end
 		end
 		else if (paddle_on == 1'b1) begin: Draw_Paddle
 			Red		= 8'hB0;
@@ -114,8 +142,8 @@ module color_mapper (	input		frame_clk, Reset,
 		end
 		else if (brick_on == 1'b1) begin: Draw_Brick
 			Red		= 8'h54;
-            Green	= 8'h22;
-            Blue	= 8'hE2;
+			Green	= 8'h22;
+			Blue	= 8'hE2;
 			// invert the edges of the brick
 			if (edge_of_brick_on == 1'b1) begin
 				Red		= ~Red;

@@ -1,5 +1,5 @@
 Flow report for lab8_usb
-Wed May 06 10:51:08 2015
+Wed May 06 17:50:20 2015
 Quartus II 64-Bit Version 14.1.1 Build 190 01/19/2015 SJ Web Edition
 
 
@@ -41,15 +41,15 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Wed May 06 10:51:08 2015      ;
+; Flow Status                        ; Successful - Wed May 06 17:50:20 2015      ;
 ; Quartus II 64-Bit Version          ; 14.1.1 Build 190 01/19/2015 SJ Web Edition ;
 ; Revision Name                      ; lab8_usb                                   ;
 ; Top-level Entity Name              ; lab8_usb                                   ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 4,322 / 114,480 ( 4 % )                    ;
-;     Total combinational functions  ; 3,591 / 114,480 ( 3 % )                    ;
+; Total logic elements               ; 5,316 / 114,480 ( 5 % )                    ;
+;     Total combinational functions  ; 4,584 / 114,480 ( 4 % )                    ;
 ;     Dedicated logic registers      ; 2,565 / 114,480 ( 2 % )                    ;
 ; Total registers                    ; 2684                                       ;
 ; Total pins                         ; 194 / 529 ( 37 % )                         ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/06/2015 10:48:25 ;
+; Start date & time ; 05/06/2015 17:47:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab8_usb            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                        ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 121367831039.143092730504740                                 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 121367831039.143095244503240                                 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)                              ; <None>        ; --          ; --             ;
 ; FLOW_ENABLE_POWER_ANALYZER          ; On                                                           ; Off           ; --          ; --             ;
@@ -106,13 +106,13 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:11     ; 1.0                     ; 839 MB              ; 00:01:53                           ;
-; Fitter                    ; 00:00:39     ; 1.6                     ; 1610 MB             ; 00:00:55                           ;
-; Assembler                 ; 00:00:06     ; 1.0                     ; 598 MB              ; 00:00:06                           ;
-; PowerPlay Power Analyzer  ; 00:00:15     ; 1.0                     ; 765 MB              ; 00:00:16                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.5                     ; 785 MB              ; 00:00:07                           ;
-; EDA Netlist Writer        ; 00:00:08     ; 1.0                     ; 613 MB              ; 00:00:07                           ;
-; Total                     ; 00:02:25     ; --                      ; --                  ; 00:03:24                           ;
+; Analysis & Synthesis      ; 00:01:19     ; 1.0                     ; 844 MB              ; 00:01:59                           ;
+; Fitter                    ; 00:00:42     ; 1.7                     ; 1638 MB             ; 00:01:00                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 595 MB              ; 00:00:06                           ;
+; PowerPlay Power Analyzer  ; 00:00:15     ; 1.2                     ; 776 MB              ; 00:00:16                           ;
+; TimeQuest Timing Analyzer ; 00:00:07     ; 1.5                     ; 800 MB              ; 00:00:07                           ;
+; EDA Netlist Writer        ; 00:00:10     ; 1.0                     ; 635 MB              ; 00:00:08                           ;
+; Total                     ; 00:02:39     ; --                      ; --                  ; 00:03:36                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
