@@ -13,31 +13,55 @@
 //-------------------------------------------------------------------------
 
 
-module color_mapper (	input [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
+module color_mapper (	input		frame_clk, Reset,
+						input [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
 						input [8:0] brick_exists,
 						input [9:0] brick_width,
 						input [9:0] brick_height,
+									paddle_height,
 						input [99:0] brick_x_vals,
 						input [99:0] brick_y_vals,
-						input			did_win_game, did_lose_game,
+						input		did_win_game, did_lose_game,
 						output logic [7:0] Red, Green, Blue );
     
     logic ball_on, brick_on, edge_of_brick_on, paddle_on;
-//	logic did_win_game, did_lose_game, out_of_bounds;
 	int DistX, DistY, Size;
 	
 	logic [8:0] brick_on_array;
 	logic [8:0] edge_of_brick_array;
+	// animations
+//	logic [99:0] brick_x_anim, brick_y_anim, brick_width_anim, brick_height_anim;
 	
 	assign DistX = DrawX - BallX;
 	assign DistY = DrawY - BallY;
 	assign Size = Ball_size;
+	
+	// Animate removing bricks
+	genvar i;
 	/*
-	assign did_win_game = (brick_exists == '0);
-	assign out_of_bounds = ((BallY + Ball_size) >= 10'd480);
-	always_ff @ (posedge out_of_bounds) begin
-		did_lose_game = 1'b1;
-	end
+	generate
+		for (i = 0; i < 9; i += 1)
+		begin: Brick_animation
+			always_ff @ (posedge frame_clk or posedge Reset)
+			begin
+				if (Reset) begin
+					brick_x_anim[10*i+9 : 10*i] = brick_x_vals[10*i+9 : 10*i];
+					brick_y_anim[10*i+9 : 10*i] = brick_y_vals[10*i+9 : 10*i];
+					brick_width_anim[10*i+9 : 10*i] = brick_width;
+					brick_height_anim[10*i+9 : 10*i] = brick_height;
+				end
+				else if (~brick_exists[i]) begin
+					// do nothing if the width is already zero
+					if (brick_width_anim[10*i+9 : 10*i] > 10'd0) begin
+						brick_x_anim[10*i+9 : 10*i] += 10'd1;
+						brick_y_anim[10*i+9 : 10*i] += 10'd1;
+						brick_width_anim[10*i+9 : 10*i] -= 10'd2;
+						brick_height_anim[10*i+9 : 10*i] -= 10'd2;
+					end
+				end
+			end
+		end
+	endgenerate
 	*/
 	always_comb
 	begin: Ball_on_proc
@@ -47,9 +71,8 @@ module color_mapper (	input [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
 			ball_on = 1'b0;
 	end
 	
-	genvar i;
 	generate
-		for (i = 0; i < 9; i = i+1)
+		for (i = 0; i < 9; i += 1)
 		begin: Brick_on_logic
 			assign brick_on_array[i] = brick_exists[i] && ((brick_x_vals[10*i+9 : 10*i] <= DrawX && DrawX < (brick_x_vals[10*i+9 : 10*i] + brick_width)) && (brick_y_vals[10*i+9 : 10*i] <= DrawY && DrawY < (brick_y_vals[10*i+9 : 10*i] + brick_height)));
 			
@@ -70,7 +93,7 @@ module color_mapper (	input [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
 	
 	assign brick_on = (brick_on_array != 10'd0);
 	assign edge_of_brick_on = (edge_of_brick_array != 10'd0);
-	assign paddle_on = ((brick_x_vals[99:90] <= DrawX && DrawX < (brick_x_vals[99:90] + 10'd80)) && (brick_y_vals[99:90] <= DrawY && DrawY < (brick_y_vals[99:90] + 10'd35)));
+	assign paddle_on = ((brick_x_vals[99:90] <= DrawX && DrawX < (brick_x_vals[99:90] + brick_width)) && (brick_y_vals[99:90] <= DrawY && DrawY < (brick_y_vals[99:90] + paddle_height)));
 	
     always_comb
     begin: RGB_Display

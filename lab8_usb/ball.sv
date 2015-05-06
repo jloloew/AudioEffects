@@ -13,18 +13,21 @@
 //-------------------------------------------------------------------------
 
 
-module  ball (	input Reset, frame_clk,
-				input [9:0] brick_width,
-				input [9:0] brick_height,
-				input [99:0] brick_x_vals,
-				input [99:0] brick_y_vals,
-				output [9:0]  BallX, BallY, BallS,
-				output [8:0] brick_exists
+module  ball (	input			Reset, frame_clk,
+								start_ball,
+				input [9:0]		brick_width,
+				input [9:0]		brick_height,
+								paddle_height,
+				input [99:0]	brick_x_vals,
+				input [99:0]	brick_y_vals,
+				output [9:0]	BallX, BallY, BallS,
+				output [8:0]	brick_exists
 				);
     
     logic [9:0] Ball_X_Pos, Ball_X_Motion, Ball_Y_Pos, Ball_Y_Motion, Ball_Size;
 	logic [1:0] velocity_x, velocity_y;
 	reg   [9:0] brick_exists_n;
+	logic		ball_is_moving;
 	
     parameter [9:0] Ball_X_Center=320;  // Center position on the X axis
     parameter [9:0] Ball_Y_Center=280;  // Center position on the Y axis
@@ -41,7 +44,21 @@ module  ball (	input Reset, frame_clk,
 	assign brick_exists = ~brick_exists_n;
 	
     assign Ball_Size = 4;  // assigns the value 4 as a 10-digit binary number, ie "0000000100"
-   
+	
+	// Ball is moving
+	always_ff @ (posedge frame_clk or posedge Reset or posedge start_ball)
+	begin: Ball_Is_Moving
+		if (Reset)
+			ball_is_moving = 1'b0;
+		else begin
+			if (start_ball)
+				ball_is_moving = 1'b1;
+			else
+				ball_is_moving = ball_is_moving;
+		end
+	end
+	
+	// Ball bouncing
     always_ff @ (posedge frame_clk or posedge Reset)
     begin: Move_Ball
         if (Reset)  // Asynchronous Reset
@@ -107,8 +124,26 @@ module  ball (	input Reset, frame_clk,
 			Ball_X_Pos = (Ball_X_Pos + Ball_X_Motion);
 			
 			// update velocities
-			velocity_x = (Ball_X_Motion[9] != 1'b0) ? 2'b10 : (Ball_X_Motion != 10'b0) ? 2'b01 : 2'b00;
-			velocity_y = (Ball_Y_Motion[9] != 1'b0) ? 2'b10 : (Ball_Y_Motion != 10'b0) ? 2'b01 : 2'b00;
+			if (ball_is_moving) begin
+				// X
+				if (Ball_X_Motion[9] != 1'b0)
+					velocity_x = 2'b10;
+				else if (Ball_X_Motion != 10'b0)
+					velocity_x = 2'b01;
+				else
+					velocity_x = 2'b00;
+				// Y
+				if (Ball_Y_Motion[9] != 1'b0)
+					velocity_y = 2'b10;
+				else if (Ball_Y_Motion != 10'b0)
+					velocity_y = 2'b01;
+				else
+					velocity_y = 2'b00;
+			end
+			else begin
+				velocity_x = 2'b00;
+				velocity_y = 2'b00;
+			end
 		end
 	end
 	
@@ -138,7 +173,7 @@ module  ball (	input Reset, frame_clk,
 	// Brick bouncing
 	genvar i;
 	generate
-		for (i = 0; i < (9+1); i += 1)
+		for (i = 0; i < 9; i += 1)
 		begin: Brick_on_logic
 			assign brick_bounce_x_array[i] =
 			~brick_exists_n[i]
@@ -175,6 +210,42 @@ module  ball (	input Reset, frame_clk,
 			);
 		end
 	endgenerate
+	
+	// Paddle bouncing
+	assign brick_bounce_x_array[9] = (
+		~brick_exists_n[9]
+		// ball's y value is within the brick's y values
+		&& (
+			((Ball_Y_Pos + Ball_Size) > brick_y_vals[99:90]) // ball is below top edge of brick
+			&& (Ball_Y_Pos <= (brick_y_vals[99:90] + paddle_height)) // ball is at least partially within brick
+		)
+		&& (
+			(
+				// ball is straddling left edge
+				(brick_x_vals[99:90] <= (Ball_X_Pos + Ball_Size)) && (brick_x_vals[99:90] > Ball_X_Pos)
+			) || (
+				// ball is straddling right edge
+				((brick_x_vals[99:90] + brick_width) <= (Ball_X_Pos + Ball_Size)) && ((brick_x_vals[99:90] + brick_width) > Ball_X_Pos)
+			)
+		)
+	);
+	assign brick_bounce_y_array[9] = (
+		~brick_exists_n[9]
+		// ball's x value is within the brick's x values
+		&& (
+			((Ball_X_Pos + Ball_Size) > brick_x_vals[99:90]) // ball is before left edge of brick
+			&& (Ball_X_Pos <= (brick_x_vals[99:90] + brick_width)) // ball is at least partially within brick
+		)
+		&& (
+			(
+				// ball is straddling top edge
+				(brick_y_vals[99:90] <= (Ball_Y_Pos + Ball_Size)) && (brick_y_vals[99:90] > Ball_Y_Pos)
+			) || (
+				// ball is straddling bottom edge
+				((brick_y_vals[99:90] + paddle_height) <= (Ball_Y_Pos + Ball_Size)) && ((brick_y_vals[99:90] + paddle_height) > Ball_Y_Pos)
+			)
+		)
+	);
 	
 	assign brick_bounce_x = (brick_bounce_x_array != 10'd0);
 	assign brick_bounce_y = (brick_bounce_y_array != 10'd0);

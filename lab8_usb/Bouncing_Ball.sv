@@ -14,17 +14,19 @@ module Bouncing_Ball (	input				Clk,
 	
 	logic [9:0]		DrawX, DrawY, BallX, BallY, BallS;
 	logic [8:0]		brick_exists;
-	logic [9:0]		brick_width, brick_height;
+	logic [9:0]		brick_width, brick_height, paddle_height;
 	logic [89:0]	brickList_x_vals;
 	reg   [99:0]	brick_x_vals, brick_y_vals;
 	logic			did_win_game, did_lose_game;
 	
 	parameter logic [9:0] paddle_step = 10'd5;
 	
+	assign paddle_height = 10'd35;
+	
 	vga_controller vga_ctrlr (.*, .pixel_clk (VGA_clk));
-	ball mBall (.*, .frame_clk (vs));
+	ball mBall (.*, .frame_clk (vs), .start_ball ((keycode == 8'h04) || (keycode == 8'h07)));
 	BrickList brickList (.*, .frame_clk (vs), .brick_x_vals (brickList_x_vals));
-	color_mapper color_map (.*, .Ball_size (BallS));
+	color_mapper color_map (.*, .frame_clk (vs), .Ball_size (BallS));
 	
 	assign brick_x_vals[89:0] = brickList_x_vals;
 	
