@@ -1,154 +1,130 @@
-# Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
-# do lab8_usb_run_msim_rtl_systemverilog.do 
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do lab8_usb_run_msim_rtl_systemverilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Copying C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
 # vlib usb_system
 # ** Warning: (vlib-34) Library already exists at "usb_system".
 # 
 # vmap usb_system usb_system
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+# vmap -modelsim_quiet usb_system usb_system 
 # Modifying modelsim.ini
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/usb_system.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/usb_system.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:23 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/usb_system.v 
 # -- Compiling module usb_system
 # 
 # Top level modules:
 # 	usb_system
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_reset_controller.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:23 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_reset_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:23 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_reset_controller.v 
 # -- Compiling module altera_reset_controller
 # 
 # Top level modules:
 # 	altera_reset_controller
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_reset_synchronizer.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:23 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_reset_synchronizer.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:23 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_reset_synchronizer.v 
 # -- Compiling module altera_reset_synchronizer
 # 
 # Top level modules:
 # 	altera_reset_synchronizer
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_1.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:23 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_1.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:23 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_1.v 
 # -- Compiling module usb_system_mm_interconnect_1
 # 
 # Top level modules:
 # 	usb_system_mm_interconnect_1
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:23 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:23 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0.v 
 # -- Compiling module usb_system_mm_interconnect_0
 # 
 # Top level modules:
 # 	usb_system_mm_interconnect_0
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_avalon_sc_fifo.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:24 on May 07,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_avalon_sc_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:24 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_avalon_sc_fifo.v 
 # -- Compiling module altera_avalon_sc_fifo
 # 
 # Top level modules:
 # 	altera_avalon_sc_fifo
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_avalon_mm_clock_crossing_bridge.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module altera_avalon_mm_clock_crossing_bridge
+# End time: 10:31:24 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_sysid_qsys_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:24 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_sysid_qsys_0.v 
+# -- Compiling module usb_system_sysid_qsys_0
 # 
 # Top level modules:
-# 	altera_avalon_mm_clock_crossing_bridge
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_avalon_dc_fifo.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module altera_avalon_dc_fifo
+# 	usb_system_sysid_qsys_0
+# End time: 10:31:24 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_sdram.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:24 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_sdram.v 
+# -- Compiling module usb_system_sdram_input_efifo_module
+# -- Compiling module usb_system_sdram
 # 
 # Top level modules:
-# 	altera_avalon_dc_fifo
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_dcfifo_synchronizer_bundle.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module altera_dcfifo_synchronizer_bundle
+# 	usb_system_sdram
+# End time: 10:31:24 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_red_leds.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:24 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_red_leds.v 
+# -- Compiling module usb_system_red_leds
 # 
 # Top level modules:
-# 	altera_dcfifo_synchronizer_bundle
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/CY7C67200_IF.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module CY7C67200_IF
-# 
-# Top level modules:
-# 	CY7C67200_IF
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_keycode.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# 	usb_system_red_leds
+# End time: 10:31:24 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_keycode.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:24 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_keycode.v 
 # -- Compiling module usb_system_keycode
 # 
 # Top level modules:
 # 	usb_system_keycode
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_clocks.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module usb_system_clocks_dffpipe_l2c
-# -- Compiling module usb_system_clocks_stdsync_sv6
-# -- Compiling module usb_system_clocks_altpll_pqa2
-# -- Compiling module usb_system_clocks
-# 
-# Top level modules:
-# 	usb_system_clocks
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module usb_system_cpu_register_bank_a_module
-# -- Compiling module usb_system_cpu_register_bank_b_module
-# -- Compiling module usb_system_cpu_nios2_oci_debug
-# -- Compiling module usb_system_cpu_ociram_sp_ram_module
-# -- Compiling module usb_system_cpu_nios2_ocimem
-# -- Compiling module usb_system_cpu_nios2_avalon_reg
-# -- Compiling module usb_system_cpu_nios2_oci_break
-# -- Compiling module usb_system_cpu_nios2_oci_xbrk
-# -- Compiling module usb_system_cpu_nios2_oci_dbrk
-# -- Compiling module usb_system_cpu_nios2_oci_itrace
-# -- Compiling module usb_system_cpu_nios2_oci_td_mode
-# -- Compiling module usb_system_cpu_nios2_oci_dtrace
-# -- Compiling module usb_system_cpu_nios2_oci_compute_input_tm_cnt
-# -- Compiling module usb_system_cpu_nios2_oci_fifo_wrptr_inc
-# -- Compiling module usb_system_cpu_nios2_oci_fifo_cnt_inc
-# -- Compiling module usb_system_cpu_nios2_oci_fifo
-# -- Compiling module usb_system_cpu_nios2_oci_pib
-# -- Compiling module usb_system_cpu_nios2_oci_im
-# -- Compiling module usb_system_cpu_nios2_performance_monitors
-# -- Compiling module usb_system_cpu_nios2_oci
-# -- Compiling module usb_system_cpu
-# 
-# Top level modules:
-# 	usb_system_cpu_nios2_performance_monitors
-# 	usb_system_cpu
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_jtag_debug_module_sysclk.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module usb_system_cpu_jtag_debug_module_sysclk
-# 
-# Top level modules:
-# 	usb_system_cpu_jtag_debug_module_sysclk
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_jtag_debug_module_tck.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module usb_system_cpu_jtag_debug_module_tck
-# 
-# Top level modules:
-# 	usb_system_cpu_jtag_debug_module_tck
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_jtag_debug_module_wrapper.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module usb_system_cpu_jtag_debug_module_wrapper
-# 
-# Top level modules:
-# 	usb_system_cpu_jtag_debug_module_wrapper
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_oci_test_bench.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module usb_system_cpu_oci_test_bench
-# 
-# Top level modules:
-# 	usb_system_cpu_oci_test_bench
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_test_bench.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module usb_system_cpu_test_bench
-# 
-# Top level modules:
-# 	usb_system_cpu_test_bench
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_jtag_uart.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:24 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_jtag_uart.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:24 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_jtag_uart.v 
 # -- Compiling module usb_system_jtag_uart_sim_scfifo_w
 # -- Compiling module usb_system_jtag_uart_scfifo_w
 # -- Compiling module usb_system_jtag_uart_sim_scfifo_r
@@ -157,180 +133,617 @@
 # 
 # Top level modules:
 # 	usb_system_jtag_uart
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_sdram.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module usb_system_sdram_input_efifo_module
-# -- Compiling module usb_system_sdram
+# End time: 10:31:24 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:24 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu.v 
+# -- Compiling module usb_system_cpu
 # 
 # Top level modules:
-# 	usb_system_sdram
-# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/HexDriver.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# 	usb_system_cpu
+# End time: 10:31:24 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_cpu.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:24 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_cpu.v 
+# -- Compiling module usb_system_cpu_cpu_register_bank_a_module
+# -- Compiling module usb_system_cpu_cpu_register_bank_b_module
+# -- Compiling module usb_system_cpu_cpu_nios2_oci_debug
+# -- Compiling module usb_system_cpu_cpu_nios2_oci_break
+# -- Compiling module usb_system_cpu_cpu_nios2_oci_xbrk
+# -- Compiling module usb_system_cpu_cpu_nios2_oci_dbrk
+# -- Compiling module usb_system_cpu_cpu_nios2_oci_itrace
+# -- Compiling module usb_system_cpu_cpu_nios2_oci_td_mode
+# -- Compiling module usb_system_cpu_cpu_nios2_oci_dtrace
+# -- Compiling module usb_system_cpu_cpu_nios2_oci_compute_input_tm_cnt
+# -- Compiling module usb_system_cpu_cpu_nios2_oci_fifo_wrptr_inc
+# -- Compiling module usb_system_cpu_cpu_nios2_oci_fifo_cnt_inc
+# -- Compiling module usb_system_cpu_cpu_nios2_oci_fifo
+# -- Compiling module usb_system_cpu_cpu_nios2_oci_pib
+# -- Compiling module usb_system_cpu_cpu_nios2_oci_im
+# -- Compiling module usb_system_cpu_cpu_nios2_performance_monitors
+# -- Compiling module usb_system_cpu_cpu_nios2_avalon_reg
+# -- Compiling module usb_system_cpu_cpu_ociram_sp_ram_module
+# -- Compiling module usb_system_cpu_cpu_nios2_ocimem
+# -- Compiling module usb_system_cpu_cpu_nios2_oci
+# -- Compiling module usb_system_cpu_cpu
+# 
+# Top level modules:
+# 	usb_system_cpu_cpu_nios2_performance_monitors
+# 	usb_system_cpu_cpu
+# End time: 10:31:25 on May 07,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_cpu_debug_slave_sysclk.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:25 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_cpu_debug_slave_sysclk.v 
+# -- Compiling module usb_system_cpu_cpu_debug_slave_sysclk
+# 
+# Top level modules:
+# 	usb_system_cpu_cpu_debug_slave_sysclk
+# End time: 10:31:25 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_cpu_debug_slave_tck.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:25 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_cpu_debug_slave_tck.v 
+# -- Compiling module usb_system_cpu_cpu_debug_slave_tck
+# 
+# Top level modules:
+# 	usb_system_cpu_cpu_debug_slave_tck
+# End time: 10:31:25 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_cpu_debug_slave_wrapper.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:25 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_cpu_debug_slave_wrapper.v 
+# -- Compiling module usb_system_cpu_cpu_debug_slave_wrapper
+# 
+# Top level modules:
+# 	usb_system_cpu_cpu_debug_slave_wrapper
+# End time: 10:31:25 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_cpu_oci_test_bench.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:25 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_cpu_oci_test_bench.v 
+# -- Compiling module usb_system_cpu_cpu_oci_test_bench
+# 
+# Top level modules:
+# 	usb_system_cpu_cpu_oci_test_bench
+# End time: 10:31:25 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_cpu_test_bench.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:25 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_cpu_cpu_test_bench.v 
+# -- Compiling module usb_system_cpu_cpu_test_bench
+# 
+# Top level modules:
+# 	usb_system_cpu_cpu_test_bench
+# End time: 10:31:25 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_clocks.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:25 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_clocks.v 
+# -- Compiling module usb_system_clocks_dffpipe_l2c
+# -- Compiling module usb_system_clocks_stdsync_sv6
+# -- Compiling module usb_system_clocks_altpll_pqa2
+# -- Compiling module usb_system_clocks
+# 
+# Top level modules:
+# 	usb_system_clocks
+# End time: 10:31:26 on May 07,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_avalon_mm_clock_crossing_bridge.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:26 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_avalon_mm_clock_crossing_bridge.v 
+# -- Compiling module altera_avalon_mm_clock_crossing_bridge
+# 
+# Top level modules:
+# 	altera_avalon_mm_clock_crossing_bridge
+# End time: 10:31:26 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_avalon_dc_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:26 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_avalon_dc_fifo.v 
+# -- Compiling module altera_avalon_dc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_dc_fifo
+# End time: 10:31:26 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_dcfifo_synchronizer_bundle.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:26 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_dcfifo_synchronizer_bundle.v 
+# -- Compiling module altera_dcfifo_synchronizer_bundle
+# 
+# Top level modules:
+# 	altera_dcfifo_synchronizer_bundle
+# End time: 10:31:26 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_std_synchronizer_nocut.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:26 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_std_synchronizer_nocut.v 
+# -- Compiling module altera_std_synchronizer_nocut
+# 
+# Top level modules:
+# 	altera_std_synchronizer_nocut
+# End time: 10:31:26 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_audio_pll_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:26 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_audio_pll_0.v 
+# -- Compiling module usb_system_audio_pll_0
+# 
+# Top level modules:
+# 	usb_system_audio_pll_0
+# End time: 10:31:26 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:26 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v 
+# -- Compiling module altera_up_avalon_reset_from_locked_signal
+# 
+# Top level modules:
+# 	altera_up_avalon_reset_from_locked_signal
+# End time: 10:31:26 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_altpll.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:26 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_altpll.v 
+# -- Compiling module altera_up_altpll
+# 
+# Top level modules:
+# 	altera_up_altpll
+# End time: 10:31:26 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_av_config_serial_bus_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:26 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_av_config_serial_bus_controller.v 
+# -- Compiling module altera_up_av_config_serial_bus_controller
+# 
+# Top level modules:
+# 	altera_up_av_config_serial_bus_controller
+# End time: 10:31:26 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_slow_clock_generator.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:26 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_slow_clock_generator.v 
+# -- Compiling module altera_up_slow_clock_generator
+# 
+# Top level modules:
+# 	altera_up_slow_clock_generator
+# End time: 10:31:26 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_av_config_auto_init.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:26 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_av_config_auto_init.v 
+# -- Compiling module altera_up_av_config_auto_init
+# 
+# Top level modules:
+# 	altera_up_av_config_auto_init
+# End time: 10:31:26 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_av_config_auto_init_ob_de2_115.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:26 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_av_config_auto_init_ob_de2_115.v 
+# -- Compiling module altera_up_av_config_auto_init_ob_de2_115
+# 
+# Top level modules:
+# 	altera_up_av_config_auto_init_ob_de2_115
+# End time: 10:31:26 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_av_config_auto_init_ob_audio.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:26 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_av_config_auto_init_ob_audio.v 
+# -- Compiling module altera_up_av_config_auto_init_ob_audio
+# 
+# Top level modules:
+# 	altera_up_av_config_auto_init_ob_audio
+# End time: 10:31:27 on May 07,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_av_config_auto_init_ob_adv7180.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:27 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_av_config_auto_init_ob_adv7180.v 
+# -- Compiling module altera_up_av_config_auto_init_ob_adv7180
+# 
+# Top level modules:
+# 	altera_up_av_config_auto_init_ob_adv7180
+# End time: 10:31:27 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_audio_config.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:27 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_audio_config.v 
+# -- Compiling module usb_system_audio_config
+# 
+# Top level modules:
+# 	usb_system_audio_config
+# End time: 10:31:27 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_audio_bit_counter.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:27 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_audio_bit_counter.v 
+# -- Compiling module altera_up_audio_bit_counter
+# 
+# Top level modules:
+# 	altera_up_audio_bit_counter
+# End time: 10:31:27 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_audio_in_deserializer.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:27 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_audio_in_deserializer.v 
+# -- Compiling module altera_up_audio_in_deserializer
+# 
+# Top level modules:
+# 	altera_up_audio_in_deserializer
+# End time: 10:31:27 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_audio_out_serializer.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:27 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_audio_out_serializer.v 
+# -- Compiling module altera_up_audio_out_serializer
+# 
+# Top level modules:
+# 	altera_up_audio_out_serializer
+# End time: 10:31:27 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_clock_edge.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:27 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_clock_edge.v 
+# -- Compiling module altera_up_clock_edge
+# 
+# Top level modules:
+# 	altera_up_clock_edge
+# End time: 10:31:27 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_sync_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:27 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_up_sync_fifo.v 
+# -- Compiling module altera_up_sync_fifo
+# 
+# Top level modules:
+# 	altera_up_sync_fifo
+# End time: 10:31:27 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_audio.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:27 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_audio.v 
+# -- Compiling module usb_system_audio
+# 
+# Top level modules:
+# 	usb_system_audio
+# End time: 10:31:27 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_all_switches.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:27 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_all_switches.v 
+# -- Compiling module usb_system_all_switches
+# 
+# Top level modules:
+# 	usb_system_all_switches
+# End time: 10:31:27 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/CY7C67200_IF.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:27 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/CY7C67200_IF.v 
+# -- Compiling module CY7C67200_IF
+# 
+# Top level modules:
+# 	CY7C67200_IF
+# End time: 10:31:27 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/font_rom.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:27 on May 07,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/font_rom.sv 
+# -- Compiling module font_rom
+# 
+# Top level modules:
+# 	font_rom
+# End time: 10:31:27 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/BrickList.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:28 on May 07,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/BrickList.sv 
+# -- Compiling module BrickList
+# 
+# Top level modules:
+# 	BrickList
+# End time: 10:31:28 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/HexDriver.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:28 on May 07,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/HexDriver.sv 
 # -- Compiling module HexDriver
 # 
 # Top level modules:
 # 	HexDriver
-# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/VGA_controller.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:28 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/VGA_controller.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:28 on May 07,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/VGA_controller.sv 
 # -- Compiling module vga_controller
 # 
 # Top level modules:
 # 	vga_controller
-# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/Color_Mapper.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:28 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/Color_Mapper.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:28 on May 07,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/Color_Mapper.sv 
 # -- Compiling module color_mapper
 # 
 # Top level modules:
 # 	color_mapper
-# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/ball.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:28 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/ball.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:28 on May 07,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/ball.sv 
 # -- Compiling module ball
 # 
 # Top level modules:
 # 	ball
-# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/lab8_usb.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lab8_usb
-# 
-# Top level modules:
-# 	lab8_usb
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_irq_clock_crosser.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:28 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_irq_clock_crosser.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:28 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_irq_clock_crosser.sv 
 # -- Compiling module altera_irq_clock_crosser
 # 
 # Top level modules:
 # 	altera_irq_clock_crosser
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_irq_mapper.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:28 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_irq_mapper.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:28 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_irq_mapper.sv 
 # -- Compiling module usb_system_irq_mapper
 # 
 # Top level modules:
 # 	usb_system_irq_mapper
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_translator.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:28 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:28 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_translator.sv 
 # -- Compiling module altera_merlin_slave_translator
 # 
 # Top level modules:
 # 	altera_merlin_slave_translator
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_merlin_master_translator.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:28 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_master_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:28 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_master_translator.sv 
 # -- Compiling module altera_merlin_master_translator
 # 
 # Top level modules:
 # 	altera_merlin_master_translator
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:28 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:28 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v 
 # -- Compiling module altera_avalon_st_handshake_clock_crosser
 # 
 # Top level modules:
 # 	altera_avalon_st_handshake_clock_crosser
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_avalon_st_clock_crosser.v}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:28 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_avalon_st_clock_crosser.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:28 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_avalon_st_clock_crosser.v 
 # -- Compiling module altera_avalon_st_clock_crosser
 # 
 # Top level modules:
 # 	altera_avalon_st_clock_crosser
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_merlin_arbitrator.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:28 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_arbitrator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:28 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_arbitrator.sv 
 # -- Compiling module altera_merlin_arbitrator
 # -- Compiling module altera_merlin_arb_adder
 # 
 # Top level modules:
 # 	altera_merlin_arbitrator
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_rsp_mux_001.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:29 on May 07,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_rsp_mux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:29 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_rsp_mux_001.sv 
 # -- Compiling module usb_system_mm_interconnect_0_rsp_mux_001
 # 
 # Top level modules:
 # 	usb_system_mm_interconnect_0_rsp_mux_001
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_rsp_mux.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:29 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_rsp_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:29 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_rsp_mux.sv 
 # -- Compiling module usb_system_mm_interconnect_0_rsp_mux
 # 
 # Top level modules:
 # 	usb_system_mm_interconnect_0_rsp_mux
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_rsp_demux_003.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:29 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_rsp_demux_003.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:29 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_rsp_demux_003.sv 
 # -- Compiling module usb_system_mm_interconnect_0_rsp_demux_003
 # 
 # Top level modules:
 # 	usb_system_mm_interconnect_0_rsp_demux_003
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_rsp_demux.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:29 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_rsp_demux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:29 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_rsp_demux_001.sv 
+# -- Compiling module usb_system_mm_interconnect_0_rsp_demux_001
+# 
+# Top level modules:
+# 	usb_system_mm_interconnect_0_rsp_demux_001
+# End time: 10:31:29 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_rsp_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:29 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_rsp_demux.sv 
 # -- Compiling module usb_system_mm_interconnect_0_rsp_demux
 # 
 # Top level modules:
 # 	usb_system_mm_interconnect_0_rsp_demux
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_cmd_mux_003.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:29 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_cmd_mux_003.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:29 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_cmd_mux_003.sv 
 # -- Compiling module usb_system_mm_interconnect_0_cmd_mux_003
 # 
 # Top level modules:
 # 	usb_system_mm_interconnect_0_cmd_mux_003
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_cmd_mux.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:29 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_cmd_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:29 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_cmd_mux.sv 
 # -- Compiling module usb_system_mm_interconnect_0_cmd_mux
 # 
 # Top level modules:
 # 	usb_system_mm_interconnect_0_cmd_mux
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_cmd_demux_001.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:29 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_cmd_demux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:29 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_cmd_demux_001.sv 
 # -- Compiling module usb_system_mm_interconnect_0_cmd_demux_001
 # 
 # Top level modules:
 # 	usb_system_mm_interconnect_0_cmd_demux_001
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_cmd_demux.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:29 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_cmd_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:29 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_cmd_demux.sv 
 # -- Compiling module usb_system_mm_interconnect_0_cmd_demux
 # 
 # Top level modules:
 # 	usb_system_mm_interconnect_0_cmd_demux
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_router_005.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:29 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_router_005.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:29 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_router_005.sv 
 # -- Compiling module usb_system_mm_interconnect_0_router_005_default_decode
 # -- Compiling module usb_system_mm_interconnect_0_router_005
 # 
 # Top level modules:
 # 	usb_system_mm_interconnect_0_router_005
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_router_002.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:30 on May 07,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_router_002.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:30 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_router_002.sv 
 # -- Compiling module usb_system_mm_interconnect_0_router_002_default_decode
 # -- Compiling module usb_system_mm_interconnect_0_router_002
 # 
 # Top level modules:
 # 	usb_system_mm_interconnect_0_router_002
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_router_001.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:30 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_router_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:30 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_router_001.sv 
 # -- Compiling module usb_system_mm_interconnect_0_router_001_default_decode
 # -- Compiling module usb_system_mm_interconnect_0_router_001
 # 
 # Top level modules:
 # 	usb_system_mm_interconnect_0_router_001
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_router.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:30 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_router.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:30 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/usb_system_mm_interconnect_0_router.sv 
 # -- Compiling module usb_system_mm_interconnect_0_router_default_decode
 # -- Compiling module usb_system_mm_interconnect_0_router
 # 
 # Top level modules:
 # 	usb_system_mm_interconnect_0_router
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:30 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:30 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv 
 # -- Compiling module altera_merlin_slave_agent
-# ** Warning: C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv(606): (vlog-2186) SystemVerilog testbench feature
+# ** Warning: C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv(597): (vlog-2186) SystemVerilog testbench feature
 # 
 # (randomization, coverage or assertion) detected in the design.
 # 
 # These features are only supported in Questasim.
 # 
-# ** Warning: C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv(486): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv(479): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
 # 
-# ** Warning: C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv(487): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv(480): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
 # 
-# ** Warning: C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv(481): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
 # 
-# ** Warning: C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv(482): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
 # 
-# ** Warning: C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# ** Warning: C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
 # 
 # (randomization, coverage or assertion) detected in the design.
 # 
@@ -339,68 +752,91 @@
 # 
 # Top level modules:
 # 	altera_merlin_slave_agent
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:30 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:30 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv 
 # -- Compiling module altera_merlin_burst_uncompressor
 # 
 # Top level modules:
 # 	altera_merlin_burst_uncompressor
-# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/usb_system/synthesis/submodules/altera_merlin_master_agent.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 10:31:30 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work usb_system +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_master_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:30 on May 07,2015
+# vlog -reportprogress 300 -sv -work usb_system "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_master_agent.sv 
 # -- Compiling module altera_merlin_master_agent
 # 
 # Top level modules:
 # 	altera_merlin_master_agent
+# End time: 10:31:30 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/Bouncing_Ball.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:30 on May 07,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/Bouncing_Ball.sv 
+# -- Compiling module Bouncing_Ball
 # 
-vsim work.lab8_usb
-# vsim work.lab8_usb 
-# Loading sv_std.std
-# Loading work.lab8_usb
-# ** Error: (vsim-3033) C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/lab8_usb.sv(77): Instantiation of 'usb_system' failed. The design unit was not found.
+# Top level modules:
+# 	Bouncing_Ball
+# End time: 10:31:30 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/text_luser.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:30 on May 07,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/text_luser.sv 
+# -- Compiling module text_luser
 # 
-#         Region: /lab8_usb
-#         Searched libraries:
-#             C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/simulation/modelsim/rtl_work
-# Loading work.HexDriver
-# Loading work.vga_controller
-# Loading work.ball
-# Loading work.color_mapper
-# Error loading design
-vsim work.lab8_usb
-# vsim work.lab8_usb 
-# Loading sv_std.std
-# Loading work.lab8_usb
-# ** Error: (vsim-3033) C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/lab8_usb.sv(77): Instantiation of 'usb_system' failed. The design unit was not found.
+# Top level modules:
+# 	text_luser
+# End time: 10:31:30 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/lab8_usb.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:30 on May 07,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/lab8_usb.sv 
+# -- Compiling module lab8_usb
 # 
-#         Region: /lab8_usb
-#         Searched libraries:
-#             C:/Users/Justin/Documents/ece385/lab8/lab8_usb/lab8_usb/simulation/modelsim/rtl_work
-# Loading work.HexDriver
-# Loading work.vga_controller
-# Loading work.ball
-# Loading work.color_mapper
-# Error loading design
-vsim work.color_mapper
-# vsim work.color_mapper 
+# Top level modules:
+# 	lab8_usb
+# End time: 10:31:30 on May 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb {C:/Users/Justin/Documents/ece385/final_project/lab8_usb/testbench_color_mapper.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:31:30 on May 07,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Justin/Documents/ece385/final_project/lab8_usb" C:/Users/Justin/Documents/ece385/final_project/lab8_usb/testbench_color_mapper.sv 
+# -- Compiling module testbench_color_mapper
+# 
+# Top level modules:
+# 	testbench_color_mapper
+# End time: 10:31:31 on May 07,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L usb_system -voptargs="+acc"  testbench_color_mapper
+# vsim -gui "+altera" -l msim_transcript -do "lab8_usb_run_msim_rtl_systemverilog.do" 
+# Start time: 10:31:31 on May 07,2015
 # Loading sv_std.std
+# Loading work.testbench_color_mapper
 # Loading work.color_mapper
-add wave  \
-sim:/color_mapper/BallX \
-sim:/color_mapper/BallY \
-sim:/color_mapper/DrawX \
-sim:/color_mapper/DrawY \
-sim:/color_mapper/Ball_size \
-sim:/color_mapper/Red \
-sim:/color_mapper/Green \
-sim:/color_mapper/Blue
-run
-run
-run
-run
-run
-run
-run
-vsim work.ball
-# vsim work.ball 
-# Loading sv_std.std
-# Loading work.ball
+# Loading work.text_luser
+# Loading work.font_rom
+# ** Warning: (vsim-3839) C:/Users/Justin/Documents/ece385/final_project/lab8_usb/Color_Mapper.sv(37): Variable '/testbench_color_mapper/color_mapper_0/spriteSizeY', driven via a port connection, is multiply driven. See C:/Users/Justin/Documents/ece385/final_project/lab8_usb/Color_Mapper.sv(38).
+# 
+#         Region: /testbench_color_mapper/color_mapper_0
+# ** Warning: (vsim-3839) C:/Users/Justin/Documents/ece385/final_project/lab8_usb/Color_Mapper.sv(36): Variable '/testbench_color_mapper/color_mapper_0/spriteSizeX', driven via a port connection, is multiply driven. See C:/Users/Justin/Documents/ece385/final_project/lab8_usb/Color_Mapper.sv(38).
+# 
+#         Region: /testbench_color_mapper/color_mapper_0
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ms
+# Great success!
+# End time: 10:44:35 on May 07,2015, Elapsed time: 0:13:04
+# Errors: 0, Warnings: 2

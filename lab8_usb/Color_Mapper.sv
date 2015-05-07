@@ -13,7 +13,7 @@
 //-------------------------------------------------------------------------
 
 
-module color_mapper (	input		frame_clk, Reset,
+module color_mapper (	input logic		frame_clk, Reset,
 						input [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
 						input [8:0] brick_exists,
 						input [9:0] brick_width,
