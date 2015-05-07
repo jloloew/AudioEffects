@@ -1,6 +1,9 @@
 	usb_system u0 (
+		.all_switches_wire_export (<connected-to-all_switches_wire_export>), // all_switches_wire.export
 		.clk_clk                  (<connected-to-clk_clk>),                  //               clk.clk
 		.keycode_export           (<connected-to-keycode_export>),           //           keycode.export
+		.led_wire_export          (<connected-to-led_wire_export>),          //          led_wire.export
+		.red_leds_wire_export     (<connected-to-red_leds_wire_export>),     //     red_leds_wire.export
 		.reset_reset_n            (<connected-to-reset_reset_n>),            //             reset.reset_n
 		.sdram_out_clk_clk        (<connected-to-sdram_out_clk_clk>),        //     sdram_out_clk.clk
 		.sdram_wire_addr          (<connected-to-sdram_wire_addr>),          //        sdram_wire.addr
@@ -19,9 +22,6 @@
 		.usb_CS_N                 (<connected-to-usb_CS_N>),                 //                  .CS_N
 		.usb_RST_N                (<connected-to-usb_RST_N>),                //                  .RST_N
 		.usb_INT                  (<connected-to-usb_INT>),                  //                  .INT
-		.usb_out_clk_clk          (<connected-to-usb_out_clk_clk>),          //       usb_out_clk.clk
-		.led_wire_export          (<connected-to-led_wire_export>),          //          led_wire.export
-		.all_switches_wire_export (<connected-to-all_switches_wire_export>), // all_switches_wire.export
-		.red_leds_wire_export     (<connected-to-red_leds_wire_export>)      //     red_leds_wire.export
+		.usb_out_clk_clk          (<connected-to-usb_out_clk_clk>)           //       usb_out_clk.clk
 	);
 

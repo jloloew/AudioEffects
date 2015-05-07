@@ -1,7 +1,10 @@
 
 module usb_system (
+	all_switches_wire_export,
 	clk_clk,
 	keycode_export,
+	led_wire_export,
+	red_leds_wire_export,
 	reset_reset_n,
 	sdram_out_clk_clk,
 	sdram_wire_addr,
@@ -20,13 +23,13 @@ module usb_system (
 	usb_CS_N,
 	usb_RST_N,
 	usb_INT,
-	usb_out_clk_clk,
-	led_wire_export,
-	all_switches_wire_export,
-	red_leds_wire_export);	
+	usb_out_clk_clk);	
 
+	input	[17:0]	all_switches_wire_export;
 	input		clk_clk;
 	output	[7:0]	keycode_export;
+	output	[7:0]	led_wire_export;
+	output	[17:0]	red_leds_wire_export;
 	input		reset_reset_n;
 	output		sdram_out_clk_clk;
 	output	[12:0]	sdram_wire_addr;
@@ -46,7 +49,4 @@ module usb_system (
 	output		usb_RST_N;
 	input		usb_INT;
 	output		usb_out_clk_clk;
-	output	[7:0]	led_wire_export;
-	input	[17:0]	all_switches_wire_export;
-	output	[17:0]	red_leds_wire_export;
 endmodule

@@ -1,7 +1,10 @@
 	component usb_system is
 		port (
+			all_switches_wire_export : in    std_logic_vector(17 downto 0) := (others => 'X'); -- export
 			clk_clk                  : in    std_logic                     := 'X';             -- clk
 			keycode_export           : out   std_logic_vector(7 downto 0);                     -- export
+			led_wire_export          : out   std_logic_vector(7 downto 0);                     -- export
+			red_leds_wire_export     : out   std_logic_vector(17 downto 0);                    -- export
 			reset_reset_n            : in    std_logic                     := 'X';             -- reset_n
 			sdram_out_clk_clk        : out   std_logic;                                        -- clk
 			sdram_wire_addr          : out   std_logic_vector(12 downto 0);                    -- addr
@@ -20,17 +23,17 @@
 			usb_CS_N                 : out   std_logic;                                        -- CS_N
 			usb_RST_N                : out   std_logic;                                        -- RST_N
 			usb_INT                  : in    std_logic                     := 'X';             -- INT
-			usb_out_clk_clk          : out   std_logic;                                        -- clk
-			led_wire_export          : out   std_logic_vector(7 downto 0);                     -- export
-			all_switches_wire_export : in    std_logic_vector(17 downto 0) := (others => 'X'); -- export
-			red_leds_wire_export     : out   std_logic_vector(17 downto 0)                     -- export
+			usb_out_clk_clk          : out   std_logic                                         -- clk
 		);
 	end component usb_system;
 
 	u0 : component usb_system
 		port map (
+			all_switches_wire_export => CONNECTED_TO_all_switches_wire_export, -- all_switches_wire.export
 			clk_clk                  => CONNECTED_TO_clk_clk,                  --               clk.clk
 			keycode_export           => CONNECTED_TO_keycode_export,           --           keycode.export
+			led_wire_export          => CONNECTED_TO_led_wire_export,          --          led_wire.export
+			red_leds_wire_export     => CONNECTED_TO_red_leds_wire_export,     --     red_leds_wire.export
 			reset_reset_n            => CONNECTED_TO_reset_reset_n,            --             reset.reset_n
 			sdram_out_clk_clk        => CONNECTED_TO_sdram_out_clk_clk,        --     sdram_out_clk.clk
 			sdram_wire_addr          => CONNECTED_TO_sdram_wire_addr,          --        sdram_wire.addr
@@ -49,9 +52,6 @@
 			usb_CS_N                 => CONNECTED_TO_usb_CS_N,                 --                  .CS_N
 			usb_RST_N                => CONNECTED_TO_usb_RST_N,                --                  .RST_N
 			usb_INT                  => CONNECTED_TO_usb_INT,                  --                  .INT
-			usb_out_clk_clk          => CONNECTED_TO_usb_out_clk_clk,          --       usb_out_clk.clk
-			led_wire_export          => CONNECTED_TO_led_wire_export,          --          led_wire.export
-			all_switches_wire_export => CONNECTED_TO_all_switches_wire_export, -- all_switches_wire.export
-			red_leds_wire_export     => CONNECTED_TO_red_leds_wire_export      --     red_leds_wire.export
+			usb_out_clk_clk          => CONNECTED_TO_usb_out_clk_clk           --       usb_out_clk.clk
 		);
 

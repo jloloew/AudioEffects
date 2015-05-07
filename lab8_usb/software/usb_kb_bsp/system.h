@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'usb_system'
  * SOPC Builder design path: ../../usb_system.sopcinfo
  *
- * Generated: Wed May 06 18:56:12 CDT 2015
+ * Generated: Wed May 06 19:17:48 CDT 2015
  */
 
 /*
@@ -393,7 +393,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1430955832
+#define SYSID_QSYS_0_TIMESTAMP 1430957044
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */

@@ -37,7 +37,7 @@
    {
       datum _sortIndex
       {
-         value = "16";
+         value = "12";
          type = "int";
       }
    }
@@ -222,7 +222,7 @@
    {
       datum _sortIndex
       {
-         value = "15";
+         value = "11";
          type = "int";
       }
    }
@@ -243,7 +243,7 @@
    {
       datum _sortIndex
       {
-         value = "17";
+         value = "13";
          type = "int";
       }
    }
@@ -294,70 +294,6 @@
       datum baseAddress
       {
          value = "285216936";
-         type = "String";
-      }
-   }
-   element to_hw_port
-   {
-      datum _sortIndex
-      {
-         value = "11";
-         type = "int";
-      }
-   }
-   element to_hw_port.s1
-   {
-      datum baseAddress
-      {
-         value = "285216880";
-         type = "String";
-      }
-   }
-   element to_hw_sig
-   {
-      datum _sortIndex
-      {
-         value = "12";
-         type = "int";
-      }
-   }
-   element to_hw_sig.s1
-   {
-      datum baseAddress
-      {
-         value = "285216864";
-         type = "String";
-      }
-   }
-   element to_sw_port
-   {
-      datum _sortIndex
-      {
-         value = "14";
-         type = "int";
-      }
-   }
-   element to_sw_port.s1
-   {
-      datum baseAddress
-      {
-         value = "285216832";
-         type = "String";
-      }
-   }
-   element to_sw_sig
-   {
-      datum _sortIndex
-      {
-         value = "13";
-         type = "int";
-      }
-   }
-   element to_sw_sig.s1
-   {
-      datum baseAddress
-      {
-         value = "285216848";
          type = "String";
       }
    }
@@ -924,62 +860,6 @@
   <parameter name="id" value="0" />
   <parameter name="timestamp" value="0" />
  </module>
- <module name="to_hw_port" kind="altera_avalon_pio" version="14.1" enabled="0">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
-  <parameter name="direction" value="Output" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="8" />
- </module>
- <module name="to_hw_sig" kind="altera_avalon_pio" version="14.1" enabled="0">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
-  <parameter name="direction" value="Output" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="2" />
- </module>
- <module name="to_sw_port" kind="altera_avalon_pio" version="14.1" enabled="0">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
-  <parameter name="direction" value="Input" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="8" />
- </module>
- <module name="to_sw_sig" kind="altera_avalon_pio" version="14.1" enabled="0">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
-  <parameter name="direction" value="Input" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="2" />
- </module>
  <connection
    kind="avalon"
    version="14.1"
@@ -1033,42 +913,6 @@
  <connection kind="avalon" version="14.1" start="cpu.data_master" end="sdram.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x08000000" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="14.1"
-   start="cpu.data_master"
-   end="to_hw_port.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x11001070" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="14.1"
-   start="cpu.data_master"
-   end="to_hw_sig.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x11001060" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="14.1"
-   start="cpu.data_master"
-   end="to_sw_sig.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x11001050" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="14.1"
-   start="cpu.data_master"
-   end="to_sw_port.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x11001040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="avalon" version="14.1" start="cpu.data_master" end="led.s1">
@@ -1164,10 +1008,6 @@
  <connection kind="clock" version="14.1" start="clk.clk" end="jtag_uart.clk" />
  <connection kind="clock" version="14.1" start="clk.clk" end="keycode.clk" />
  <connection kind="clock" version="14.1" start="clk.clk" end="sysid_qsys_0.clk" />
- <connection kind="clock" version="14.1" start="clk.clk" end="to_hw_port.clk" />
- <connection kind="clock" version="14.1" start="clk.clk" end="to_hw_sig.clk" />
- <connection kind="clock" version="14.1" start="clk.clk" end="to_sw_sig.clk" />
- <connection kind="clock" version="14.1" start="clk.clk" end="to_sw_port.clk" />
  <connection kind="clock" version="14.1" start="clk.clk" end="led.clk" />
  <connection kind="clock" version="14.1" start="clk.clk" end="all_switches.clk" />
  <connection kind="clock" version="14.1" start="clk.clk" end="red_leds.clk" />
@@ -1219,26 +1059,6 @@
    version="14.1"
    start="clk.clk_reset"
    end="sysid_qsys_0.reset" />
- <connection
-   kind="reset"
-   version="14.1"
-   start="clk.clk_reset"
-   end="to_hw_port.reset" />
- <connection
-   kind="reset"
-   version="14.1"
-   start="clk.clk_reset"
-   end="to_hw_sig.reset" />
- <connection
-   kind="reset"
-   version="14.1"
-   start="clk.clk_reset"
-   end="to_sw_sig.reset" />
- <connection
-   kind="reset"
-   version="14.1"
-   start="clk.clk_reset"
-   end="to_sw_port.reset" />
  <connection kind="reset" version="14.1" start="clk.clk_reset" end="led.reset" />
  <connection
    kind="reset"

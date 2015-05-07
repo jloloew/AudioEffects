@@ -1,37 +1,39 @@
 # # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
 # 
+preplace inst usb_system.red_leds -pg 1 -lvl 3 -y 670
 preplace inst usb_system.cpu.reset_bridge -pg 1
-preplace inst usb_system.CY7C67200_IF_0 -pg 1 -lvl 5 -y 310
+preplace inst usb_system.CY7C67200_IF_0 -pg 1 -lvl 5 -y 390
 preplace inst usb_system -pg 1 -lvl 1 -y 40 -regy -20
-preplace inst usb_system.to_hw_port -pg 1 -lvl 3 -y 230
-preplace inst usb_system.to_sw_sig -pg 1 -lvl 3 -y 780
+preplace inst usb_system.all_switches -pg 1 -lvl 3 -y 40
+preplace inst usb_system.led -pg 1 -lvl 3 -y 280
 preplace inst usb_system.cpu.clock_bridge -pg 1
-preplace inst usb_system.keycode -pg 1 -lvl 4 -y 30
-preplace inst usb_system.clocks -pg 1 -lvl 3 -y 410
-preplace inst usb_system.clock_bridge_sdram -pg 1 -lvl 5 -y 80
-preplace inst usb_system.to_hw_sig -pg 1 -lvl 3 -y 560
+preplace inst usb_system.keycode -pg 1 -lvl 4 -y 110
+preplace inst usb_system.clocks -pg 1 -lvl 3 -y 490
+preplace inst usb_system.clock_bridge_sdram -pg 1 -lvl 5 -y 160
 preplace inst usb_system.cpu.cpu -pg 1
-preplace inst usb_system.clock_crossing_io -pg 1 -lvl 4 -y 410
-preplace inst usb_system.clock_bridge_usb -pg 1 -lvl 5 -y 470
-preplace inst usb_system.jtag_uart -pg 1 -lvl 4 -y 150
-preplace inst usb_system.cpu -pg 1 -lvl 2 -y 310
-preplace inst usb_system.clk -pg 1 -lvl 1 -y 350
-preplace inst usb_system.sysid_qsys_0 -pg 1 -lvl 3 -y 70
-preplace inst usb_system.to_sw_port -pg 1 -lvl 3 -y 670
-preplace inst usb_system.sdram -pg 1 -lvl 5 -y 130
-preplace netloc EXPORT<net_container>usb_system</net_container>(SLAVE)usb_system.keycode,(SLAVE)keycode.external_connection) 1 0 4 NJ 60 NJ 60 NJ 60 NJ
-preplace netloc POINT_TO_POINT<net_container>usb_system</net_container>(SLAVE)CY7C67200_IF_0.hpi,(MASTER)clock_crossing_io.m0) 1 4 1 1410
-preplace netloc FAN_OUT<net_container>usb_system</net_container>(SLAVE)to_hw_port.clk,(SLAVE)to_sw_port.clk,(SLAVE)sysid_qsys_0.clk,(SLAVE)clock_crossing_io.s0_clk,(SLAVE)to_sw_sig.clk,(SLAVE)cpu.clk,(SLAVE)keycode.clk,(SLAVE)to_hw_sig.clk,(SLAVE)clocks.inclk_interface,(MASTER)clk.clk,(SLAVE)jtag_uart.clk) 1 1 3 290 270 730 200 1050
-preplace netloc FAN_OUT<net_container>usb_system</net_container>(MASTER)clocks.c1,(SLAVE)clock_crossing_io.m0_clk,(SLAVE)CY7C67200_IF_0.clock_sink,(SLAVE)clock_bridge_usb.in_clk) 1 3 2 1030 400 1370
-preplace netloc FAN_OUT<net_container>usb_system</net_container>(SLAVE)CY7C67200_IF_0.interrupt_sender,(MASTER)cpu.irq,(SLAVE)jtag_uart.irq) 1 2 3 750 340 1090 380 NJ
-preplace netloc EXPORT<net_container>usb_system</net_container>(SLAVE)usb_system.usb,(SLAVE)CY7C67200_IF_0.conduit_end) 1 0 5 NJ 250 NJ 250 NJ 360 NJ 360 NJ
-preplace netloc EXPORT<net_container>usb_system</net_container>(MASTER)clock_bridge_usb.out_clk,(MASTER)usb_system.usb_out_clk) 1 5 1 NJ
+preplace inst usb_system.clock_crossing_io -pg 1 -lvl 4 -y 510
+preplace inst usb_system.clock_bridge_usb -pg 1 -lvl 5 -y 550
+preplace inst usb_system.jtag_uart -pg 1 -lvl 4 -y 270
+preplace inst usb_system.cpu -pg 1 -lvl 2 -y 390
+preplace inst usb_system.clk -pg 1 -lvl 1 -y 430
+preplace inst usb_system.sysid_qsys_0 -pg 1 -lvl 3 -y 150
+preplace inst usb_system.sdram -pg 1 -lvl 5 -y 210
+preplace netloc INTERCONNECT<net_container>usb_system</net_container>(SLAVE)keycode.reset,(MASTER)clk.clk_reset,(SLAVE)CY7C67200_IF_0.clock_sink_reset,(SLAVE)sysid_qsys_0.reset,(SLAVE)led.reset,(SLAVE)cpu.reset,(SLAVE)sdram.reset,(SLAVE)all_switches.reset,(MASTER)cpu.debug_reset_request,(SLAVE)clock_crossing_io.m0_reset,(SLAVE)clock_crossing_io.s0_reset,(SLAVE)jtag_uart.reset,(SLAVE)red_leds.reset,(SLAVE)clocks.inclk_interface_reset) 1 1 4 330 580 810 640 1070 220 1370
+preplace netloc EXPORT<net_container>usb_system</net_container>(SLAVE)led.external_connection,(SLAVE)usb_system.led_wire) 1 0 3 NJ 310 NJ 310 NJ
+preplace netloc FAN_OUT<net_container>usb_system</net_container>(SLAVE)all_switches.clk,(SLAVE)cpu.clk,(SLAVE)sysid_qsys_0.clk,(MASTER)clk.clk,(SLAVE)keycode.clk,(SLAVE)clocks.inclk_interface,(SLAVE)jtag_uart.clk,(SLAVE)led.clk,(SLAVE)red_leds.clk,(SLAVE)clock_crossing_io.s0_clk) 1 1 3 350 540 790 480 1030
+preplace netloc EXPORT<net_container>usb_system</net_container>(SLAVE)keycode.external_connection,(SLAVE)usb_system.keycode) 1 0 4 NJ 40 NJ 40 NJ 30 NJ
+preplace netloc FAN_OUT<net_container>usb_system</net_container>(SLAVE)CY7C67200_IF_0.interrupt_sender,(MASTER)cpu.irq,(SLAVE)jtag_uart.irq) 1 2 3 NJ 420 1130 460 NJ
+preplace netloc EXPORT<net_container>usb_system</net_container>(SLAVE)usb_system.all_switches_wire,(SLAVE)all_switches.external_connection) 1 0 3 NJ 70 NJ 70 NJ
+preplace netloc EXPORT<net_container>usb_system</net_container>(MASTER)usb_system.usb_out_clk,(MASTER)clock_bridge_usb.out_clk) 1 5 1 NJ
+preplace netloc EXPORT<net_container>usb_system</net_container>(SLAVE)usb_system.usb,(SLAVE)CY7C67200_IF_0.conduit_end) 1 0 5 NJ 330 NJ 330 NJ 440 NJ 440 NJ
+preplace netloc INTERCONNECT<net_container>usb_system</net_container>(SLAVE)clock_crossing_io.s0,(SLAVE)sdram.s1,(SLAVE)all_switches.s1,(MASTER)cpu.data_master,(SLAVE)clocks.pll_slave,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)red_leds.s1,(SLAVE)sysid_qsys_0.control_slave,(SLAVE)led.s1,(MASTER)cpu.instruction_master,(SLAVE)cpu.debug_mem_slave,(SLAVE)keycode.s1) 1 1 4 370 560 750 660 1110 240 NJ
 preplace netloc EXPORT<net_container>usb_system</net_container>(SLAVE)clk.clk_in_reset,(SLAVE)usb_system.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>usb_system</net_container>(SLAVE)red_leds.external_connection,(SLAVE)usb_system.red_leds_wire) 1 0 3 NJ 700 NJ 700 NJ
 preplace netloc EXPORT<net_container>usb_system</net_container>(SLAVE)usb_system.clk,(SLAVE)clk.clk_in) 1 0 1 NJ
-preplace netloc EXPORT<net_container>usb_system</net_container>(SLAVE)sdram.wire,(SLAVE)usb_system.sdram_wire) 1 0 5 NJ 160 NJ 160 NJ 160 NJ 140 NJ
+preplace netloc EXPORT<net_container>usb_system</net_container>(SLAVE)sdram.wire,(SLAVE)usb_system.sdram_wire) 1 0 5 NJ 240 NJ 240 NJ 240 NJ 260 NJ
 preplace netloc EXPORT<net_container>usb_system</net_container>(MASTER)clock_bridge_sdram.out_clk,(MASTER)usb_system.sdram_out_clk) 1 5 1 NJ
-preplace netloc FAN_OUT<net_container>usb_system</net_container>(MASTER)clocks.c0,(SLAVE)sdram.clk,(SLAVE)clock_bridge_sdram.in_clk) 1 3 2 990 280 1310
-preplace netloc INTERCONNECT<net_container>usb_system</net_container>(SLAVE)jtag_uart.avalon_jtag_slave,(MASTER)cpu.data_master,(SLAVE)cpu.debug_mem_slave,(SLAVE)to_sw_sig.s1,(SLAVE)sysid_qsys_0.control_slave,(SLAVE)to_hw_sig.s1,(SLAVE)clocks.pll_slave,(SLAVE)clock_crossing_io.s0,(SLAVE)to_sw_port.s1,(MASTER)cpu.instruction_master,(SLAVE)keycode.s1,(SLAVE)sdram.s1,(SLAVE)to_hw_port.s1) 1 1 4 310 460 690 180 1010 260 1330
-preplace netloc INTERCONNECT<net_container>usb_system</net_container>(SLAVE)sysid_qsys_0.reset,(SLAVE)to_hw_sig.reset,(SLAVE)to_sw_sig.reset,(SLAVE)to_hw_port.reset,(SLAVE)clock_crossing_io.m0_reset,(MASTER)clk.clk_reset,(SLAVE)sdram.reset,(SLAVE)jtag_uart.reset,(SLAVE)cpu.reset,(SLAVE)to_sw_port.reset,(SLAVE)CY7C67200_IF_0.clock_sink_reset,(MASTER)cpu.debug_reset_request,(SLAVE)clock_crossing_io.s0_reset,(SLAVE)keycode.reset,(SLAVE)clocks.inclk_interface_reset) 1 1 4 290 480 770 220 1070 300 1350
-levelinfo -pg 1 0 80 1710
-levelinfo -hier usb_system 90 120 450 800 1140 1450 1590
+preplace netloc FAN_OUT<net_container>usb_system</net_container>(MASTER)clocks.c1,(SLAVE)CY7C67200_IF_0.clock_sink,(SLAVE)clock_bridge_usb.in_clk,(SLAVE)clock_crossing_io.m0_clk) 1 3 2 1090 500 1450
+preplace netloc FAN_OUT<net_container>usb_system</net_container>(SLAVE)sdram.clk,(MASTER)clocks.c0,(SLAVE)clock_bridge_sdram.in_clk) 1 3 2 NJ 480 1390
+preplace netloc POINT_TO_POINT<net_container>usb_system</net_container>(MASTER)clock_crossing_io.m0,(SLAVE)CY7C67200_IF_0.hpi) 1 4 1 1430
+levelinfo -pg 1 0 120 1750
+levelinfo -hier usb_system 130 160 490 840 1180 1490 1630

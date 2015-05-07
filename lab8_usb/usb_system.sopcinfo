@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="usb_system" kind="usb_system" version="1.0" fabric="QSYS">
  <!-- Format version 14.1 190 (Future versions may contain additional information.) -->
- <!-- 2015.05.06.18:43:52 -->
+ <!-- 2015.05.06.19:04:04 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1430955832</value>
+  <value>1430957044</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -12764,7 +12764,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1430955832</value>
+   <value>1430957044</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -12784,7 +12784,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1430955832</value>
+   <value>1430957044</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -12800,7 +12800,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1430955832</value>
+   <value>1430957044</value>
    <derived>false</derived>
    <enabled>false</enabled>
    <visible>false</visible>

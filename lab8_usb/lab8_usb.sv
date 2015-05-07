@@ -53,9 +53,6 @@ module  lab8_usb 		( input      Clk,
     assign {Reset_h}=~ (Reset);  // The push buttons are active low
 	assign OTG_FSPEED = 1'bz;
 	assign OTG_LSPEED = 1'bz;
-	
-//	assign LEDG = 9'b0;
-//	assign LEDR = 18'b0;
 	    
 	 usb_system usbsys_instance(
 										 .clk_clk(Clk),         

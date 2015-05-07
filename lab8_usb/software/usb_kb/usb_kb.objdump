@@ -11990,7 +11990,7 @@ void UsbPrintMem()
  80098d4:	1105883a 	add	r2,r2,r4
  80098d8:	10800017 	ldw	r2,0(r2)
  80098dc:	1000683a 	jmp	r2
- 80098e0:	0800a040 	call	800a04 <__alt_mem_sdram-0x77ff5fc>
+ 80098e0:	0800a040 	call	800a04 <__reset-0x77ff5fc>
  80098e4:	0800a2e0 	cmpeqi	zero,at,651
  80098e8:	0800a2e0 	cmpeqi	zero,at,651
  80098ec:	0800a05c 	xori	zero,at,641
@@ -12068,7 +12068,7 @@ void UsbPrintMem()
  8009a0c:	0800a2e0 	cmpeqi	zero,at,651
  8009a10:	0800a068 	cmpgeui	zero,at,641
  8009a14:	0800a2e0 	cmpeqi	zero,at,651
- 8009a18:	0800a080 	call	800a08 <__alt_mem_sdram-0x77ff5f8>
+ 8009a18:	0800a080 	call	800a08 <__reset-0x77ff5f8>
  8009a1c:	0800a0b8 	rdprs	zero,at,642
  8009a20:	0800a298 	cmpnei	zero,at,650
  8009a24:	0800a1bc 	xorhi	zero,at,646
@@ -15396,7 +15396,7 @@ void UsbPrintMem()
  800cd2c:	0800cd58 	cmpnei	zero,at,821
  800cd30:	0800cd58 	cmpnei	zero,at,821
  800cd34:	0800cd58 	cmpnei	zero,at,821
- 800cd38:	0800d2c0 	call	800d2c <__alt_mem_sdram-0x77ff2d4>
+ 800cd38:	0800d2c0 	call	800d2c <__reset-0x77ff2d4>
  800cd3c:	9904b03a 	or	r2,r19,r4
  800cd40:	10006e1e 	bne	r2,zero,800cefc <__divdf3+0x2f8>
  800cd44:	05400204 	movi	r21,8
@@ -21505,7 +21505,7 @@ int alt_get_fd (alt_dev* dev)
  801107c:	d9400015 	stw	r5,0(sp)
  8011080:	d9800115 	stw	r6,4(sp)
  8011084:	d9c00215 	stw	r7,8(sp)
- 8011088:	00000000 	call	0 <__alt_mem_sdram-0x8000000>
+ 8011088:	00000000 	call	0 <__reset-0x8000000>
  801108c:	d9400017 	ldw	r5,0(sp)
  8011090:	d9800117 	ldw	r6,4(sp)
  8011094:	d9c00217 	ldw	r7,8(sp)
@@ -21647,7 +21647,7 @@ int alt_get_fd (alt_dev* dev)
  80112ac:	18000a26 	beq	r3,zero,80112d8 <__call_exitprocs+0x19c>
  80112b0:	9009883a 	mov	r4,r18
  80112b4:	b8c00015 	stw	r3,0(r23)
- 80112b8:	00000000 	call	0 <__alt_mem_sdram-0x8000000>
+ 80112b8:	00000000 	call	0 <__reset-0x8000000>
  80112bc:	bc800017 	ldw	r18,0(r23)
  80112c0:	903fb61e 	bne	r18,zero,801119c <__alt_data_end+0xf801119c>
  80112c4:	003fcc06 	br	80111f8 <__alt_data_end+0xf80111f8>
