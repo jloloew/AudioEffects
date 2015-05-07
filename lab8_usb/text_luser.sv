@@ -32,6 +32,8 @@ module text_luser (	input			didWin, didLose,
 					addr = 'h65; // e
 				'd4:
 					addr = 'h72; // r
+				default:
+					addr = 'h00; // blank
 			endcase
 		end
 		else if (didWin) begin
@@ -50,6 +52,8 @@ module text_luser (	input			didWin, didLose,
 					addr = 'h52; // R
 				'd6:
 					addr = 'h21; // !
+				default:
+					addr = 'h00; // blank
 			endcase
 		end
 		

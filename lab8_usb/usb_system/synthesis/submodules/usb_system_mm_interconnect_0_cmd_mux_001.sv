@@ -32,7 +32,7 @@
 //   PIPELINE_ARB:        1
 //   PKT_TRANS_LOCK:      69 (arbitration locking enabled)
 //   ST_DATA_W:           107
-//   ST_CHANNEL_W:        11
+//   ST_CHANNEL_W:        10
 // ------------------------------------------
 
 module usb_system_mm_interconnect_0_cmd_mux_001
@@ -42,14 +42,14 @@ module usb_system_mm_interconnect_0_cmd_mux_001
     // ----------------------
     input                       sink0_valid,
     input [107-1   : 0]  sink0_data,
-    input [11-1: 0]  sink0_channel,
+    input [10-1: 0]  sink0_channel,
     input                       sink0_startofpacket,
     input                       sink0_endofpacket,
     output                      sink0_ready,
 
     input                       sink1_valid,
     input [107-1   : 0]  sink1_data,
-    input [11-1: 0]  sink1_channel,
+    input [10-1: 0]  sink1_channel,
     input                       sink1_startofpacket,
     input                       sink1_endofpacket,
     output                      sink1_ready,
@@ -60,7 +60,7 @@ module usb_system_mm_interconnect_0_cmd_mux_001
     // ----------------------
     output                      src_valid,
     output [107-1    : 0] src_data,
-    output [11-1 : 0] src_channel,
+    output [10-1 : 0] src_channel,
     output                      src_startofpacket,
     output                      src_endofpacket,
     input                       src_ready,
@@ -71,12 +71,12 @@ module usb_system_mm_interconnect_0_cmd_mux_001
     input clk,
     input reset
 );
-    localparam PAYLOAD_W        = 107 + 11 + 2;
+    localparam PAYLOAD_W        = 107 + 10 + 2;
     localparam NUM_INPUTS       = 2;
     localparam SHARE_COUNTER_W  = 1;
     localparam PIPELINE_ARB     = 1;
     localparam ST_DATA_W        = 107;
-    localparam ST_CHANNEL_W     = 11;
+    localparam ST_CHANNEL_W     = 10;
     localparam PKT_TRANS_LOCK   = 69;
 
     // ------------------------------------------

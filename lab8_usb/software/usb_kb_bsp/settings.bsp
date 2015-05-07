@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>May 6, 2015 5:51:22 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1430952682012</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>May 6, 2015 6:56:11 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1430956571298</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Justin\Documents\ece385\final_project\lab8_usb\software\usb_kb_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\usb_system.sopcinfo</SopcDesignFile>
@@ -899,50 +899,44 @@
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>to_sw_port</slaveDescriptor>
+                <slaveDescriptor>red_leds</slaveDescriptor>
                 <addressRange>0x11001010 - 0x1100101F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>to_sw_sig</slaveDescriptor>
+                <slaveDescriptor>all_switches</slaveDescriptor>
                 <addressRange>0x11001020 - 0x1100102F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>to_hw_sig</slaveDescriptor>
+                <slaveDescriptor>led</slaveDescriptor>
                 <addressRange>0x11001030 - 0x1100103F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>to_hw_port</slaveDescriptor>
-                <addressRange>0x11001040 - 0x1100104F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>keycode</slaveDescriptor>
-                <addressRange>0x11001050 - 0x1100105F</addressRange>
+                <addressRange>0x11001080 - 0x1100108F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>clocks</slaveDescriptor>
-                <addressRange>0x11001060 - 0x1100106F</addressRange>
+                <addressRange>0x11001090 - 0x1100109F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x11001078 - 0x1100107F</addressRange>
+                <addressRange>0x110010A8 - 0x110010AF</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x11001080 - 0x11001087</addressRange>
+                <addressRange>0x110010B0 - 0x110010B7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

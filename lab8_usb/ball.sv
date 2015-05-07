@@ -41,7 +41,7 @@ module  ball (	input			Reset, frame_clk,
 	logic brick_bounce_x, brick_bounce_y;
 	logic [9:0] brick_bounce_x_array, brick_bounce_y_array;
 	
-	assign brick_exists = ~brick_exists_n;
+	assign brick_exists = ~brick_exists_n[8:0];
 	
     assign Ball_Size = 4;  // assigns the value 4 as a 10-digit binary number, ie "0000000100"
 	

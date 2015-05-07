@@ -25,11 +25,55 @@
 #include "lcp_data.h"
 
 
-//----------------------------------------------------------------------------------------//
-//
-//                                Main function
-//
-//----------------------------------------------------------------------------------------//
+// ball game stuff
+static volatile unsigned int *LEDG		= (unsigned int *)0x11001030;
+static volatile unsigned int *ALL_SW	= (unsigned int *)0x11001020;
+static volatile unsigned int *LEDR		= (unsigned int *)0x11001010;
+
+
+typedef struct {
+	unsigned char ball_is_traveling_right : 1;
+	unsigned int ball_position;
+} State;
+
+static State state;
+
+static void delay(unsigned int cycles);
+static void reset();
+static void update_state();
+
+static void delay(unsigned int cycles)
+{
+	unsigned int i;
+	for (i = 0; i < cycles; i++)
+		;
+}
+
+static void reset()
+{
+	state.ball_is_traveling_right = 1;
+	state.ball_position = 8;
+	// reset LEDs
+	*LEDG = 0;
+	*LEDR = 0;
+}
+
+static void update_state()
+{
+	// update ball position
+	if (state.ball_is_traveling_right)
+		state.ball_position--;
+	else
+		state.ball_position++;
+	// update ball direction
+	if (state.ball_position == 0)
+		state.ball_is_traveling_right = 0;
+	else if (state.ball_position == 17)
+		state.ball_is_traveling_right = 1;
+	else if (*ALL_SW & (1 << state.ball_position)) // bounce off switches
+		state.ball_is_traveling_right = ~state.ball_is_traveling_right;
+}
+
 int main(void)
 {
 	alt_u16 intStat;
@@ -43,6 +87,9 @@ int main(void)
 
 	alt_u16 code;
 	int i,hot_plug_count;
+	
+	
+	reset(); // ball game
 	
 
 	printf("USB keyboard setup...\n\n");
@@ -490,7 +537,7 @@ int main(void)
 		keycode = IORD(CY7C67200_BASE,HPI_DATA);
 		printf("\nfirst two keycode values are %04x\n",keycode);
 		IOWR(KEYCODE_BASE, 0, keycode & 0xff);
-
+		
 		
 		usleep(200);//usleep(5000);
 		usb_ctl_val = UsbRead(ctl_reg);
@@ -527,6 +574,14 @@ int main(void)
 			usleep(200);
 
 		}
+		
+		
+		// ball game
+		update_state();
+		*LEDG = 0xAA;
+		*LEDR = *ALL_SW | (1 << state.ball_position);
+		delay(10000);
+		
 
 	}//end while
 

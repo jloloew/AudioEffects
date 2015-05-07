@@ -12,6 +12,7 @@
 
 module  lab8_usb 		( input      Clk,
                                      Reset,
+									 input [17:0] SW,
 							  output [6:0]  HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7,
 							  output [8:0]  LEDG,
 							  output [17:0] LEDR,
@@ -53,12 +54,15 @@ module  lab8_usb 		( input      Clk,
 	assign OTG_FSPEED = 1'bz;
 	assign OTG_LSPEED = 1'bz;
 	
-	assign LEDG = 9'b0;
-	assign LEDR = 18'b0;
+//	assign LEDG = 9'b0;
+//	assign LEDR = 18'b0;
 	    
 	 usb_system usbsys_instance(
 										 .clk_clk(Clk),         
 										 .reset_reset_n(1'b1),   
+										 .all_switches_wire_export(SW),
+										 .led_wire_export(LEDG),
+										 .red_leds_wire_export(LEDR),
 										 .sdram_wire_addr(sdram_wire_addr), 
 										 .sdram_wire_ba(sdram_wire_ba),   
 										 .sdram_wire_cas_n(sdram_wire_cas_n),
@@ -78,23 +82,17 @@ module  lab8_usb 		( input      Clk,
 										 .usb_RST_N(OTG_RST_N),   
 										 .usb_INT(OTG_INT) );
 	
-										  
-	 HexDriver hex_inst_0 (.In0(keycode[3:0]),	.Out0(HEX0));
-	 HexDriver hex_inst_1 (.In0(keycode[7:4]),	.Out0(HEX1));
-	 HexDriver hex_inst_2 (.In0(Blue[3:0]),		.Out0(HEX2));
-	 HexDriver hex_inst_3 (.In0(Blue[7:4]),		.Out0(HEX3));
-	 HexDriver hex_inst_4 (.In0(Green[3:0]),	.Out0(HEX4));
-	 HexDriver hex_inst_5 (.In0(Green[7:4]),	.Out0(HEX5));
-	 HexDriver hex_inst_6 (.In0(Red[3:0]),		.Out0(HEX6));
-	 HexDriver hex_inst_7 (.In0(Red[7:4]),		.Out0(HEX7));
-	 
+	logic [31:0] hex_input = 32'h8BADF00D;
+	
+	HexDriver hex_inst_0 (.In0(hex_input[3:0]),		.Out0(HEX0));
+	HexDriver hex_inst_1 (.In0(hex_input[7:4]),		.Out0(HEX1));
+	HexDriver hex_inst_2 (.In0(hex_input[11:8]),	.Out0(HEX2));
+	HexDriver hex_inst_3 (.In0(hex_input[15:12]),	.Out0(HEX3));
+	HexDriver hex_inst_4 (.In0(hex_input[19:16]),	.Out0(HEX4));
+	HexDriver hex_inst_5 (.In0(hex_input[23:20]),	.Out0(HEX5));
+	HexDriver hex_inst_6 (.In0(hex_input[27:24]),	.Out0(HEX6));
+	HexDriver hex_inst_7 (.In0(hex_input[31:28]),	.Out0(HEX7));
+	
 	Bouncing_Ball bouncingBall (.*, .Reset (Reset_h));
     
-
-	 /**************************************************************************************
-	    ATTENTION! Please answer the following quesiton in your lab report! Points will be allocated for the answers!
-		 Hidden Question #1/2:
-          What are the advantages and/or disadvantages of using a USB interface over PS/2 interface to
-			 connect to the keyboard? List any two.  Give an answer in your Post-Lab.
-     **************************************************************************************/
 endmodule
