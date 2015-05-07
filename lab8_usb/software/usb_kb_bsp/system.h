@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'usb_system'
  * SOPC Builder design path: ../../usb_system.sopcinfo
  *
- * Generated: Wed May 06 19:17:48 CDT 2015
+ * Generated: Wed May 06 20:22:25 CDT 2015
  */
 
 /*
@@ -135,7 +135,7 @@
 
 #define ALT_MODULE_CLASS_CY7C67200_IF_0 CY7C67200_IF
 #define CY7C67200_IF_0_BASE 0x10000000
-#define CY7C67200_IF_0_IRQ 6
+#define CY7C67200_IF_0_IRQ 0
 #define CY7C67200_IF_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define CY7C67200_IF_0_NAME "/dev/CY7C67200_IF_0"
 #define CY7C67200_IF_0_SPAN 16
@@ -152,6 +152,8 @@
 #define __ALTERA_AVALON_PIO
 #define __ALTERA_AVALON_SYSID_QSYS
 #define __ALTERA_NIOS2_GEN2
+#define __ALTERA_UP_AVALON_AUDIO
+#define __ALTERA_UP_AVALON_AUDIO_AND_VIDEO_CONFIG
 #define __ALTPLL
 #define __CY7C67200_IF
 
@@ -172,19 +174,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart"
-#define ALT_STDERR_BASE 0x110010b0
+#define ALT_STDERR_BASE 0x11001090
 #define ALT_STDERR_DEV jtag_uart
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart"
-#define ALT_STDIN_BASE 0x110010b0
+#define ALT_STDIN_BASE 0x11001090
 #define ALT_STDIN_DEV jtag_uart
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart"
-#define ALT_STDOUT_BASE 0x110010b0
+#define ALT_STDOUT_BASE 0x11001090
 #define ALT_STDOUT_DEV jtag_uart
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -220,12 +222,40 @@
 
 
 /*
+ * audio configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_audio altera_up_avalon_audio
+#define AUDIO_BASE 0x11001050
+#define AUDIO_IRQ 2
+#define AUDIO_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define AUDIO_NAME "/dev/audio"
+#define AUDIO_SPAN 16
+#define AUDIO_TYPE "altera_up_avalon_audio"
+
+
+/*
+ * audio_config configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_audio_config altera_up_avalon_audio_and_video_config
+#define AUDIO_CONFIG_BASE 0x11001040
+#define AUDIO_CONFIG_IRQ -1
+#define AUDIO_CONFIG_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define AUDIO_CONFIG_NAME "/dev/audio_config"
+#define AUDIO_CONFIG_SPAN 16
+#define AUDIO_CONFIG_TYPE "altera_up_avalon_audio_and_video_config"
+
+
+/*
  * clocks configuration
  *
  */
 
 #define ALT_MODULE_CLASS_clocks altpll
-#define CLOCKS_BASE 0x11001090
+#define CLOCKS_BASE 0x11001070
 #define CLOCKS_IRQ -1
 #define CLOCKS_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define CLOCKS_NAME "/dev/clocks"
@@ -249,8 +279,8 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart altera_avalon_jtag_uart
-#define JTAG_UART_BASE 0x110010b0
-#define JTAG_UART_IRQ 5
+#define JTAG_UART_BASE 0x11001090
+#define JTAG_UART_IRQ 1
 #define JTAG_UART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_NAME "/dev/jtag_uart"
 #define JTAG_UART_READ_DEPTH 64
@@ -267,7 +297,7 @@
  */
 
 #define ALT_MODULE_CLASS_keycode altera_avalon_pio
-#define KEYCODE_BASE 0x11001080
+#define KEYCODE_BASE 0x11001060
 #define KEYCODE_BIT_CLEARING_EDGE_REGISTER 0
 #define KEYCODE_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define KEYCODE_CAPTURE 0
@@ -387,13 +417,13 @@
  */
 
 #define ALT_MODULE_CLASS_sysid_qsys_0 altera_avalon_sysid_qsys
-#define SYSID_QSYS_0_BASE 0x110010a8
+#define SYSID_QSYS_0_BASE 0x11001088
 #define SYSID_QSYS_0_ID 0
 #define SYSID_QSYS_0_IRQ -1
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1430957044
+#define SYSID_QSYS_0_TIMESTAMP 1430961355
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */

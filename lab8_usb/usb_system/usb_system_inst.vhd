@@ -23,7 +23,14 @@
 			usb_CS_N                 : out   std_logic;                                        -- CS_N
 			usb_RST_N                : out   std_logic;                                        -- RST_N
 			usb_INT                  : in    std_logic                     := 'X';             -- INT
-			usb_out_clk_clk          : out   std_logic                                         -- clk
+			usb_out_clk_clk          : out   std_logic;                                        -- clk
+			audio_wire_ADCDAT        : in    std_logic                     := 'X';             -- ADCDAT
+			audio_wire_ADCLRCK       : in    std_logic                     := 'X';             -- ADCLRCK
+			audio_wire_BCLK          : in    std_logic                     := 'X';             -- BCLK
+			audio_wire_DACDAT        : out   std_logic;                                        -- DACDAT
+			audio_wire_DACLRCK       : in    std_logic                     := 'X';             -- DACLRCK
+			audio_config_wire_SDAT   : inout std_logic                     := 'X';             -- SDAT
+			audio_config_wire_SCLK   : out   std_logic                                         -- SCLK
 		);
 	end component usb_system;
 
@@ -52,6 +59,13 @@
 			usb_CS_N                 => CONNECTED_TO_usb_CS_N,                 --                  .CS_N
 			usb_RST_N                => CONNECTED_TO_usb_RST_N,                --                  .RST_N
 			usb_INT                  => CONNECTED_TO_usb_INT,                  --                  .INT
-			usb_out_clk_clk          => CONNECTED_TO_usb_out_clk_clk           --       usb_out_clk.clk
+			usb_out_clk_clk          => CONNECTED_TO_usb_out_clk_clk,          --       usb_out_clk.clk
+			audio_wire_ADCDAT        => CONNECTED_TO_audio_wire_ADCDAT,        --        audio_wire.ADCDAT
+			audio_wire_ADCLRCK       => CONNECTED_TO_audio_wire_ADCLRCK,       --                  .ADCLRCK
+			audio_wire_BCLK          => CONNECTED_TO_audio_wire_BCLK,          --                  .BCLK
+			audio_wire_DACDAT        => CONNECTED_TO_audio_wire_DACDAT,        --                  .DACDAT
+			audio_wire_DACLRCK       => CONNECTED_TO_audio_wire_DACLRCK,       --                  .DACLRCK
+			audio_config_wire_SDAT   => CONNECTED_TO_audio_config_wire_SDAT,   -- audio_config_wire.SDAT
+			audio_config_wire_SCLK   => CONNECTED_TO_audio_config_wire_SCLK    --                  .SCLK
 		);
 

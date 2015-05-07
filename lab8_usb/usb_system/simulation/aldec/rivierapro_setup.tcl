@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 14.1 190 win32 2015.05.06.19:04:01
+# ACDS 14.1 190 win32 2015.05.06.20:15:52
 
 # ----------------------------------------
 # Auto-generated simulation script
@@ -89,72 +89,84 @@ ensure_lib                  ./libraries/altera_lnsim_ver
 vmap       altera_lnsim_ver ./libraries/altera_lnsim_ver
 ensure_lib                  ./libraries/cycloneive_ver  
 vmap       cycloneive_ver   ./libraries/cycloneive_ver  
-ensure_lib                                            ./libraries/crosser                                   
-vmap       crosser                                    ./libraries/crosser                                   
-ensure_lib                                            ./libraries/rsp_mux_001                               
-vmap       rsp_mux_001                                ./libraries/rsp_mux_001                               
-ensure_lib                                            ./libraries/rsp_mux                                   
-vmap       rsp_mux                                    ./libraries/rsp_mux                                   
-ensure_lib                                            ./libraries/rsp_demux_001                             
-vmap       rsp_demux_001                              ./libraries/rsp_demux_001                             
-ensure_lib                                            ./libraries/rsp_demux                                 
-vmap       rsp_demux                                  ./libraries/rsp_demux                                 
-ensure_lib                                            ./libraries/cmd_mux_001                               
-vmap       cmd_mux_001                                ./libraries/cmd_mux_001                               
-ensure_lib                                            ./libraries/cmd_mux                                   
-vmap       cmd_mux                                    ./libraries/cmd_mux                                   
-ensure_lib                                            ./libraries/cmd_demux_001                             
-vmap       cmd_demux_001                              ./libraries/cmd_demux_001                             
-ensure_lib                                            ./libraries/cmd_demux                                 
-vmap       cmd_demux                                  ./libraries/cmd_demux                                 
-ensure_lib                                            ./libraries/router_003                                
-vmap       router_003                                 ./libraries/router_003                                
-ensure_lib                                            ./libraries/router_002                                
-vmap       router_002                                 ./libraries/router_002                                
-ensure_lib                                            ./libraries/router_001                                
-vmap       router_001                                 ./libraries/router_001                                
-ensure_lib                                            ./libraries/router                                    
-vmap       router                                     ./libraries/router                                    
-ensure_lib                                            ./libraries/jtag_uart_avalon_jtag_slave_agent_rsp_fifo
-vmap       jtag_uart_avalon_jtag_slave_agent_rsp_fifo ./libraries/jtag_uart_avalon_jtag_slave_agent_rsp_fifo
-ensure_lib                                            ./libraries/jtag_uart_avalon_jtag_slave_agent         
-vmap       jtag_uart_avalon_jtag_slave_agent          ./libraries/jtag_uart_avalon_jtag_slave_agent         
-ensure_lib                                            ./libraries/cpu_data_master_agent                     
-vmap       cpu_data_master_agent                      ./libraries/cpu_data_master_agent                     
-ensure_lib                                            ./libraries/jtag_uart_avalon_jtag_slave_translator    
-vmap       jtag_uart_avalon_jtag_slave_translator     ./libraries/jtag_uart_avalon_jtag_slave_translator    
-ensure_lib                                            ./libraries/cpu_data_master_translator                
-vmap       cpu_data_master_translator                 ./libraries/cpu_data_master_translator                
-ensure_lib                                            ./libraries/cpu                                       
-vmap       cpu                                        ./libraries/cpu                                       
-ensure_lib                                            ./libraries/rst_controller                            
-vmap       rst_controller                             ./libraries/rst_controller                            
-ensure_lib                                            ./libraries/irq_synchronizer                          
-vmap       irq_synchronizer                           ./libraries/irq_synchronizer                          
-ensure_lib                                            ./libraries/irq_mapper                                
-vmap       irq_mapper                                 ./libraries/irq_mapper                                
-ensure_lib                                            ./libraries/mm_interconnect_1                         
-vmap       mm_interconnect_1                          ./libraries/mm_interconnect_1                         
-ensure_lib                                            ./libraries/mm_interconnect_0                         
-vmap       mm_interconnect_0                          ./libraries/mm_interconnect_0                         
-ensure_lib                                            ./libraries/sysid_qsys_0                              
-vmap       sysid_qsys_0                               ./libraries/sysid_qsys_0                              
-ensure_lib                                            ./libraries/sdram                                     
-vmap       sdram                                      ./libraries/sdram                                     
-ensure_lib                                            ./libraries/red_leds                                  
-vmap       red_leds                                   ./libraries/red_leds                                  
-ensure_lib                                            ./libraries/keycode                                   
-vmap       keycode                                    ./libraries/keycode                                   
-ensure_lib                                            ./libraries/jtag_uart                                 
-vmap       jtag_uart                                  ./libraries/jtag_uart                                 
-ensure_lib                                            ./libraries/clocks                                    
-vmap       clocks                                     ./libraries/clocks                                    
-ensure_lib                                            ./libraries/clock_crossing_io                         
-vmap       clock_crossing_io                          ./libraries/clock_crossing_io                         
-ensure_lib                                            ./libraries/all_switches                              
-vmap       all_switches                               ./libraries/all_switches                              
-ensure_lib                                            ./libraries/CY7C67200_IF_0                            
-vmap       CY7C67200_IF_0                             ./libraries/CY7C67200_IF_0                            
+ensure_lib                                         ./libraries/crosser                                
+vmap       crosser                                 ./libraries/crosser                                
+ensure_lib                                         ./libraries/rsp_mux_001                            
+vmap       rsp_mux_001                             ./libraries/rsp_mux_001                            
+ensure_lib                                         ./libraries/rsp_mux                                
+vmap       rsp_mux                                 ./libraries/rsp_mux                                
+ensure_lib                                         ./libraries/rsp_demux_003                          
+vmap       rsp_demux_003                           ./libraries/rsp_demux_003                          
+ensure_lib                                         ./libraries/rsp_demux_001                          
+vmap       rsp_demux_001                           ./libraries/rsp_demux_001                          
+ensure_lib                                         ./libraries/rsp_demux                              
+vmap       rsp_demux                               ./libraries/rsp_demux                              
+ensure_lib                                         ./libraries/cmd_mux_003                            
+vmap       cmd_mux_003                             ./libraries/cmd_mux_003                            
+ensure_lib                                         ./libraries/cmd_mux                                
+vmap       cmd_mux                                 ./libraries/cmd_mux                                
+ensure_lib                                         ./libraries/cmd_demux_001                          
+vmap       cmd_demux_001                           ./libraries/cmd_demux_001                          
+ensure_lib                                         ./libraries/cmd_demux                              
+vmap       cmd_demux                               ./libraries/cmd_demux                              
+ensure_lib                                         ./libraries/router_005                             
+vmap       router_005                              ./libraries/router_005                             
+ensure_lib                                         ./libraries/router_002                             
+vmap       router_002                              ./libraries/router_002                             
+ensure_lib                                         ./libraries/router_001                             
+vmap       router_001                              ./libraries/router_001                             
+ensure_lib                                         ./libraries/router                                 
+vmap       router                                  ./libraries/router                                 
+ensure_lib                                         ./libraries/audio_avalon_audio_slave_agent_rsp_fifo
+vmap       audio_avalon_audio_slave_agent_rsp_fifo ./libraries/audio_avalon_audio_slave_agent_rsp_fifo
+ensure_lib                                         ./libraries/audio_avalon_audio_slave_agent         
+vmap       audio_avalon_audio_slave_agent          ./libraries/audio_avalon_audio_slave_agent         
+ensure_lib                                         ./libraries/cpu_data_master_agent                  
+vmap       cpu_data_master_agent                   ./libraries/cpu_data_master_agent                  
+ensure_lib                                         ./libraries/audio_avalon_audio_slave_translator    
+vmap       audio_avalon_audio_slave_translator     ./libraries/audio_avalon_audio_slave_translator    
+ensure_lib                                         ./libraries/cpu_data_master_translator             
+vmap       cpu_data_master_translator              ./libraries/cpu_data_master_translator             
+ensure_lib                                         ./libraries/cpu                                    
+vmap       cpu                                     ./libraries/cpu                                    
+ensure_lib                                         ./libraries/reset_from_locked                      
+vmap       reset_from_locked                       ./libraries/reset_from_locked                      
+ensure_lib                                         ./libraries/audio_pll                              
+vmap       audio_pll                               ./libraries/audio_pll                              
+ensure_lib                                         ./libraries/rst_controller                         
+vmap       rst_controller                          ./libraries/rst_controller                         
+ensure_lib                                         ./libraries/irq_synchronizer                       
+vmap       irq_synchronizer                        ./libraries/irq_synchronizer                       
+ensure_lib                                         ./libraries/irq_mapper                             
+vmap       irq_mapper                              ./libraries/irq_mapper                             
+ensure_lib                                         ./libraries/mm_interconnect_1                      
+vmap       mm_interconnect_1                       ./libraries/mm_interconnect_1                      
+ensure_lib                                         ./libraries/mm_interconnect_0                      
+vmap       mm_interconnect_0                       ./libraries/mm_interconnect_0                      
+ensure_lib                                         ./libraries/sysid_qsys_0                           
+vmap       sysid_qsys_0                            ./libraries/sysid_qsys_0                           
+ensure_lib                                         ./libraries/sdram                                  
+vmap       sdram                                   ./libraries/sdram                                  
+ensure_lib                                         ./libraries/red_leds                               
+vmap       red_leds                                ./libraries/red_leds                               
+ensure_lib                                         ./libraries/keycode                                
+vmap       keycode                                 ./libraries/keycode                                
+ensure_lib                                         ./libraries/jtag_uart                              
+vmap       jtag_uart                               ./libraries/jtag_uart                              
+ensure_lib                                         ./libraries/clocks                                 
+vmap       clocks                                  ./libraries/clocks                                 
+ensure_lib                                         ./libraries/clock_crossing_io                      
+vmap       clock_crossing_io                       ./libraries/clock_crossing_io                      
+ensure_lib                                         ./libraries/audio_pll_0                            
+vmap       audio_pll_0                             ./libraries/audio_pll_0                            
+ensure_lib                                         ./libraries/audio_config                           
+vmap       audio_config                            ./libraries/audio_config                           
+ensure_lib                                         ./libraries/audio                                  
+vmap       audio                                   ./libraries/audio                                  
+ensure_lib                                         ./libraries/all_switches                           
+vmap       all_switches                            ./libraries/all_switches                           
+ensure_lib                                         ./libraries/CY7C67200_IF_0                         
+vmap       CY7C67200_IF_0                          ./libraries/CY7C67200_IF_0                         
 
 # ----------------------------------------
 # Compile device library files
@@ -172,71 +184,94 @@ alias dev_com {
 # Compile the design files in correct order
 alias com {
   echo "\[exec\] com"
-  vlog  "$QSYS_SIMDIR/submodules/altera_avalon_st_handshake_clock_crosser.v"    -work crosser                                   
-  vlog  "$QSYS_SIMDIR/submodules/altera_avalon_st_clock_crosser.v"              -work crosser                                   
-  vlog  "$QSYS_SIMDIR/submodules/altera_avalon_st_pipeline_base.v"              -work crosser                                   
-  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                   -work rsp_mux_001                               
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_rsp_mux_001.sv"   -work rsp_mux_001                               
-  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                   -work rsp_mux                                   
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_rsp_mux.sv"       -work rsp_mux                                   
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_rsp_demux_001.sv" -work rsp_demux_001                             
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_rsp_demux.sv"     -work rsp_demux                                 
-  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                   -work cmd_mux_001                               
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_cmd_mux_001.sv"   -work cmd_mux_001                               
-  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                   -work cmd_mux                                   
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_cmd_mux.sv"       -work cmd_mux                                   
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_cmd_demux_001.sv" -work cmd_demux_001                             
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_cmd_demux.sv"     -work cmd_demux                                 
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_router_003.sv"    -work router_003                                
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_router_002.sv"    -work router_002                                
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_router_001.sv"    -work router_001                                
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_router.sv"        -work router                                    
-  vlog  "$QSYS_SIMDIR/submodules/altera_avalon_sc_fifo.v"                       -work jtag_uart_avalon_jtag_slave_agent_rsp_fifo
-  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_slave_agent.sv"                  -work jtag_uart_avalon_jtag_slave_agent         
-  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_burst_uncompressor.sv"           -work jtag_uart_avalon_jtag_slave_agent         
-  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_master_agent.sv"                 -work cpu_data_master_agent                     
-  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_slave_translator.sv"             -work jtag_uart_avalon_jtag_slave_translator    
-  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_master_translator.sv"            -work cpu_data_master_translator                
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_cpu_cpu.v"                          -work cpu                                       
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_cpu_cpu_debug_slave_sysclk.v"       -work cpu                                       
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_cpu_cpu_debug_slave_tck.v"          -work cpu                                       
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_cpu_cpu_debug_slave_wrapper.v"      -work cpu                                       
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_cpu_cpu_oci_test_bench.v"           -work cpu                                       
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_cpu_cpu_test_bench.v"               -work cpu                                       
-  vlog  "$QSYS_SIMDIR/submodules/altera_reset_controller.v"                     -work rst_controller                            
-  vlog  "$QSYS_SIMDIR/submodules/altera_reset_synchronizer.v"                   -work rst_controller                            
-  vlog  "$QSYS_SIMDIR/submodules/altera_irq_clock_crosser.sv"                   -work irq_synchronizer                          
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_irq_mapper.sv"                      -work irq_mapper                                
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_1.v"                -work mm_interconnect_1                         
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0.v"                -work mm_interconnect_0                         
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_sysid_qsys_0.vo"                    -work sysid_qsys_0                              
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_sdram.v"                            -work sdram                                     
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_red_leds.v"                         -work red_leds                                  
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_keycode.v"                          -work keycode                                   
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_jtag_uart.v"                        -work jtag_uart                                 
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_cpu.v"                              -work cpu                                       
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_clocks.vo"                          -work clocks                                    
-  vlog  "$QSYS_SIMDIR/submodules/altera_avalon_mm_clock_crossing_bridge.v"      -work clock_crossing_io                         
-  vlog  "$QSYS_SIMDIR/submodules/altera_avalon_dc_fifo.v"                       -work clock_crossing_io                         
-  vlog  "$QSYS_SIMDIR/submodules/altera_dcfifo_synchronizer_bundle.v"           -work clock_crossing_io                         
-  vlog  "$QSYS_SIMDIR/submodules/altera_std_synchronizer_nocut.v"               -work clock_crossing_io                         
-  vlog  "$QSYS_SIMDIR/submodules/usb_system_all_switches.v"                     -work all_switches                              
-  vlog  "$QSYS_SIMDIR/submodules/CY7C67200_IF.v"                                -work CY7C67200_IF_0                            
-  vlog  "$QSYS_SIMDIR/usb_system.v"                                                                                             
+  vlog  "$QSYS_SIMDIR/submodules/altera_avalon_st_handshake_clock_crosser.v"    -work crosser                                
+  vlog  "$QSYS_SIMDIR/submodules/altera_avalon_st_clock_crosser.v"              -work crosser                                
+  vlog  "$QSYS_SIMDIR/submodules/altera_avalon_st_pipeline_base.v"              -work crosser                                
+  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                   -work rsp_mux_001                            
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_rsp_mux_001.sv"   -work rsp_mux_001                            
+  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                   -work rsp_mux                                
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_rsp_mux.sv"       -work rsp_mux                                
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_rsp_demux_003.sv" -work rsp_demux_003                          
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_rsp_demux_001.sv" -work rsp_demux_001                          
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_rsp_demux.sv"     -work rsp_demux                              
+  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                   -work cmd_mux_003                            
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_cmd_mux_003.sv"   -work cmd_mux_003                            
+  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                   -work cmd_mux                                
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_cmd_mux.sv"       -work cmd_mux                                
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_cmd_demux_001.sv" -work cmd_demux_001                          
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_cmd_demux.sv"     -work cmd_demux                              
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_router_005.sv"    -work router_005                             
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_router_002.sv"    -work router_002                             
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_router_001.sv"    -work router_001                             
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_router.sv"        -work router                                 
+  vlog  "$QSYS_SIMDIR/submodules/altera_avalon_sc_fifo.v"                       -work audio_avalon_audio_slave_agent_rsp_fifo
+  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_slave_agent.sv"                  -work audio_avalon_audio_slave_agent         
+  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_burst_uncompressor.sv"           -work audio_avalon_audio_slave_agent         
+  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_master_agent.sv"                 -work cpu_data_master_agent                  
+  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_slave_translator.sv"             -work audio_avalon_audio_slave_translator    
+  vlog  "$QSYS_SIMDIR/submodules/altera_merlin_master_translator.sv"            -work cpu_data_master_translator             
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_cpu_cpu.v"                          -work cpu                                    
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_cpu_cpu_debug_slave_sysclk.v"       -work cpu                                    
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_cpu_cpu_debug_slave_tck.v"          -work cpu                                    
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_cpu_cpu_debug_slave_wrapper.v"      -work cpu                                    
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_cpu_cpu_oci_test_bench.v"           -work cpu                                    
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_cpu_cpu_test_bench.v"               -work cpu                                    
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_avalon_reset_from_locked_signal.v"   -work reset_from_locked                      
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_altpll.v"                            -work audio_pll                              
+  vlog  "$QSYS_SIMDIR/submodules/altera_reset_controller.v"                     -work rst_controller                         
+  vlog  "$QSYS_SIMDIR/submodules/altera_reset_synchronizer.v"                   -work rst_controller                         
+  vlog  "$QSYS_SIMDIR/submodules/altera_irq_clock_crosser.sv"                   -work irq_synchronizer                       
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_irq_mapper.sv"                      -work irq_mapper                             
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_1.v"                -work mm_interconnect_1                      
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0.v"                -work mm_interconnect_0                      
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_sysid_qsys_0.vo"                    -work sysid_qsys_0                           
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_sdram.v"                            -work sdram                                  
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_red_leds.v"                         -work red_leds                               
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_keycode.v"                          -work keycode                                
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_jtag_uart.v"                        -work jtag_uart                              
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_cpu.v"                              -work cpu                                    
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_clocks.vo"                          -work clocks                                 
+  vlog  "$QSYS_SIMDIR/submodules/altera_avalon_mm_clock_crossing_bridge.v"      -work clock_crossing_io                      
+  vlog  "$QSYS_SIMDIR/submodules/altera_avalon_dc_fifo.v"                       -work clock_crossing_io                      
+  vlog  "$QSYS_SIMDIR/submodules/altera_dcfifo_synchronizer_bundle.v"           -work clock_crossing_io                      
+  vlog  "$QSYS_SIMDIR/submodules/altera_std_synchronizer_nocut.v"               -work clock_crossing_io                      
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_audio_pll_0.v"                      -work audio_pll_0                            
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_av_config_serial_bus_controller.v"   -work audio_config                           
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_slow_clock_generator.v"              -work audio_config                           
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_av_config_auto_init.v"               -work audio_config                           
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_dc2.v"           -work audio_config                           
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_d5m.v"           -work audio_config                           
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_lcm.v"           -work audio_config                           
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_ltm.v"           -work audio_config                           
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_ob_de1_soc.v"    -work audio_config                           
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_ob_de2_115.v"    -work audio_config                           
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_ob_audio.v"      -work audio_config                           
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_ob_adv7180.v"    -work audio_config                           
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_ob_adv7181.v"    -work audio_config                           
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_audio_config.v"                     -work audio_config                           
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_audio_bit_counter.v"                 -work audio                                  
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_audio_in_deserializer.v"             -work audio                                  
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_audio_out_serializer.v"              -work audio                                  
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_clock_edge.v"                        -work audio                                  
+  vlog  "$QSYS_SIMDIR/submodules/altera_up_sync_fifo.v"                         -work audio                                  
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_audio.v"                            -work audio                                  
+  vlog  "$QSYS_SIMDIR/submodules/usb_system_all_switches.v"                     -work all_switches                           
+  vlog  "$QSYS_SIMDIR/submodules/CY7C67200_IF.v"                                -work CY7C67200_IF_0                         
+  vlog  "$QSYS_SIMDIR/usb_system.v"                                                                                          
 }
 
 # ----------------------------------------
 # Elaborate top level design
 alias elab {
   echo "\[exec\] elab"
-  eval vsim +access +r -t ps $ELAB_OPTIONS -L work -L crosser -L rsp_mux_001 -L rsp_mux -L rsp_demux_001 -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L jtag_uart_avalon_jtag_slave_agent_rsp_fifo -L jtag_uart_avalon_jtag_slave_agent -L cpu_data_master_agent -L jtag_uart_avalon_jtag_slave_translator -L cpu_data_master_translator -L cpu -L rst_controller -L irq_synchronizer -L irq_mapper -L mm_interconnect_1 -L mm_interconnect_0 -L sysid_qsys_0 -L sdram -L red_leds -L keycode -L jtag_uart -L clocks -L clock_crossing_io -L all_switches -L CY7C67200_IF_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver $TOP_LEVEL_NAME
+  eval vsim +access +r -t ps $ELAB_OPTIONS -L work -L crosser -L rsp_mux_001 -L rsp_mux -L rsp_demux_003 -L rsp_demux_001 -L rsp_demux -L cmd_mux_003 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_005 -L router_002 -L router_001 -L router -L audio_avalon_audio_slave_agent_rsp_fifo -L audio_avalon_audio_slave_agent -L cpu_data_master_agent -L audio_avalon_audio_slave_translator -L cpu_data_master_translator -L cpu -L reset_from_locked -L audio_pll -L rst_controller -L irq_synchronizer -L irq_mapper -L mm_interconnect_1 -L mm_interconnect_0 -L sysid_qsys_0 -L sdram -L red_leds -L keycode -L jtag_uart -L clocks -L clock_crossing_io -L audio_pll_0 -L audio_config -L audio -L all_switches -L CY7C67200_IF_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------
 # Elaborate the top level design with -dbg -O2 option
 alias elab_debug {
   echo "\[exec\] elab_debug"
-  eval vsim -dbg -O2 +access +r -t ps $ELAB_OPTIONS -L work -L crosser -L rsp_mux_001 -L rsp_mux -L rsp_demux_001 -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L jtag_uart_avalon_jtag_slave_agent_rsp_fifo -L jtag_uart_avalon_jtag_slave_agent -L cpu_data_master_agent -L jtag_uart_avalon_jtag_slave_translator -L cpu_data_master_translator -L cpu -L rst_controller -L irq_synchronizer -L irq_mapper -L mm_interconnect_1 -L mm_interconnect_0 -L sysid_qsys_0 -L sdram -L red_leds -L keycode -L jtag_uart -L clocks -L clock_crossing_io -L all_switches -L CY7C67200_IF_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver $TOP_LEVEL_NAME
+  eval vsim -dbg -O2 +access +r -t ps $ELAB_OPTIONS -L work -L crosser -L rsp_mux_001 -L rsp_mux -L rsp_demux_003 -L rsp_demux_001 -L rsp_demux -L cmd_mux_003 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_005 -L router_002 -L router_001 -L router -L audio_avalon_audio_slave_agent_rsp_fifo -L audio_avalon_audio_slave_agent -L cpu_data_master_agent -L audio_avalon_audio_slave_translator -L cpu_data_master_translator -L cpu -L reset_from_locked -L audio_pll -L rst_controller -L irq_synchronizer -L irq_mapper -L mm_interconnect_1 -L mm_interconnect_0 -L sysid_qsys_0 -L sdram -L red_leds -L keycode -L jtag_uart -L clocks -L clock_crossing_io -L audio_pll_0 -L audio_config -L audio -L all_switches -L CY7C67200_IF_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------

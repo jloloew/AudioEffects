@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>May 6, 2015 7:30:41 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1430958641528</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>May 6, 2015 8:22:24 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1430961744424</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Justin\Documents\ece385\final_project\lab8_usb\software\usb_kb_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\usb_system.sopcinfo</SopcDesignFile>
@@ -917,26 +917,38 @@
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>audio_config</slaveDescriptor>
+                <addressRange>0x11001040 - 0x1100104F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>audio</slaveDescriptor>
+                <addressRange>0x11001050 - 0x1100105F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>keycode</slaveDescriptor>
-                <addressRange>0x11001080 - 0x1100108F</addressRange>
+                <addressRange>0x11001060 - 0x1100106F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>clocks</slaveDescriptor>
-                <addressRange>0x11001090 - 0x1100109F</addressRange>
+                <addressRange>0x11001070 - 0x1100107F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x110010A8 - 0x110010AF</addressRange>
+                <addressRange>0x11001088 - 0x1100108F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x110010B0 - 0x110010B7</addressRange>
+                <addressRange>0x11001090 - 0x11001097</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

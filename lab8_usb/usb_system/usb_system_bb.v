@@ -23,7 +23,14 @@ module usb_system (
 	usb_CS_N,
 	usb_RST_N,
 	usb_INT,
-	usb_out_clk_clk);	
+	usb_out_clk_clk,
+	audio_wire_ADCDAT,
+	audio_wire_ADCLRCK,
+	audio_wire_BCLK,
+	audio_wire_DACDAT,
+	audio_wire_DACLRCK,
+	audio_config_wire_SDAT,
+	audio_config_wire_SCLK);	
 
 	input	[17:0]	all_switches_wire_export;
 	input		clk_clk;
@@ -49,4 +56,11 @@ module usb_system (
 	output		usb_RST_N;
 	input		usb_INT;
 	output		usb_out_clk_clk;
+	input		audio_wire_ADCDAT;
+	input		audio_wire_ADCLRCK;
+	input		audio_wire_BCLK;
+	output		audio_wire_DACDAT;
+	input		audio_wire_DACLRCK;
+	inout		audio_config_wire_SDAT;
+	output		audio_config_wire_SCLK;
 endmodule

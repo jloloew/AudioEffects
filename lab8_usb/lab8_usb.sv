@@ -43,7 +43,16 @@ module  lab8_usb 		( input      Clk,
 							  output			 sdram_wire_cke,				// SDRAM Clock Enable
 							  output			 sdram_wire_we_n,				// SDRAM Write Enable
 							  output			 sdram_wire_cs_n,				// SDRAM Chip Select
-							  output			 sdram_clk						// SDRAM Clock
+							  output			 sdram_clk,						// SDRAM Clock
+							// Audio
+							input			AUD_ADCDAT,
+							input			AUD_ADCLRCK,
+							input			AUD_BCLK,
+							output			AUD_DACDAT,
+							input			AUD_DACLRCK,
+							// Audio Config
+							inout			I2C_SCLK,
+							output			I2C_SDAT
 											);
     
     logic Reset_h;
@@ -56,7 +65,13 @@ module  lab8_usb 		( input      Clk,
 	    
 	 usb_system usbsys_instance(
 										 .clk_clk(Clk),         
-										 .reset_reset_n(1'b1),   
+										 .reset_reset_n(1'b1),
+										// Audio
+										.audio_wire_ADCDAT (AUD_ADCDAT), .audio_wire_ADCLRCK (AUD_ADCLRCK),
+										.audio_wire_BCLK (AUD_BCLK), .audio_wire_DACDAT (AUD_DACDAT),
+										.audio_wire_DACLRCK (AUD_DACLRCK),
+										// Audio Config
+										.audio_config_wire_SDAT (I2C_SDAT), .audio_config_wire_SCLK (I2C_SCLK),
 										 .all_switches_wire_export(SW),
 										 .led_wire_export(LEDG),
 										 .red_leds_wire_export(LEDR),

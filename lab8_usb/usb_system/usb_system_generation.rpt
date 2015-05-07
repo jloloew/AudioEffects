@@ -6,6 +6,12 @@ Progress: Adding CY7C67200_IF_0 [CY7C67200_IF 1.0]
 Progress: Parameterizing module CY7C67200_IF_0
 Progress: Adding all_switches [altera_avalon_pio 14.1]
 Progress: Parameterizing module all_switches
+Progress: Adding audio [altera_up_avalon_audio 14.1]
+Progress: Parameterizing module audio
+Progress: Adding audio_config [altera_up_avalon_audio_and_video_config 14.1]
+Progress: Parameterizing module audio_config
+Progress: Adding audio_pll_0 [altera_up_avalon_audio_pll 14.1]
+Progress: Parameterizing module audio_pll_0
 Progress: Adding clk [clock_source 14.1]
 Progress: Parameterizing module clk
 Progress: Adding clock_bridge_sdram [altera_clock_bridge 14.1]
@@ -42,10 +48,12 @@ Warning: usb_system.clocks: clocks.areset_conduit must be exported, or connected
 Warning: usb_system.clocks: clocks.locked_conduit must be exported, or connected to a matching conduit.
 Warning: usb_system.clocks: clocks.phasedone_conduit must be exported, or connected to a matching conduit.
 Info: usb_system: Generating usb_system "usb_system" for SIM_VERILOG
-Info: Inserting clock-crossing logic between cmd_demux.src6 and cmd_mux_006.sink0
-Info: Inserting clock-crossing logic between cmd_demux_001.src3 and cmd_mux_006.sink1
-Info: Inserting clock-crossing logic between rsp_demux_006.src0 and rsp_mux.sink6
-Info: Inserting clock-crossing logic between rsp_demux_006.src1 and rsp_mux_001.sink3
+Info: Inserting clock-crossing logic between cmd_demux.src0 and cmd_mux.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src8 and cmd_mux_008.sink0
+Info: Inserting clock-crossing logic between cmd_demux_001.src3 and cmd_mux_008.sink1
+Info: Inserting clock-crossing logic between rsp_demux.src0 and rsp_mux.sink0
+Info: Inserting clock-crossing logic between rsp_demux_008.src0 and rsp_mux.sink8
+Info: Inserting clock-crossing logic between rsp_demux_008.src1 and rsp_mux_001.sink3
 Info: Interconnect is inserted between master clock_crossing_io.m0 and slave CY7C67200_IF_0.hpi because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
 Info: Interconnect is inserted between master clock_crossing_io.m0 and slave CY7C67200_IF_0.hpi because the master has readdatavalid signal 1 bit wide, but the slave is 0 bit wide.
 Info: Interconnect is inserted between master clock_crossing_io.m0 and slave CY7C67200_IF_0.hpi because the master has burstcount signal 1 bit wide, but the slave is 0 bit wide.
@@ -54,28 +62,33 @@ Info: Interconnect is inserted between master clock_crossing_io.m0 and slave CY7
 Info: Interconnect is inserted between master clock_crossing_io.m0 and slave CY7C67200_IF_0.hpi because the master has debugaccess signal 1 bit wide, but the slave is 0 bit wide.
 Info: CY7C67200_IF_0: "usb_system" instantiated CY7C67200_IF "CY7C67200_IF_0"
 Info: all_switches: Starting RTL generation for module 'usb_system_all_switches'
-Info: all_switches:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=usb_system_all_switches --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0002_all_switches_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0002_all_switches_gen//usb_system_all_switches_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0002_all_switches_gen/  ]
+Info: all_switches:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=usb_system_all_switches --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0109_all_switches_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0109_all_switches_gen//usb_system_all_switches_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0109_all_switches_gen/  ]
 Info: all_switches: Done RTL generation for module 'usb_system_all_switches'
 Info: all_switches: "usb_system" instantiated altera_avalon_pio "all_switches"
+Info: audio: Starting Generation of Audio Controller
+Info: audio: "usb_system" instantiated altera_up_avalon_audio "audio"
+Info: audio_config: Starting Generation of Audio and Video Config
+Info: audio_config: "usb_system" instantiated altera_up_avalon_audio_and_video_config "audio_config"
+Info: audio_pll_0: "usb_system" instantiated altera_up_avalon_audio_pll "audio_pll_0"
 Info: clock_crossing_io: "usb_system" instantiated altera_avalon_mm_clock_crossing_bridge "clock_crossing_io"
 Info: clocks: Generating Verilog simulation model
 Info: clocks: Generated simulation model usb_system_clocks.vo
 Info: clocks: "usb_system" instantiated altpll "clocks"
 Info: cpu: "usb_system" instantiated altera_nios2_gen2 "cpu"
 Info: jtag_uart: Starting RTL generation for module 'usb_system_jtag_uart'
-Info: jtag_uart:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=usb_system_jtag_uart --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0007_jtag_uart_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0007_jtag_uart_gen//usb_system_jtag_uart_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0007_jtag_uart_gen/  ]
+Info: jtag_uart:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=usb_system_jtag_uart --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0116_jtag_uart_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0116_jtag_uart_gen//usb_system_jtag_uart_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0116_jtag_uart_gen/  ]
 Info: jtag_uart: Done RTL generation for module 'usb_system_jtag_uart'
 Info: jtag_uart: "usb_system" instantiated altera_avalon_jtag_uart "jtag_uart"
 Info: keycode: Starting RTL generation for module 'usb_system_keycode'
-Info: keycode:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=usb_system_keycode --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0008_keycode_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0008_keycode_gen//usb_system_keycode_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0008_keycode_gen/  ]
+Info: keycode:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=usb_system_keycode --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0117_keycode_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0117_keycode_gen//usb_system_keycode_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0117_keycode_gen/  ]
 Info: keycode: Done RTL generation for module 'usb_system_keycode'
 Info: keycode: "usb_system" instantiated altera_avalon_pio "keycode"
 Info: red_leds: Starting RTL generation for module 'usb_system_red_leds'
-Info: red_leds:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=usb_system_red_leds --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0009_red_leds_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0009_red_leds_gen//usb_system_red_leds_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0009_red_leds_gen/  ]
+Info: red_leds:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=usb_system_red_leds --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0118_red_leds_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0118_red_leds_gen//usb_system_red_leds_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0118_red_leds_gen/  ]
 Info: red_leds: Done RTL generation for module 'usb_system_red_leds'
 Info: red_leds: "usb_system" instantiated altera_avalon_pio "red_leds"
 Info: sdram: Starting RTL generation for module 'usb_system_sdram'
-Info: sdram:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=usb_system_sdram --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0010_sdram_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0010_sdram_gen//usb_system_sdram_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0010_sdram_gen/  ]
+Info: sdram:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=usb_system_sdram --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0119_sdram_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0119_sdram_gen//usb_system_sdram_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0119_sdram_gen/  ]
 Info: sdram: Done RTL generation for module 'usb_system_sdram'
 Info: sdram: "usb_system" instantiated altera_avalon_new_sdram_controller "sdram"
 Info: sysid_qsys_0: Generating Verilog simulation model
@@ -86,45 +99,48 @@ Info: mm_interconnect_1: "usb_system" instantiated altera_mm_interconnect "mm_in
 Info: irq_mapper: "usb_system" instantiated altera_irq_mapper "irq_mapper"
 Info: irq_synchronizer: "usb_system" instantiated altera_irq_clock_crosser "irq_synchronizer"
 Info: rst_controller: "usb_system" instantiated altera_reset_controller "rst_controller"
+Info: audio_pll: "audio_pll_0" instantiated altera_up_altpll "audio_pll"
+Info: reset_from_locked: "audio_pll_0" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
 Info: cpu: Starting RTL generation for module 'usb_system_cpu_cpu'
-Info: cpu:   Generation command is [exec C:/altera/14.1/quartus/bin64/eperlcmd.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=usb_system_cpu_cpu --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0017_cpu_gen/ --quartus_bindir=C:/altera/14.1/quartus/bin64 --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0017_cpu_gen//usb_system_cpu_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0017_cpu_gen/  ]
-Info: cpu: # 2015.05.06 19:03:52 (*) Starting Nios II generation
-Info: cpu: # 2015.05.06 19:03:52 (*)   Checking for plaintext license.
-Info: cpu: # 2015.05.06 19:03:54 (*)   Couldn't query license setup in Quartus directory C:/altera/14.1/quartus/bin64
-Info: cpu: # 2015.05.06 19:03:54 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info: cpu: # 2015.05.06 19:03:54 (*)   LM_LICENSE_FILE environment variable is empty
-Info: cpu: # 2015.05.06 19:03:54 (*)   Plaintext license not found.
-Info: cpu: # 2015.05.06 19:03:54 (*)   No license required to generate encrypted Nios II/e.
-Info: cpu: # 2015.05.06 19:03:54 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2015.05.06 19:03:54 (*)   Creating all objects for CPU
-Info: cpu: # 2015.05.06 19:03:56 (*)   Creating 'C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0017_cpu_gen//usb_system_cpu_cpu_nios2_waves.do'
-Info: cpu: # 2015.05.06 19:03:56 (*)   Generating RTL from CPU objects
-Info: cpu: # 2015.05.06 19:03:56 (*)   Creating plain-text RTL
-Info: cpu: # 2015.05.06 19:03:58 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec C:/altera/14.1/quartus/bin64/eperlcmd.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=usb_system_cpu_cpu --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0128_cpu_gen/ --quartus_bindir=C:/altera/14.1/quartus/bin64 --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0128_cpu_gen//usb_system_cpu_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0128_cpu_gen/  ]
+Info: cpu: # 2015.05.06 20:15:44 (*) Starting Nios II generation
+Info: cpu: # 2015.05.06 20:15:44 (*)   Checking for plaintext license.
+Info: cpu: # 2015.05.06 20:15:46 (*)   Couldn't query license setup in Quartus directory C:/altera/14.1/quartus/bin64
+Info: cpu: # 2015.05.06 20:15:46 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2015.05.06 20:15:46 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2015.05.06 20:15:46 (*)   Plaintext license not found.
+Info: cpu: # 2015.05.06 20:15:46 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2015.05.06 20:15:46 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2015.05.06 20:15:46 (*)   Creating all objects for CPU
+Info: cpu: # 2015.05.06 20:15:48 (*)   Creating 'C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0128_cpu_gen//usb_system_cpu_cpu_nios2_waves.do'
+Info: cpu: # 2015.05.06 20:15:48 (*)   Generating RTL from CPU objects
+Info: cpu: # 2015.05.06 20:15:48 (*)   Creating plain-text RTL
+Info: cpu: # 2015.05.06 20:15:49 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'usb_system_cpu_cpu'
 Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
 Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
-Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: audio_avalon_audio_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "audio_avalon_audio_slave_translator"
 Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
-Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
-Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: audio_avalon_audio_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "audio_avalon_audio_slave_agent"
+Info: audio_avalon_audio_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "audio_avalon_audio_slave_agent_rsp_fifo"
 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
-Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
-Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: cmd_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_003"
 Info: Reusing file C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/simulation/submodules/altera_merlin_arbitrator.sv
 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
 Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_003"
 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
 Info: Reusing file C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/simulation/submodules/altera_merlin_arbitrator.sv
 Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
 Info: Reusing file C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/simulation/submodules/altera_merlin_arbitrator.sv
 Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
-Info: usb_system: Done "usb_system" with 35 modules, 60 files
+Info: usb_system: Done "usb_system" with 41 modules, 83 files
 Info: ip-generate succeeded.
 Info: Finished: Create simulation model
 Info: Starting: Create Modelsim Project.
@@ -141,7 +157,7 @@ Info: Generating the following file(s) for NCSIM simulator in C:/Users/Justin/Do
 Info: 	cadence/cds.lib
 Info: 	cadence/hdl.var
 Info: 	cadence/ncsim_setup.sh
-Info: 	33 .cds.lib files in cadence/cds_libs/ directory
+Info: 	39 .cds.lib files in cadence/cds_libs/ directory
 Info: Generating the following file(s) for RIVIERA simulator in C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/simulation/ directory:
 Info: 	aldec/rivierapro_setup.tcl
 Info: Finished: Create Modelsim Project.
@@ -153,6 +169,12 @@ Progress: Adding CY7C67200_IF_0 [CY7C67200_IF 1.0]
 Progress: Parameterizing module CY7C67200_IF_0
 Progress: Adding all_switches [altera_avalon_pio 14.1]
 Progress: Parameterizing module all_switches
+Progress: Adding audio [altera_up_avalon_audio 14.1]
+Progress: Parameterizing module audio
+Progress: Adding audio_config [altera_up_avalon_audio_and_video_config 14.1]
+Progress: Parameterizing module audio_config
+Progress: Adding audio_pll_0 [altera_up_avalon_audio_pll 14.1]
+Progress: Parameterizing module audio_pll_0
 Progress: Adding clk [clock_source 14.1]
 Progress: Parameterizing module clk
 Progress: Adding clock_bridge_sdram [altera_clock_bridge 14.1]
@@ -199,6 +221,12 @@ Progress: Adding CY7C67200_IF_0 [CY7C67200_IF 1.0]
 Progress: Parameterizing module CY7C67200_IF_0
 Progress: Adding all_switches [altera_avalon_pio 14.1]
 Progress: Parameterizing module all_switches
+Progress: Adding audio [altera_up_avalon_audio 14.1]
+Progress: Parameterizing module audio
+Progress: Adding audio_config [altera_up_avalon_audio_and_video_config 14.1]
+Progress: Parameterizing module audio_config
+Progress: Adding audio_pll_0 [altera_up_avalon_audio_pll 14.1]
+Progress: Parameterizing module audio_pll_0
 Progress: Adding clk [clock_source 14.1]
 Progress: Parameterizing module clk
 Progress: Adding clock_bridge_sdram [altera_clock_bridge 14.1]
@@ -235,10 +263,12 @@ Warning: usb_system.clocks: clocks.areset_conduit must be exported, or connected
 Warning: usb_system.clocks: clocks.locked_conduit must be exported, or connected to a matching conduit.
 Warning: usb_system.clocks: clocks.phasedone_conduit must be exported, or connected to a matching conduit.
 Info: usb_system: Generating usb_system "usb_system" for QUARTUS_SYNTH
-Info: Inserting clock-crossing logic between cmd_demux.src6 and cmd_mux_006.sink0
-Info: Inserting clock-crossing logic between cmd_demux_001.src3 and cmd_mux_006.sink1
-Info: Inserting clock-crossing logic between rsp_demux_006.src0 and rsp_mux.sink6
-Info: Inserting clock-crossing logic between rsp_demux_006.src1 and rsp_mux_001.sink3
+Info: Inserting clock-crossing logic between cmd_demux.src0 and cmd_mux.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src8 and cmd_mux_008.sink0
+Info: Inserting clock-crossing logic between cmd_demux_001.src3 and cmd_mux_008.sink1
+Info: Inserting clock-crossing logic between rsp_demux.src0 and rsp_mux.sink0
+Info: Inserting clock-crossing logic between rsp_demux_008.src0 and rsp_mux.sink8
+Info: Inserting clock-crossing logic between rsp_demux_008.src1 and rsp_mux_001.sink3
 Info: Interconnect is inserted between master clock_crossing_io.m0 and slave CY7C67200_IF_0.hpi because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
 Info: Interconnect is inserted between master clock_crossing_io.m0 and slave CY7C67200_IF_0.hpi because the master has readdatavalid signal 1 bit wide, but the slave is 0 bit wide.
 Info: Interconnect is inserted between master clock_crossing_io.m0 and slave CY7C67200_IF_0.hpi because the master has burstcount signal 1 bit wide, but the slave is 0 bit wide.
@@ -247,26 +277,31 @@ Info: Interconnect is inserted between master clock_crossing_io.m0 and slave CY7
 Info: Interconnect is inserted between master clock_crossing_io.m0 and slave CY7C67200_IF_0.hpi because the master has debugaccess signal 1 bit wide, but the slave is 0 bit wide.
 Info: CY7C67200_IF_0: "usb_system" instantiated CY7C67200_IF "CY7C67200_IF_0"
 Info: all_switches: Starting RTL generation for module 'usb_system_all_switches'
-Info: all_switches:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=usb_system_all_switches --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0036_all_switches_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0036_all_switches_gen//usb_system_all_switches_component_configuration.pl  --do_build_sim=0  ]
+Info: all_switches:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=usb_system_all_switches --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0148_all_switches_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0148_all_switches_gen//usb_system_all_switches_component_configuration.pl  --do_build_sim=0  ]
 Info: all_switches: Done RTL generation for module 'usb_system_all_switches'
 Info: all_switches: "usb_system" instantiated altera_avalon_pio "all_switches"
+Info: audio: Starting Generation of Audio Controller
+Info: audio: "usb_system" instantiated altera_up_avalon_audio "audio"
+Info: audio_config: Starting Generation of Audio and Video Config
+Info: audio_config: "usb_system" instantiated altera_up_avalon_audio_and_video_config "audio_config"
+Info: audio_pll_0: "usb_system" instantiated altera_up_avalon_audio_pll "audio_pll_0"
 Info: clock_crossing_io: "usb_system" instantiated altera_avalon_mm_clock_crossing_bridge "clock_crossing_io"
 Info: clocks: "usb_system" instantiated altpll "clocks"
 Info: cpu: "usb_system" instantiated altera_nios2_gen2 "cpu"
 Info: jtag_uart: Starting RTL generation for module 'usb_system_jtag_uart'
-Info: jtag_uart:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=usb_system_jtag_uart --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0039_jtag_uart_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0039_jtag_uart_gen//usb_system_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=usb_system_jtag_uart --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0153_jtag_uart_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0153_jtag_uart_gen//usb_system_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag_uart: Done RTL generation for module 'usb_system_jtag_uart'
 Info: jtag_uart: "usb_system" instantiated altera_avalon_jtag_uart "jtag_uart"
 Info: keycode: Starting RTL generation for module 'usb_system_keycode'
-Info: keycode:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=usb_system_keycode --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0040_keycode_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0040_keycode_gen//usb_system_keycode_component_configuration.pl  --do_build_sim=0  ]
+Info: keycode:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=usb_system_keycode --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0154_keycode_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0154_keycode_gen//usb_system_keycode_component_configuration.pl  --do_build_sim=0  ]
 Info: keycode: Done RTL generation for module 'usb_system_keycode'
 Info: keycode: "usb_system" instantiated altera_avalon_pio "keycode"
 Info: red_leds: Starting RTL generation for module 'usb_system_red_leds'
-Info: red_leds:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=usb_system_red_leds --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0041_red_leds_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0041_red_leds_gen//usb_system_red_leds_component_configuration.pl  --do_build_sim=0  ]
+Info: red_leds:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=usb_system_red_leds --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0155_red_leds_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0155_red_leds_gen//usb_system_red_leds_component_configuration.pl  --do_build_sim=0  ]
 Info: red_leds: Done RTL generation for module 'usb_system_red_leds'
 Info: red_leds: "usb_system" instantiated altera_avalon_pio "red_leds"
 Info: sdram: Starting RTL generation for module 'usb_system_sdram'
-Info: sdram:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=usb_system_sdram --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0042_sdram_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0042_sdram_gen//usb_system_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=usb_system_sdram --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0156_sdram_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0156_sdram_gen//usb_system_sdram_component_configuration.pl  --do_build_sim=0  ]
 Info: sdram: Done RTL generation for module 'usb_system_sdram'
 Info: sdram: "usb_system" instantiated altera_avalon_new_sdram_controller "sdram"
 Info: sysid_qsys_0: "usb_system" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
@@ -275,44 +310,47 @@ Info: mm_interconnect_1: "usb_system" instantiated altera_mm_interconnect "mm_in
 Info: irq_mapper: "usb_system" instantiated altera_irq_mapper "irq_mapper"
 Info: irq_synchronizer: "usb_system" instantiated altera_irq_clock_crosser "irq_synchronizer"
 Info: rst_controller: "usb_system" instantiated altera_reset_controller "rst_controller"
+Info: audio_pll: "audio_pll_0" instantiated altera_up_altpll "audio_pll"
+Info: reset_from_locked: "audio_pll_0" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
 Info: cpu: Starting RTL generation for module 'usb_system_cpu_cpu'
-Info: cpu:   Generation command is [exec C:/altera/14.1/quartus/bin64/eperlcmd.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=usb_system_cpu_cpu --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0047_cpu_gen/ --quartus_bindir=C:/altera/14.1/quartus/bin64 --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_6437487574118388780.dir/0047_cpu_gen//usb_system_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2015.05.06 19:04:19 (*) Starting Nios II generation
-Info: cpu: # 2015.05.06 19:04:19 (*)   Checking for plaintext license.
-Info: cpu: # 2015.05.06 19:04:20 (*)   Couldn't query license setup in Quartus directory C:/altera/14.1/quartus/bin64
-Info: cpu: # 2015.05.06 19:04:20 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info: cpu: # 2015.05.06 19:04:20 (*)   LM_LICENSE_FILE environment variable is empty
-Info: cpu: # 2015.05.06 19:04:20 (*)   Plaintext license not found.
-Info: cpu: # 2015.05.06 19:04:20 (*)   No license required to generate encrypted Nios II/e.
-Info: cpu: # 2015.05.06 19:04:20 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2015.05.06 19:04:20 (*)   Creating all objects for CPU
-Info: cpu: # 2015.05.06 19:04:22 (*)   Generating RTL from CPU objects
-Info: cpu: # 2015.05.06 19:04:22 (*)   Creating plain-text RTL
-Info: cpu: # 2015.05.06 19:04:23 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec C:/altera/14.1/quartus/bin64/eperlcmd.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=usb_system_cpu_cpu --dir=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0163_cpu_gen/ --quartus_bindir=C:/altera/14.1/quartus/bin64 --verilog --config=C:/Users/Justin/AppData/Local/Temp/alt6562_4733707291249115399.dir/0163_cpu_gen//usb_system_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2015.05.06 20:16:09 (*) Starting Nios II generation
+Info: cpu: # 2015.05.06 20:16:09 (*)   Checking for plaintext license.
+Info: cpu: # 2015.05.06 20:16:11 (*)   Couldn't query license setup in Quartus directory C:/altera/14.1/quartus/bin64
+Info: cpu: # 2015.05.06 20:16:11 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2015.05.06 20:16:11 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2015.05.06 20:16:11 (*)   Plaintext license not found.
+Info: cpu: # 2015.05.06 20:16:11 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2015.05.06 20:16:11 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2015.05.06 20:16:11 (*)   Creating all objects for CPU
+Info: cpu: # 2015.05.06 20:16:12 (*)   Generating RTL from CPU objects
+Info: cpu: # 2015.05.06 20:16:12 (*)   Creating plain-text RTL
+Info: cpu: # 2015.05.06 20:16:14 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'usb_system_cpu_cpu'
 Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
 Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
-Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: audio_avalon_audio_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "audio_avalon_audio_slave_translator"
 Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
-Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
-Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: audio_avalon_audio_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "audio_avalon_audio_slave_agent"
+Info: audio_avalon_audio_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "audio_avalon_audio_slave_agent_rsp_fifo"
 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
-Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
-Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: cmd_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_003"
 Info: Reusing file C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
 Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_003"
 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
 Info: Reusing file C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
 Info: Reusing file C:/Users/Justin/Documents/ece385/final_project/lab8_usb/usb_system/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
-Info: usb_system: Done "usb_system" with 35 modules, 54 files
+Info: usb_system: Done "usb_system" with 41 modules, 77 files
 Info: Generating third-party timing and resource estimation model ...
 Info: Done generating third-party timing and resource estimation model.
 Info: ip-generate succeeded.

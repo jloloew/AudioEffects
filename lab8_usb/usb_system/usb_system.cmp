@@ -1,6 +1,13 @@
 	component usb_system is
 		port (
 			all_switches_wire_export : in    std_logic_vector(17 downto 0) := (others => 'X'); -- export
+			audio_config_wire_SDAT   : inout std_logic                     := 'X';             -- SDAT
+			audio_config_wire_SCLK   : out   std_logic;                                        -- SCLK
+			audio_wire_ADCDAT        : in    std_logic                     := 'X';             -- ADCDAT
+			audio_wire_ADCLRCK       : in    std_logic                     := 'X';             -- ADCLRCK
+			audio_wire_BCLK          : in    std_logic                     := 'X';             -- BCLK
+			audio_wire_DACDAT        : out   std_logic;                                        -- DACDAT
+			audio_wire_DACLRCK       : in    std_logic                     := 'X';             -- DACLRCK
 			clk_clk                  : in    std_logic                     := 'X';             -- clk
 			keycode_export           : out   std_logic_vector(7 downto 0);                     -- export
 			led_wire_export          : out   std_logic_vector(7 downto 0);                     -- export

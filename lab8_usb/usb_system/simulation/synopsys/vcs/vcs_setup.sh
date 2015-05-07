@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 14.1 190 win32 2015.05.06.19:04:01
+# ACDS 14.1 190 win32 2015.05.06.20:15:52
 
 # ----------------------------------------
 # vcs - auto-generated simulation script
@@ -77,13 +77,14 @@ vcs -lca -timescale=1ps/1ps -sverilog +verilog2001ext+.v -ntb_opts dtm $ELAB_OPT
   $QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv \
   $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_rsp_mux_001.sv \
   $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_rsp_mux.sv \
+  $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_rsp_demux_003.sv \
   $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_rsp_demux_001.sv \
   $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_rsp_demux.sv \
-  $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_cmd_mux_001.sv \
+  $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_cmd_mux_003.sv \
   $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_cmd_mux.sv \
   $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_cmd_demux_001.sv \
   $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_cmd_demux.sv \
-  $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_router_003.sv \
+  $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_router_005.sv \
   $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_router_002.sv \
   $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_router_001.sv \
   $QSYS_SIMDIR/submodules/usb_system_mm_interconnect_0_router.sv \
@@ -99,6 +100,8 @@ vcs -lca -timescale=1ps/1ps -sverilog +verilog2001ext+.v -ntb_opts dtm $ELAB_OPT
   $QSYS_SIMDIR/submodules/usb_system_cpu_cpu_debug_slave_wrapper.v \
   $QSYS_SIMDIR/submodules/usb_system_cpu_cpu_oci_test_bench.v \
   $QSYS_SIMDIR/submodules/usb_system_cpu_cpu_test_bench.v \
+  $QSYS_SIMDIR/submodules/altera_up_avalon_reset_from_locked_signal.v \
+  $QSYS_SIMDIR/submodules/altera_up_altpll.v \
   $QSYS_SIMDIR/submodules/altera_reset_controller.v \
   $QSYS_SIMDIR/submodules/altera_reset_synchronizer.v \
   $QSYS_SIMDIR/submodules/altera_irq_clock_crosser.sv \
@@ -116,6 +119,26 @@ vcs -lca -timescale=1ps/1ps -sverilog +verilog2001ext+.v -ntb_opts dtm $ELAB_OPT
   $QSYS_SIMDIR/submodules/altera_avalon_dc_fifo.v \
   $QSYS_SIMDIR/submodules/altera_dcfifo_synchronizer_bundle.v \
   $QSYS_SIMDIR/submodules/altera_std_synchronizer_nocut.v \
+  $QSYS_SIMDIR/submodules/usb_system_audio_pll_0.v \
+  $QSYS_SIMDIR/submodules/altera_up_av_config_serial_bus_controller.v \
+  $QSYS_SIMDIR/submodules/altera_up_slow_clock_generator.v \
+  $QSYS_SIMDIR/submodules/altera_up_av_config_auto_init.v \
+  $QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_dc2.v \
+  $QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_d5m.v \
+  $QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_lcm.v \
+  $QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_ltm.v \
+  $QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_ob_de1_soc.v \
+  $QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_ob_de2_115.v \
+  $QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_ob_audio.v \
+  $QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_ob_adv7180.v \
+  $QSYS_SIMDIR/submodules/altera_up_av_config_auto_init_ob_adv7181.v \
+  $QSYS_SIMDIR/submodules/usb_system_audio_config.v \
+  $QSYS_SIMDIR/submodules/altera_up_audio_bit_counter.v \
+  $QSYS_SIMDIR/submodules/altera_up_audio_in_deserializer.v \
+  $QSYS_SIMDIR/submodules/altera_up_audio_out_serializer.v \
+  $QSYS_SIMDIR/submodules/altera_up_clock_edge.v \
+  $QSYS_SIMDIR/submodules/altera_up_sync_fifo.v \
+  $QSYS_SIMDIR/submodules/usb_system_audio.v \
   $QSYS_SIMDIR/submodules/usb_system_all_switches.v \
   $QSYS_SIMDIR/submodules/CY7C67200_IF.v \
   $QSYS_SIMDIR/usb_system.v \

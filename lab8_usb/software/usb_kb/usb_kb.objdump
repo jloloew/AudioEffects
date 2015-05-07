@@ -75,7 +75,7 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
  28 .quartus_project_dir 00000037  00000000  00000000  0006d99c  2**0
                   CONTENTS, READONLY
- 29 .sopcinfo     00069ce4  00000000  00000000  0006d9d3  2**0
+ 29 .sopcinfo     00077df1  00000000  00000000  0006d9d3  2**0
                   CONTENTS, READONLY
 SYMBOL TABLE:
 08000000 l    d  .entry	00000000 .entry
@@ -2400,7 +2400,7 @@ int main(void)
  8000f58:	e0bffd17 	ldw	r2,-12(fp)
  8000f5c:	10c03fcc 	andi	r3,r2,255
  8000f60:	00844034 	movhi	r2,4352
- 8000f64:	10842004 	addi	r2,r2,4224
+ 8000f64:	10841804 	addi	r2,r2,4192
  8000f68:	10c00035 	stwio	r3,0(r2)
 		
 		
@@ -18484,7 +18484,7 @@ void alt_sys_init( void )
  800f580:	01020074 	movhi	r4,2049
  800f584:	2109fe04 	addi	r4,r4,10232
  800f588:	000b883a 	mov	r5,zero
- 800f58c:	01800144 	movi	r6,5
+ 800f58c:	01800044 	movi	r6,1
  800f590:	800f71c0 	call	800f71c <altera_avalon_jtag_uart_init>
  800f594:	01020074 	movhi	r4,2049
  800f598:	2109f404 	addi	r4,r4,10192

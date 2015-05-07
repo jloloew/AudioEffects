@@ -22,6 +22,13 @@
 		.usb_CS_N                 (<connected-to-usb_CS_N>),                 //                  .CS_N
 		.usb_RST_N                (<connected-to-usb_RST_N>),                //                  .RST_N
 		.usb_INT                  (<connected-to-usb_INT>),                  //                  .INT
-		.usb_out_clk_clk          (<connected-to-usb_out_clk_clk>)           //       usb_out_clk.clk
+		.usb_out_clk_clk          (<connected-to-usb_out_clk_clk>),          //       usb_out_clk.clk
+		.audio_wire_ADCDAT        (<connected-to-audio_wire_ADCDAT>),        //        audio_wire.ADCDAT
+		.audio_wire_ADCLRCK       (<connected-to-audio_wire_ADCLRCK>),       //                  .ADCLRCK
+		.audio_wire_BCLK          (<connected-to-audio_wire_BCLK>),          //                  .BCLK
+		.audio_wire_DACDAT        (<connected-to-audio_wire_DACDAT>),        //                  .DACDAT
+		.audio_wire_DACLRCK       (<connected-to-audio_wire_DACLRCK>),       //                  .DACLRCK
+		.audio_config_wire_SDAT   (<connected-to-audio_config_wire_SDAT>),   // audio_config_wire.SDAT
+		.audio_config_wire_SCLK   (<connected-to-audio_config_wire_SCLK>)    //                  .SCLK
 	);
 

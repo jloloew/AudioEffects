@@ -54,6 +54,56 @@
          type = "String";
       }
    }
+   element audio
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+   }
+   element audio.avalon_audio_slave
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "285216848";
+         type = "String";
+      }
+   }
+   element audio_config
+   {
+      datum _sortIndex
+      {
+         value = "15";
+         type = "int";
+      }
+   }
+   element audio_config.avalon_av_config_slave
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "285216832";
+         type = "String";
+      }
+   }
+   element audio_pll_0
+   {
+      datum _sortIndex
+      {
+         value = "16";
+         type = "int";
+      }
+   }
    element clk
    {
       datum _sortIndex
@@ -158,7 +208,7 @@
    {
       datum baseAddress
       {
-         value = "285216912";
+         value = "285216880";
          type = "String";
       }
    }
@@ -190,7 +240,7 @@
    {
       datum baseAddress
       {
-         value = "285216944";
+         value = "285216912";
          type = "String";
       }
    }
@@ -214,7 +264,7 @@
    {
       datum baseAddress
       {
-         value = "285216896";
+         value = "285216864";
          type = "String";
       }
    }
@@ -293,7 +343,7 @@
    {
       datum baseAddress
       {
-         value = "285216936";
+         value = "285216904";
          type = "String";
       }
    }
@@ -320,6 +370,16 @@
  <interface
    name="all_switches_wire"
    internal="all_switches.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="audio_config_wire"
+   internal="audio_config.external_interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="audio_wire"
+   internal="audio.external_interface"
    type="conduit"
    dir="end" />
  <interface name="clk" internal="clk.clk_in" type="clock" dir="end" />
@@ -373,6 +433,47 @@
   <parameter name="simDoTestBenchWiring" value="false" />
   <parameter name="simDrivenValue" value="0" />
   <parameter name="width" value="18" />
+ </module>
+ <module name="audio" kind="altera_up_avalon_audio" version="14.1" enabled="1">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="12288000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
+  <parameter name="audio_in" value="true" />
+  <parameter name="audio_out" value="true" />
+  <parameter name="avalon_bus_type" value="Memory Mapped" />
+  <parameter name="dw" value="32" />
+ </module>
+ <module
+   name="audio_config"
+   kind="altera_up_avalon_audio_and_video_config"
+   version="14.1"
+   enabled="1">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
+  <parameter name="audio_in" value="Line In to ADC" />
+  <parameter name="bit_length" value="32" />
+  <parameter name="board" value="DE2-115" />
+  <parameter name="d5m_resolution" value="2592 x 1944" />
+  <parameter name="dac_enable" value="true" />
+  <parameter name="data_format" value="Left Justified" />
+  <parameter name="device">On-Board Peripherals</parameter>
+  <parameter name="eai" value="true" />
+  <parameter name="exposure" value="false" />
+  <parameter name="line_in_bypass" value="true" />
+  <parameter name="mic_attenuation" value="-6dB" />
+  <parameter name="mic_bypass" value="false" />
+  <parameter name="sampling_rate" value="48 kHz" />
+  <parameter name="video_format" value="NTSC" />
+ </module>
+ <module
+   name="audio_pll_0"
+   kind="altera_up_avalon_audio_pll"
+   version="14.1"
+   enabled="1">
+  <parameter name="AUTO_DEVICE" value="EP4CE115F29C7" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
+  <parameter name="audio_clk_freq" value="12.288" />
+  <parameter name="device_family" value="Cyclone IV E" />
+  <parameter name="gui_refclk" value="50.0" />
  </module>
  <module name="clk" kind="clock_source" version="14.1" enabled="1">
   <parameter name="clockFrequency" value="50000000" />
@@ -605,7 +706,7 @@
   <parameter name="dataAddrWidth" value="29" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x8000000' end='0x10000000' /><slave name='CY7C67200_IF_0.hpi' start='0x10000000' end='0x10000010' /><slave name='cpu.debug_mem_slave' start='0x11000800' end='0x11001000' /><slave name='red_leds.s1' start='0x11001010' end='0x11001020' /><slave name='all_switches.s1' start='0x11001020' end='0x11001030' /><slave name='led.s1' start='0x11001030' end='0x11001040' /><slave name='keycode.s1' start='0x11001080' end='0x11001090' /><slave name='clocks.pll_slave' start='0x11001090' end='0x110010A0' /><slave name='sysid_qsys_0.control_slave' start='0x110010A8' end='0x110010B0' /><slave name='jtag_uart.avalon_jtag_slave' start='0x110010B0' end='0x110010B8' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x8000000' end='0x10000000' /><slave name='CY7C67200_IF_0.hpi' start='0x10000000' end='0x10000010' /><slave name='cpu.debug_mem_slave' start='0x11000800' end='0x11001000' /><slave name='red_leds.s1' start='0x11001010' end='0x11001020' /><slave name='all_switches.s1' start='0x11001020' end='0x11001030' /><slave name='led.s1' start='0x11001030' end='0x11001040' /><slave name='audio_config.avalon_av_config_slave' start='0x11001040' end='0x11001050' /><slave name='audio.avalon_audio_slave' start='0x11001050' end='0x11001060' /><slave name='keycode.s1' start='0x11001060' end='0x11001070' /><slave name='clocks.pll_slave' start='0x11001070' end='0x11001080' /><slave name='sysid_qsys_0.control_slave' start='0x11001088' end='0x11001090' /><slave name='jtag_uart.avalon_jtag_slave' start='0x11001090' end='0x11001098' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -644,14 +745,14 @@
   <parameter name="icache_tagramBlockType" value="Automatic" />
   <parameter name="impl" value="Tiny" />
   <parameter name="instAddrWidth" value="29" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x8000000' end='0x10000000' /><slave name='cpu.debug_mem_slave' start='0x11000800' end='0x11001000' /><slave name='clocks.pll_slave' start='0x11001090' end='0x110010A0' /><slave name='sysid_qsys_0.control_slave' start='0x110010A8' end='0x110010B0' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x8000000' end='0x10000000' /><slave name='cpu.debug_mem_slave' start='0x11000800' end='0x11001000' /><slave name='clocks.pll_slave' start='0x11001070' end='0x11001080' /><slave name='sysid_qsys_0.control_slave' start='0x11001088' end='0x11001090' /></address-map>]]></parameter>
   <parameter name="instructionMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="instructionMasterHighPerformanceMapParam" value="" />
   <parameter name="instruction_master_high_performance_paddr_base" value="0" />
   <parameter name="instruction_master_high_performance_paddr_size" value="0" />
   <parameter name="instruction_master_paddr_base" value="0" />
   <parameter name="instruction_master_paddr_size" value="0" />
-  <parameter name="internalIrqMaskSystemInfo" value="96" />
+  <parameter name="internalIrqMaskSystemInfo" value="7" />
   <parameter name="io_regionbase" value="0" />
   <parameter name="io_regionsize" value="0" />
   <parameter name="master_addr_map" value="false" />
@@ -864,9 +965,27 @@
    kind="avalon"
    version="14.1"
    start="cpu.data_master"
+   end="audio.avalon_audio_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x11001050" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="cpu.data_master"
+   end="audio_config.avalon_av_config_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x11001040" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="cpu.data_master"
    end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x110010b0" />
+  <parameter name="baseAddress" value="0x11001090" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -875,7 +994,7 @@
    start="cpu.data_master"
    end="sysid_qsys_0.control_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x110010a8" />
+  <parameter name="baseAddress" value="0x11001088" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -893,7 +1012,7 @@
    start="cpu.data_master"
    end="clocks.pll_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x11001090" />
+  <parameter name="baseAddress" value="0x11001070" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -907,7 +1026,7 @@
  </connection>
  <connection kind="avalon" version="14.1" start="cpu.data_master" end="keycode.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x11001080" />
+  <parameter name="baseAddress" value="0x11001060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="avalon" version="14.1" start="cpu.data_master" end="sdram.s1">
@@ -944,7 +1063,7 @@
    start="cpu.instruction_master"
    end="sysid_qsys_0.control_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x110010a8" />
+  <parameter name="baseAddress" value="0x11001088" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -962,7 +1081,7 @@
    start="cpu.instruction_master"
    end="clocks.pll_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x11001090" />
+  <parameter name="baseAddress" value="0x11001070" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -983,6 +1102,11 @@
   <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
+ <connection
+   kind="clock"
+   version="14.1"
+   start="audio_pll_0.audio_clk"
+   end="audio.clk" />
  <connection kind="clock" version="14.1" start="clocks.c0" end="sdram.clk" />
  <connection
    kind="clock"
@@ -1011,25 +1135,30 @@
  <connection kind="clock" version="14.1" start="clk.clk" end="led.clk" />
  <connection kind="clock" version="14.1" start="clk.clk" end="all_switches.clk" />
  <connection kind="clock" version="14.1" start="clk.clk" end="red_leds.clk" />
+ <connection kind="clock" version="14.1" start="clk.clk" end="audio_config.clk" />
  <connection
    kind="clock"
    version="14.1"
    start="clk.clk"
    end="clocks.inclk_interface" />
+ <connection kind="clock" version="14.1" start="clk.clk" end="audio_pll_0.ref_clk" />
  <connection
    kind="clock"
    version="14.1"
    start="clk.clk"
    end="clock_crossing_io.s0_clk" />
+ <connection kind="interrupt" version="14.1" start="cpu.irq" end="audio.interrupt">
+  <parameter name="irqNumber" value="2" />
+ </connection>
  <connection
    kind="interrupt"
    version="14.1"
    start="cpu.irq"
    end="CY7C67200_IF_0.interrupt_sender">
-  <parameter name="irqNumber" value="6" />
+  <parameter name="irqNumber" value="0" />
  </connection>
  <connection kind="interrupt" version="14.1" start="cpu.irq" end="jtag_uart.irq">
-  <parameter name="irqNumber" value="5" />
+  <parameter name="irqNumber" value="1" />
  </connection>
  <connection
    kind="reset"
@@ -1046,6 +1175,11 @@
    version="14.1"
    start="clk.clk_reset"
    end="clock_crossing_io.m0_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk.clk_reset"
+   end="audio_pll_0.ref_reset" />
  <connection
    kind="reset"
    version="14.1"
@@ -1070,6 +1204,11 @@
    version="14.1"
    start="clk.clk_reset"
    end="red_leds.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk.clk_reset"
+   end="audio_config.reset" />
  <connection
    kind="reset"
    version="14.1"
@@ -1115,6 +1254,11 @@
    version="14.1"
    start="cpu.debug_reset_request"
    end="clock_crossing_io.s0_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="audio_pll_0.reset_source"
+   end="audio.reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
